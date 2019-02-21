@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="bsoftlab-goods-3.0">
+    <serverData>
+      <paths name="bsoftlab-goods-3.0">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/bsoftlab-goods-3.0" local="$PROJECT_DIR$" web="/bsoftlab-goods-3.0" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

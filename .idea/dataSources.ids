@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="materials@localhost" uuid="ab687e6b-4720-47f8-ae5f-b2d50188656a">
+    <database-info product="MySQL" version="8.0.13" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.13 (Revision: 66459e9d39c8fd09767992bc592acd2053279be6)">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.2">
+      <schema id="1" name="materials"/>
+      <table id="2" parent="1" name="refcurrencies"/>
+      <table id="3" parent="1" name="refcurrenciesrates"/>
+      <table id="4" parent="1" name="refdepartments"/>
+      <table id="5" parent="1" name="refgroups"/>
+      <table id="6" parent="1" name="refmatvalues"/>
+      <table id="7" parent="1" name="refpermissions"/>
+      <table id="8" parent="1" name="refpricesofmatvalues"/>
+      <table id="9" parent="1" name="refroles"/>
+      <table id="10" parent="1" name="refrolespermissions"/>
+      <table id="11" parent="1" name="refunitsofmsrs"/>
+      <table id="12" parent="1" name="refworkmans"/>
+      <table id="13" parent="1" name="refworkmansroles"/>
+      <column id="14" parent="2" name="Code">
+        <mandatory>1</mandatory>
+        <data-type>varchar(3)</data-type>
+      </column>
+      <column id="15" parent="2" name="ShortName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="16" parent="2" name="LongName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="17" parent="2" name="Country">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="18" parent="2" name="AdditionalInformation">
+        <data-type>varchar(500)</data-type>
+      </column>
+      <key id="19" parent="2" name="PRIMARY">
+        <columns>Code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="20" parent="3" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="21" parent="3" name="CurrencyCode">
+        <mandatory>1</mandatory>
+        <data-type>varchar(3)</data-type>
+      </column>
+      <column id="22" parent="3" name="Date">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <column id="23" parent="3" name="Rate">
+        <mandatory>1</mandatory>
+        <data-type>double</data-type>
+      </column>
+      <column id="24" parent="3" name="Quantity">
+        <mandatory>1</mandatory>
+        <data-type>double</data-type>
+      </column>
+      <index id="25" parent="3" name="UK_CurrencyRate">
+        <columns>CurrencyCode
+Date</columns>
+        <unique>1</unique>
+      </index>
+      <key id="26" parent="3" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <key id="27" parent="3" name="UK_CurrencyRate">
+        <columns>CurrencyCode
+Date</columns>
+        <underlying-index>UK_CurrencyRate</underlying-index>
+      </key>
+      <foreign-key id="28" parent="3" name="FK_CurrencyCode_CurrencyRate">
+        <columns>CurrencyCode</columns>
+        <ref-key>materials.refcurrencies|code</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="29" parent="4" name="Code">
+        <mandatory>1</mandatory>
+        <data-type>varchar(8)</data-type>
+      </column>
+      <column id="30" parent="4" name="Name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="31" parent="4" name="Street">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="32" parent="4" name="Pincode">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="33" parent="4" name="City">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="34" parent="4" name="State">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="35" parent="4" name="Country">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="36" parent="4" name="Phones">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="37" parent="4" name="Faxes">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="38" parent="4" name="WebSite">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="39" parent="4" name="EmailAddress">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="40" parent="4" name="AdditionalInformation">
+        <data-type>varchar(500)</data-type>
+      </column>
+      <key id="41" parent="4" name="PRIMARY">
+        <columns>Code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="42" parent="5" name="Code">
+        <mandatory>1</mandatory>
+        <data-type>varchar(8)</data-type>
+      </column>
+      <column id="43" parent="5" name="Name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="44" parent="5" name="EnhancedName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <key id="45" parent="5" name="PRIMARY">
+        <columns>Code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="46" parent="6" name="Code">
+        <mandatory>1</mandatory>
+        <data-type>varchar(13)</data-type>
+      </column>
+      <column id="47" parent="6" name="Name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="48" parent="6" name="UnitofmsrCode">
+        <mandatory>1</mandatory>
+        <data-type>varchar(3)</data-type>
+      </column>
+      <column id="49" parent="6" name="GroupCode">
+        <mandatory>1</mandatory>
+        <data-type>varchar(8)</data-type>
+      </column>
+      <key id="50" parent="6" name="PRIMARY">
+        <columns>Code</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="51" parent="6" name="FK_GroupCode_Matvalue">
+        <columns>GroupCode</columns>
+        <ref-key>materials.refgroups|code</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="52" parent="6" name="FK_UnitofmsrCode_Matvalue">
+        <columns>UnitofmsrCode</columns>
+        <ref-key>materials.refunitsofmsrs|code</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="53" parent="7" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="54" parent="7" name="Name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <index id="55" parent="7" name="UK_Permission">
+        <columns>Name</columns>
+        <unique>1</unique>
+      </index>
+      <key id="56" parent="7" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <key id="57" parent="7" name="UK_Permission">
+        <columns>Name</columns>
+        <underlying-index>UK_Permission</underlying-index>
+      </key>
+      <column id="58" parent="8" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="59" parent="8" name="MatvalueCode">
+        <mandatory>1</mandatory>
+        <data-type>varchar(13)</data-type>
+      </column>
+      <column id="60" parent="8" name="DepartmentCode">
+        <mandatory>1</mandatory>
+        <data-type>varchar(8)</data-type>
+      </column>
+      <column id="61" parent="8" name="CurrencyCode">
+        <mandatory>1</mandatory>
+        <data-type>varchar(3)</data-type>
+      </column>
+      <column id="62" parent="8" name="Date">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <column id="63" parent="8" name="Price">
+        <mandatory>1</mandatory>
+        <data-type>double</data-type>
+      </column>
+      <column id="64" parent="8" name="Quantity">
+        <mandatory>1</mandatory>
+        <data-type>double</data-type>
+      </column>
+      <index id="65" parent="8" name="UK_SalePrice">
+        <columns>DepartmentCode
+MatvalueCode
+Date</columns>
+        <unique>1</unique>
+      </index>
+      <key id="66" parent="8" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <key id="67" parent="8" name="UK_SalePrice">
+        <columns>DepartmentCode
+MatvalueCode
+Date</columns>
+        <underlying-index>UK_SalePrice</underlying-index>
+      </key>
+      <foreign-key id="68" parent="8" name="FK_CurrencyCode_SalePrice">
+        <columns>CurrencyCode</columns>
+        <ref-key>materials.refcurrencies|code</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="69" parent="8" name="FK_DepartmentCode_SalePrice">
+        <columns>DepartmentCode</columns>
+        <ref-key>materials.refdepartments|code</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="70" parent="8" name="FK_MatvalueCode_SalePrice">
+        <columns>MatvalueCode</columns>
+        <ref-key>materials.refmatvalues|code</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="71" parent="9" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="72" parent="9" name="Name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <index id="73" parent="9" name="UK_Role">
+        <columns>Name</columns>
+        <unique>1</unique>
+      </index>
+      <key id="74" parent="9" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <key id="75" parent="9" name="UK_Role">
+        <columns>Name</columns>
+        <underlying-index>UK_Role</underlying-index>
+      </key>
+      <column id="76" parent="10" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="77" parent="10" name="RoleID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="78" parent="10" name="PermissionID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <index id="79" parent="10" name="UK_RolePermission">
+        <columns>RoleID
+PermissionID</columns>
+        <unique>1</unique>
+      </index>
+      <key id="80" parent="10" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <key id="81" parent="10" name="UK_RolePermission">
+        <columns>RoleID
+PermissionID</columns>
+        <underlying-index>UK_RolePermission</underlying-index>
+      </key>
+      <foreign-key id="82" parent="10" name="FK_PermissionID_RolePermission">
+        <columns>PermissionID</columns>
+        <ref-key>materials.refpermissions|id</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="83" parent="10" name="FK_RoleID_RolePermission">
+        <columns>RoleID</columns>
+        <ref-key>materials.refroles|id</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="84" parent="11" name="Code">
+        <mandatory>1</mandatory>
+        <data-type>varchar(3)</data-type>
+      </column>
+      <column id="85" parent="11" name="ShortName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="86" parent="11" name="LongName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <key id="87" parent="11" name="PRIMARY">
+        <columns>Code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="88" parent="12" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="89" parent="12" name="Name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="90" parent="12" name="Password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="91" parent="12" name="FirstName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="92" parent="12" name="LastName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="93" parent="12" name="Phones">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="94" parent="12" name="Street">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="95" parent="12" name="Pincode">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="96" parent="12" name="City">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="97" parent="12" name="State">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="98" parent="12" name="Country">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <index id="99" parent="12" name="UK_Workman">
+        <columns>Name</columns>
+        <unique>1</unique>
+      </index>
+      <key id="100" parent="12" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <key id="101" parent="12" name="UK_Workman">
+        <columns>Name</columns>
+        <underlying-index>UK_Workman</underlying-index>
+      </key>
+      <column id="102" parent="13" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="103" parent="13" name="WorkmanID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="104" parent="13" name="RoleID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="105" parent="13" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="106" parent="13" name="FK_RoleID_WorkmanRole">
+        <columns>RoleID</columns>
+        <ref-key>materials.refroles|id</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="107" parent="13" name="FK_WorkmanID_WorkmanRole">
+        <columns>WorkmanID</columns>
+        <ref-key>materials.refworkmans|id</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+    </database-model>
+  </data-source>
+</component>

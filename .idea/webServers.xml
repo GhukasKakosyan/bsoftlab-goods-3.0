@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9761b6ee-f214-41ae-8daf-c6cfd71c3461" name="bsoftlab-goods-3.0" url="http://localhost:8443">
+        <fileTransfer port="0" mountedRoot="C:\Users\BSOFTLAB\Documents\IntellJIDEA Projects\WEB Server\apache-tomcat-9.0.16\webapps" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
