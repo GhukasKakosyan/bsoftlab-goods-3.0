@@ -186,8 +186,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -221,6 +219,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1076,6 +1076,7 @@
       <workItem from="1550763541309" duration="2717000" />
       <workItem from="1550829164329" duration="5032000" />
       <workItem from="1550849186372" duration="562000" />
+      <workItem from="1550926841182" duration="514000" />
     </task>
     <servers />
   </component>
@@ -1088,7 +1089,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2207985000" />
+    <option name="totallyTimeSpent" value="2208499000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1141,7 +1142,7 @@
       <window_info anchor="right" id="Bean Validation" order="7" show_stripe_button="false" />
       <window_info active="true" anchor="right" id="Maven Projects" order="8" visible="true" weight="0.19894099" />
       <window_info anchor="right" id="Capture Analysis" order="9" />
-      <window_info active="true" anchor="right" id="Maven" order="10" visible="true" weight="0.1452345" />
+      <window_info anchor="right" id="Maven" order="10" weight="0.1452345" />
       <window_info anchor="right" id="Theme Preview" order="11" />
     </layout>
     <layout-to-restore>
