@@ -5,7 +5,7 @@ import net.bsoftlab.message.MessageFactory;
 import net.bsoftlab.model.Unitofmsr;
 import net.bsoftlab.service.exception.ServiceException;
 import net.bsoftlab.service.UnitofmsrService;
-import net.bsoftlab.utility.UtilityFunctions;
+import net.bsoftlab.utility.Functions;
 
 import net.bsoftlab.resource.assembler.UnitofmsrResourceAssembler;
 import net.bsoftlab.resource.container.UnitofmsrResourceListContainer;
@@ -67,7 +67,6 @@ public class UnitofmsrWebController {
 
     private ConversionService conversionService = null;
     private MessageFactory messageFactory = null;
-    private UtilityFunctions utilityFunctions = null;
 
     @Autowired
     public UnitofmsrWebController(
@@ -95,15 +94,10 @@ public class UnitofmsrWebController {
             MessageFactory messageFactory) {
         this.messageFactory = messageFactory;
     }
-    @Autowired
-    public void setUtilityFunctions(
-            UtilityFunctions utilityFunctions) {
-        this.utilityFunctions = utilityFunctions;
-    }
 
     @ExceptionHandler(value = {Throwable.class})
     public ResponseEntity<Message> handleException(Throwable throwable) {
-        String error = this.utilityFunctions.getPrintStackTrace(throwable);
+        String error = Functions.getPrintStackTrace(throwable);
         Message message = this.messageFactory.getInternalServerErrorMessage(error);
         HttpHeaders httpHeaders = new HttpHeaders();
         return new ResponseEntity<>(message, httpHeaders,

@@ -3,11 +3,11 @@ package net.bsoftlab.controller.rest;
 import net.bsoftlab.message.Message;
 import net.bsoftlab.message.MessageFactory;
 import net.bsoftlab.model.Permission;
-import net.bsoftlab.service.exception.ServiceException;
-import net.bsoftlab.service.PermissionService;
-import net.bsoftlab.utility.UtilityFunctions;
 import net.bsoftlab.resource.assembler.PermissionResourceAssembler;
 import net.bsoftlab.resource.PermissionResource;
+import net.bsoftlab.service.exception.ServiceException;
+import net.bsoftlab.service.PermissionService;
+import net.bsoftlab.utility.Functions;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
@@ -56,7 +56,6 @@ public class PermissionRestController {
 
     private ConversionService conversionService = null;
     private MessageFactory messageFactory = null;
-    private UtilityFunctions utilityFunctions = null;
 
     @Autowired
     public PermissionRestController(
@@ -75,11 +74,6 @@ public class PermissionRestController {
     public void setMessageFactory(
             MessageFactory messageFactory) {
         this.messageFactory = messageFactory;
-    }
-    @Autowired
-    public void setUtilityFunctions(
-            UtilityFunctions utilityFunctions) {
-        this.utilityFunctions = utilityFunctions;
     }
 
     @PreDestroy
@@ -100,7 +94,7 @@ public class PermissionRestController {
         } else if(throwable instanceof HttpMessageConversionException) {
             message = this.messageFactory.getMessage(ParameterHttpBodyNotConvertedMessageCode);
         } else {
-            String error = this.utilityFunctions.getPrintStackTrace(throwable);
+            String error = Functions.getPrintStackTrace(throwable);
             message = this.messageFactory.getInternalServerErrorMessage(error);
         }
         HttpHeaders httpHeaders = new HttpHeaders();

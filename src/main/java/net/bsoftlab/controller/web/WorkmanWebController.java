@@ -12,8 +12,7 @@ import net.bsoftlab.resource.validator.WorkmanResourceValidator;
 import net.bsoftlab.service.RoleService;
 import net.bsoftlab.service.WorkmanService;
 import net.bsoftlab.service.exception.ServiceException;
-import net.bsoftlab.utility.UtilityFunctions;
-
+import net.bsoftlab.utility.Functions;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
@@ -53,7 +52,6 @@ public class WorkmanWebController {
 
     private ConversionService conversionService = null;
     private MessageFactory messageFactory = null;
-    private UtilityFunctions utilityFunctions = null;
 
     @Autowired
     public WorkmanWebController(
@@ -89,15 +87,10 @@ public class WorkmanWebController {
             MessageFactory messageFactory) {
         this.messageFactory = messageFactory;
     }
-    @Autowired
-    public void setUtilityFunctions(
-            UtilityFunctions utilityFunctions) {
-        this.utilityFunctions = utilityFunctions;
-    }
 
     @ExceptionHandler(value = {Throwable.class})
     public ResponseEntity<Message> handleException(Throwable throwable) {
-        String error = this.utilityFunctions.getPrintStackTrace(throwable);
+        String error = Functions.getPrintStackTrace(throwable);
         Message message = this.messageFactory.getInternalServerErrorMessage(error);
         HttpHeaders httpHeaders = new HttpHeaders();
         return new ResponseEntity<>(message, httpHeaders,

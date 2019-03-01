@@ -5,9 +5,8 @@ import net.bsoftlab.model.Currency;
 import net.bsoftlab.model.Department;
 import net.bsoftlab.model.Matvalue;
 import net.bsoftlab.model.SalePrice;
-import net.bsoftlab.utility.UtilityFunctions;
+import net.bsoftlab.utility.Functions;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
@@ -28,7 +27,6 @@ import java.util.List;
 public class SalePriceDaoJpaTemplate implements SalePriceDao {
 
     private EntityManager entityManager = null;
-    private UtilityFunctions utilityFunctions = null;
 
     @PreDestroy
     public void destroy() {}
@@ -39,11 +37,6 @@ public class SalePriceDaoJpaTemplate implements SalePriceDao {
     public void setEntityManager(
             EntityManager entityManager) {
         this.entityManager = entityManager;
-    }
-    @Autowired
-    public void setUtilityFunctions(
-            UtilityFunctions utilityFunctions) {
-        this.utilityFunctions = utilityFunctions;
     }
 
     @Override
@@ -139,8 +132,8 @@ public class SalePriceDaoJpaTemplate implements SalePriceDao {
         if(salePriceList == null || salePriceList.isEmpty()) {
             return null;
         }
-        int first = this.utilityFunctions.calculateFirst(start, size, salePriceList.size());
-        int quantity = this.utilityFunctions.calculateQuantity(start, size, salePriceList.size());
+        int first = Functions.calculateFirst(start, size, salePriceList.size());
+        int quantity = Functions.calculateQuantity(start, size, salePriceList.size());
         List<SalePrice> salePriceSubList = salePriceList.subList(first, quantity);
         if(salePriceSubList.isEmpty()) {
             return null;
@@ -166,10 +159,8 @@ public class SalePriceDaoJpaTemplate implements SalePriceDao {
             return null;
         }
 
-        int first = this.utilityFunctions
-                .calculateFirst(start, size, salePriceListCurrency.size());
-        int quantity = this.utilityFunctions
-                .calculateQuantity(start, size, salePriceListCurrency.size());
+        int first = Functions.calculateFirst(start, size, salePriceListCurrency.size());
+        int quantity = Functions.calculateQuantity(start, size, salePriceListCurrency.size());
         List<SalePrice> salePriceSubListCurrency =
                 salePriceListCurrency.subList(first, quantity);
         if(salePriceSubListCurrency.isEmpty()) {
@@ -196,10 +187,8 @@ public class SalePriceDaoJpaTemplate implements SalePriceDao {
             return null;
         }
 
-        int first = this.utilityFunctions
-                .calculateFirst(start, size, salePriceListDepartment.size());
-        int quantity = this.utilityFunctions
-                .calculateQuantity(start, size, salePriceListDepartment.size());
+        int first = Functions.calculateFirst(start, size, salePriceListDepartment.size());
+        int quantity = Functions.calculateQuantity(start, size, salePriceListDepartment.size());
         List<SalePrice> salePriceSubListDepartment =
                 salePriceListDepartment.subList(first, quantity);
         if(salePriceSubListDepartment.isEmpty()) {
@@ -226,10 +215,8 @@ public class SalePriceDaoJpaTemplate implements SalePriceDao {
             return null;
         }
 
-        int first = this.utilityFunctions
-                .calculateFirst(start, size, salePriceListMatvalue.size());
-        int quantity = this.utilityFunctions
-                .calculateQuantity(start, size, salePriceListMatvalue.size());
+        int first = Functions.calculateFirst(start, size, salePriceListMatvalue.size());
+        int quantity = Functions.calculateQuantity(start, size, salePriceListMatvalue.size());
         List<SalePrice> salePriceSubListMatvalue =
                 salePriceListMatvalue.subList(first, quantity);
         if(salePriceSubListMatvalue.isEmpty()) {

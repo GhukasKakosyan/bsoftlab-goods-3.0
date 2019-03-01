@@ -2,9 +2,8 @@ package net.bsoftlab.dao.template.jpa;
 
 import net.bsoftlab.dao.DepartmentDao;
 import net.bsoftlab.model.Department;
-import net.bsoftlab.utility.UtilityFunctions;
+import net.bsoftlab.utility.Functions;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
@@ -23,7 +22,6 @@ import java.util.List;
 public class DepartmentDaoJpaTemplate implements DepartmentDao {
 
     private EntityManager entityManager = null;
-    private UtilityFunctions utilityFunctions = null;
 
     @PreDestroy
     public void destroy() {}
@@ -34,11 +32,6 @@ public class DepartmentDaoJpaTemplate implements DepartmentDao {
     public void setEntityManager(
             EntityManager entityManager) {
         this.entityManager = entityManager;
-    }
-    @Autowired
-    public void setUtilityFunctions(
-            UtilityFunctions utilityFunctions) {
-        this.utilityFunctions = utilityFunctions;
     }
 
     @Override
@@ -76,8 +69,8 @@ public class DepartmentDaoJpaTemplate implements DepartmentDao {
         if(departmentList == null || departmentList.isEmpty()) {
             return null;
         }
-        int first = this.utilityFunctions.calculateFirst(start, size, departmentList.size());
-        int quantity = this.utilityFunctions.calculateQuantity(start, size, departmentList.size());
+        int first = Functions.calculateFirst(start, size, departmentList.size());
+        int quantity = Functions.calculateQuantity(start, size, departmentList.size());
         List<Department> departmentSubList = departmentList.subList(first, quantity);
         if(departmentSubList.isEmpty()) {
             return null;

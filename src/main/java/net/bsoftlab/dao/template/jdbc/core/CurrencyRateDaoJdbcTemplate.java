@@ -4,7 +4,7 @@ import net.bsoftlab.dao.CurrencyRateDao;
 import net.bsoftlab.dao.template.jdbc.mapper.CurrencyRateMapper;
 import net.bsoftlab.model.Currency;
 import net.bsoftlab.model.CurrencyRate;
-import net.bsoftlab.utility.UtilityFunctions;
+import net.bsoftlab.utility.Functions;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
@@ -24,7 +24,6 @@ import java.util.List;
 public class CurrencyRateDaoJdbcTemplate implements CurrencyRateDao {
 
     private JdbcTemplate jdbcTemplate;
-    private UtilityFunctions utilityFunctions = null;
 
     @Autowired
     public CurrencyRateDaoJdbcTemplate(
@@ -36,12 +35,6 @@ public class CurrencyRateDaoJdbcTemplate implements CurrencyRateDao {
     public void destroy(){}
     @PostConstruct
     public void init(){}
-
-    @Autowired
-    public void setUtilityFunctions(
-            UtilityFunctions utilityFunctions) {
-        this.utilityFunctions = utilityFunctions;
-    }
 
     @Override
     public void deleteCurrencyRate(CurrencyRate currencyRate) {
@@ -169,8 +162,8 @@ public class CurrencyRateDaoJdbcTemplate implements CurrencyRateDao {
             return null;
         }
 
-        int first = this.utilityFunctions.calculateFirst(start, size, currencyRateList.size());
-        int quantity = this.utilityFunctions.calculateQuantity(start, size, currencyRateList.size());
+        int first = Functions.calculateFirst(start, size, currencyRateList.size());
+        int quantity = Functions.calculateQuantity(start, size, currencyRateList.size());
         List<CurrencyRate> currencyRateSubList = currencyRateList.subList(first, quantity);
         if(currencyRateSubList.isEmpty()) {
             return null;
@@ -201,8 +194,8 @@ public class CurrencyRateDaoJdbcTemplate implements CurrencyRateDao {
             return null;
         }
 
-        int first = this.utilityFunctions.calculateFirst(start, size, currencyRateList.size());
-        int quantity = this.utilityFunctions.calculateQuantity(start, size, currencyRateList.size());
+        int first = Functions.calculateFirst(start, size, currencyRateList.size());
+        int quantity = Functions.calculateQuantity(start, size, currencyRateList.size());
         List<CurrencyRate> currencyRateSubList = currencyRateList.subList(first, quantity);
         if(currencyRateSubList.isEmpty()) {
             return null;

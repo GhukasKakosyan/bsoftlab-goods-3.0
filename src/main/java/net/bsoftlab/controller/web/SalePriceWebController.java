@@ -13,7 +13,7 @@ import net.bsoftlab.service.DepartmentService;
 import net.bsoftlab.service.MatvalueService;
 import net.bsoftlab.service.SalePriceService;
 
-import net.bsoftlab.utility.UtilityFunctions;
+import net.bsoftlab.utility.Functions;
 
 import net.bsoftlab.resource.assembler.CurrencyResourceAssembler;
 import net.bsoftlab.resource.assembler.DepartmentResourceAssembler;
@@ -95,7 +95,6 @@ public class SalePriceWebController {
 
     private ConversionService conversionService = null;
     private MessageFactory messageFactory = null;
-    private UtilityFunctions utilityFunctions = null;
 
     @Autowired
     public SalePriceWebController(
@@ -156,15 +155,10 @@ public class SalePriceWebController {
             MessageFactory messageFactory) {
         this.messageFactory = messageFactory;
     }
-    @Autowired
-    public void setUtilityFunctions(
-            UtilityFunctions utilityFunctions) {
-        this.utilityFunctions = utilityFunctions;
-    }
 
     @ExceptionHandler(value = {Throwable.class})
     public ResponseEntity<Message> handleException(Throwable throwable) {
-        String error = this.utilityFunctions.getPrintStackTrace(throwable);
+        String error = Functions.getPrintStackTrace(throwable);
         Message message = this.messageFactory.getInternalServerErrorMessage(error);
         HttpHeaders httpHeaders = new HttpHeaders();
         return new ResponseEntity<>(message, httpHeaders,

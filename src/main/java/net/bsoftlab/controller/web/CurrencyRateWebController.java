@@ -7,7 +7,6 @@ import net.bsoftlab.model.CurrencyRate;
 import net.bsoftlab.service.exception.ServiceException;
 import net.bsoftlab.service.CurrencyRateService;
 import net.bsoftlab.service.CurrencyService;
-import net.bsoftlab.utility.UtilityFunctions;
 
 import net.bsoftlab.resource.assembler.CurrencyRateResourceAssembler;
 import net.bsoftlab.resource.assembler.CurrencyResourceAssembler;
@@ -16,6 +15,8 @@ import net.bsoftlab.resource.container.CurrencyResourceListContainer;
 import net.bsoftlab.resource.CurrencyRateResource;
 import net.bsoftlab.resource.CurrencyResource;
 import net.bsoftlab.resource.validator.CurrencyRateResourceValidator;
+
+import net.bsoftlab.utility.Functions;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
@@ -75,7 +76,6 @@ public class CurrencyRateWebController {
 
     private ConversionService conversionService = null;
     private MessageFactory messageFactory = null;
-    private UtilityFunctions utilityFunctions = null;
 
     @Autowired
     public CurrencyRateWebController(
@@ -113,15 +113,10 @@ public class CurrencyRateWebController {
             MessageFactory messageFactory) {
         this.messageFactory = messageFactory;
     }
-    @Autowired
-    public void setUtilityFunctions(
-            UtilityFunctions utilityFunctions) {
-        this.utilityFunctions = utilityFunctions;
-    }
 
     @ExceptionHandler(value = {Throwable.class})
     public ResponseEntity<Message> handleException(Throwable throwable) {
-        String error = this.utilityFunctions.getPrintStackTrace(throwable);
+        String error = Functions.getPrintStackTrace(throwable);
         Message message = this.messageFactory.getInternalServerErrorMessage(error);
         HttpHeaders httpHeaders = new HttpHeaders();
         return new ResponseEntity<>(message, httpHeaders,

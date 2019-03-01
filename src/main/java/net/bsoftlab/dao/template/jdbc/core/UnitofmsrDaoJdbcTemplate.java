@@ -3,7 +3,7 @@ package net.bsoftlab.dao.template.jdbc.core;
 import net.bsoftlab.dao.UnitofmsrDao;
 import net.bsoftlab.dao.template.jdbc.mapper.UnitofmsrMapper;
 import net.bsoftlab.model.Unitofmsr;
-import net.bsoftlab.utility.UtilityFunctions;
+import net.bsoftlab.utility.Functions;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
@@ -22,7 +22,6 @@ import java.util.List;
 public class UnitofmsrDaoJdbcTemplate implements UnitofmsrDao {
 
     private JdbcTemplate jdbcTemplate;
-    private UtilityFunctions utilityFunctions = null;
 
     @Autowired
     public UnitofmsrDaoJdbcTemplate(
@@ -34,12 +33,6 @@ public class UnitofmsrDaoJdbcTemplate implements UnitofmsrDao {
     public void destroy(){}
     @PostConstruct
     public void init(){}
-
-    @Autowired
-    public void setUtilityFunctions(
-            UtilityFunctions utilityFunctions) {
-        this.utilityFunctions = utilityFunctions;
-    }
 
     @Override
     public void deleteUnitofmsr(Unitofmsr unitofmsr) {
@@ -106,8 +99,8 @@ public class UnitofmsrDaoJdbcTemplate implements UnitofmsrDao {
             return null;
         }
 
-        int first = this.utilityFunctions.calculateFirst(start, size, unitofmsrList.size());
-        int quantity = this.utilityFunctions.calculateQuantity(start, size, unitofmsrList.size());
+        int first = Functions.calculateFirst(start, size, unitofmsrList.size());
+        int quantity = Functions.calculateQuantity(start, size, unitofmsrList.size());
         List<Unitofmsr> unitofmsrSubList = unitofmsrList.subList(first, quantity);
         if(unitofmsrSubList.isEmpty()) {
             return null;
