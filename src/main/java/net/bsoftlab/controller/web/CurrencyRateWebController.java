@@ -119,12 +119,12 @@ public class CurrencyRateWebController {
 
     @ExceptionHandler(value = {Throwable.class})
     public ResponseEntity<Message> handleException(Throwable throwable) {
-        Function <Throwable, String> function = throwableParameter -> {
+        Function <Throwable, String> stackTraceToStringFunction = throwableParameter -> {
             StringWriter stringWriter = new StringWriter();
             throwableParameter.printStackTrace(new PrintWriter(stringWriter));
             return stringWriter.toString();
         };
-        String error = function.apply(throwable);
+        String error = stackTraceToStringFunction.apply(throwable);
         Message message = this.messageFactory.getInternalServerErrorMessage(error);
         HttpHeaders httpHeaders = new HttpHeaders();
         return new ResponseEntity<>(message, httpHeaders,
