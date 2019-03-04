@@ -1,0 +1,108 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:aop = "http://www.springframework.org/schema/aop"
+       xmlns:context = "http://www.springframework.org/schema/context"
+       xmlns:tx = "http://www.springframework.org/schema/tx"
+       xsi:schemaLocation = "http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <bean class = "org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+    <bean class = "org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
+    <bean class = "org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
+
+    <bean id = "messageSource" lazy-init = "false"
+          class = "org.springframework.context.support.ResourceBundleMessageSource">
+        <property name = "basenames">
+            <list>
+                <value>messages.AddressValidation</value>
+                <value>messages.CurrencyRateValidation</value>
+                <value>messages.CurrencyValidation</value>
+                <value>messages.DepartmentValidation</value>
+                <value>messages.GroupValidation</value>
+                <value>messages.MatvalueValidation</value>
+                <value>messages.ParameterValidation</value>
+                <value>messages.PermissionValidation</value>
+                <value>messages.RoleValidation</value>
+                <value>messages.SalePriceValidation</value>
+                <value>messages.UnitofmsrValidation</value>
+                <value>messages.WorkmanValidation</value>
+            </list>
+        </property>
+        <property name = "defaultEncoding" value = "UTF-8"/>
+    </bean>
+
+    <aop:aspectj-autoproxy/>
+    <aop:config/>
+
+    <context:annotation-config/>
+
+    <context:component-scan base-package = "net.bsoftlab.dao.template.jdbc.core"/>
+    <context:component-scan base-package = "net.bsoftlab.dao.template.jpa"/>
+    <context:component-scan base-package = "net.bsoftlab.message"/>
+    <context:component-scan base-package = "net.bsoftlab.service.aspect"/>
+    <context:component-scan base-package = "net.bsoftlab.service.implement"/>
+    <context:component-scan base-package = "net.bsoftlab.utility"/>
+
+    <context:property-placeholder location = "classpath:database/database.properties"/>
+
+    <bean id = "dataSource" lazy-init = "false"
+          class = "org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name = "driverClassName" value = "${jdbc.driverClassName}"/>
+        <property name = "url" value = "${jdbc.url}"/>
+        <property name = "username" value = "${jdbc.username}"/>
+        <property name = "password" value = "${jdbc.password}"/>
+    </bean>
+
+    <bean id = "jdbcTemplate" lazy-init = "false"
+          class = "org.springframework.jdbc.core.JdbcTemplate">
+        <constructor-arg name = "dataSource" ref = "dataSource"/>
+        <constructor-arg name = "lazyInit" value = "false"/>
+    </bean>
+    <bean id = "namedParameterJdbcTemplate" lazy-init = "false"
+          class = "org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
+        <constructor-arg name = "dataSource" ref = "dataSource"/>
+    </bean>
+
+    <bean id = "entityManagerFactory" lazy-init = "false"
+          class = "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name = "dataSource" ref = "dataSource"/>
+        <property name = "persistenceUnitName" value = "entityManagerFactory"/>
+        <property name = "jpaVendorAdapter">
+            <bean class = "org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
+        </property>
+        <property name = "packagesToScan" value = "net.bsoftlab.model"/>
+        <property name = "jpaProperties">
+            <props>
+                <prop key = "hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+                <prop key = "hibernate.max_fetch_depth">2</prop>
+                <prop key = "hibernate.jdbc.fetch_size">50</prop>
+                <prop key = "hibernate.jdbc.batch_size">10</prop>
+                <prop key = "hibernate.show_sql">false</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id = "jdbcTransactionManager" lazy-init = "false"
+          class = "org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name = "dataSource" ref = "dataSource"/>
+        <qualifier value = "jdbcTransactionManager"/>
+    </bean>
+    <bean id = "jpaTransactionManager" lazy-init = "false"
+          class = "org.springframework.orm.jpa.JpaTransactionManager">
+        <property name = "entityManagerFactory" ref = "entityManagerFactory"/>
+        <property name = "dataSource" ref = "dataSource"/>
+        <qualifier value = "jpaTransactionManager"/>
+    </bean>
+
+    <bean class = "org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
+
+    <tx:annotation-driven transaction-manager = "jpaTransactionManager"/>
+
+</beans>

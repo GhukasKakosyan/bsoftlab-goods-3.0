@@ -1,0 +1,178 @@
+<jsp:root xmlns = "http://www.w3.org/1999/xhtml" version = "2.1"
+          xmlns:jsp = "http://java.sun.com/JSP/Page"
+          xmlns:core = "http://java.sun.com/jsp/jstl/core"
+          xmlns:form = "http://www.springframework.org/tags/form">
+
+    <jsp:directive.page buffer = "512kb"/>
+    <jsp:directive.page contentType = "text/html"/>
+    <jsp:directive.page info = "workmanRegisterViewer"/>
+    <jsp:directive.page isELIgnored = "false"/>
+    <jsp:directive.page pageEncoding = "utf-8"/>
+
+    <core:set var = "contextPath" scope = "page"
+              value = "${pageContext.request.contextPath}"/>
+
+    <jsp:useBean id = "message" scope = "request"
+                 class = "net.bsoftlab.message.Message">
+        <jsp:setProperty name = "message" property = "code" value = ""/>
+        <jsp:setProperty name = "message" property = "armenianText" value = ""/>
+        <jsp:setProperty name = "message" property = "englishText" value = ""/>
+    </jsp:useBean>
+
+    <html>
+        <head>
+            <meta charset = "utf-8"/>
+            <meta http-equiv = "x-ua-compatible" content = "IE=edge"/>
+            <meta name = "viewport" content = "width = device-width, initial-scale = 1"/>
+            <meta name = "description" content = ""/>
+            <meta name = "author" content = ""/>
+
+            <title>ANALITIKA WEB - Գրանցել նոր օգտագործող</title>
+        </head>
+
+        <jsp:body>
+            <br/>
+            <h2 align = "center">ԳՐԱՆՑԵԼ ՆՈՐ ՕԳՏԱԳՈՐԾՈՂ</h2>
+            <core:if test = "${not empty message.armenianText}">
+                <h3 align = "center">
+                    <b><core:out value = "${message.armenianText}"/></b>
+                </h3>
+            </core:if>
+            <!--@elvariable id="workmanResource" type="net.bsoftlab.resource.WorkmanResource"-->
+            <form:form commandName = "workmanResource"
+                       modelAttribute = "workmanResource">
+                <table align = "center">
+                    <tr align = "center">
+                        <td align = "right"><strong>Էլեկտրոնային փոստ</strong></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:hidden path = "code" disabled = "false" tabindex = "1"/>
+                            <form:input path = "name"
+                                        disabled = "false" readonly = "false" tabindex = "2"
+                                        size = "80" maxlength = "255"
+                                        title = "Նիշերի առավելագույն քանակը = 100"/>
+                        </td>
+                    </tr>
+                    <tr align = "center">
+                        <td align = "right"><strong>Գաղտնաբառ</strong></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:password path = "password"
+                                        disabled = "false" readonly = "false" tabindex = "3"
+                                        size = "80" maxlength = "255"
+                                        title = "Նիշերի առավելագույն քանակը = 255"/>
+                        </td>
+                    </tr>
+                    <tr align = "center">
+                        <td align = "right"><b>Դեր.Անվանում</b></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <!--@elvariable id="roleResourceListContainer" type="net.bsoftlab.resource.container.RoleResourceListContainer"-->
+                            <form:select path = "roleResource" disabled = "false"
+                                         items = "${roleResourceListContainer.roleResourceList}"
+                                         itemLabel = "name"
+                                         itemValue = "code"
+                                         tabindex = "4"
+                                         title = "Ընտրեք օգտագործողի դերը"/>
+                        </td>
+                    </tr>
+                    <tr align = "center">
+                        <td align = "right"><strong>Անուն</strong></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:input path = "firstName"
+                                        disabled = "false" readonly = "false" tabindex = "5"
+                                        size = "80" maxlength = "100"
+                                        title = "Նիշերի առավելագույն քանակը = 100"/>
+
+                        </td>
+                    </tr>
+                    <tr align = "center">
+                        <td align = "right"><strong>Ազգանուն</strong></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:input path = "lastName"
+                                        disabled = "false" readonly = "false" tabindex = "6"
+                                        size = "80" maxlength = "100"
+                                        title = "Նիշերի առավելագույն քանակը = 100"/>
+                        </td>
+                    </tr>
+                    <tr align = "center">
+                        <td align = "right"><strong>Հեռախոսահամարներ</strong></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:input path = "phones"
+                                        disabled = "false" readonly = "false" tabindex = "7"
+                                        size = "80" maxlength = "100"
+                                        title = "Նիշերի առավելագույն քանակը = 100"/>
+                        </td>
+                    </tr>
+                    <tr align = "center">
+                        <td align = "right"><strong>Հասցե.Փողոց, տուն</strong></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:input path = "addressResource.street"
+                                        disabled = "false" readonly = "false" tabindex = "8"
+                                        size = "80" maxlength = "100"
+                                        title = "Նիշերի առավելագույն քանակը = 100"/>
+                        </td>
+                    </tr>
+                    <tr align = "center">
+                        <td align = "right"><strong>Հասցե.Փոստի կոդ</strong></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:input path = "addressResource.pincode"
+                                        disabled = "false" readonly = "false" tabindex = "9"
+                                        size = "20" maxlength = "20"
+                                        title = "Նիշերի առավելագույն քանակը = 20"/>
+                        </td>
+                    </tr>
+                    <tr align = "center">
+                        <td align = "right"><strong>Հասցե.Քաղաք</strong></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:input path = "addressResource.city"
+                                        disabled = "false" readonly = "false" tabindex = "10"
+                                        size = "80" maxlength = "100"
+                                        title = "Նիշերի առավելագույն քանակը = 100"/>
+                        </td>
+                    </tr>
+                    <tr align = "center">
+                        <td align = "right"><strong>Հասցե.Մարզ</strong></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:input path = "addressResource.state"
+                                        disabled = "false" readonly = "false" tabindex = "11"
+                                        size = "80" maxlength = "100"
+                                        title = "Նիշերի առավելագույն քանակը = 100"/>
+                        </td>
+                    </tr>
+                    <tr align = "center">
+                        <td align = "right"><strong>Հասցե.Երկիր</strong></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:input path = "addressResource.country"
+                                        disabled = "false" readonly = "false" tabindex = "12"
+                                        size = "80" maxlength = "100"
+                                        title = "Նիշերի առավելագույն քանակը = 100"/>
+                        </td>
+                    </tr>
+                    <tr align = "center">
+                        <td align = "right"/>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <input type = "submit" align = "center"
+                                   value = "Գրանցել օգտագործողին"
+                                   formaction = "${contextPath}/insert"
+                                   formmethod = "post"/>
+                            <input type = "submit" align = "center"
+                                   value = "Մուտք գործել համակարգ"
+                                   formaction = "${contextPath}/signin"
+                                   formmethod = "post"/>
+                        </td>
+                    </tr>
+                </table>
+            </form:form>
+        </jsp:body>
+    </html>
+</jsp:root>

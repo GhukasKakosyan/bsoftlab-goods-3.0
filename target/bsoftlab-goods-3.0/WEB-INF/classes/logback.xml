@@ -1,0 +1,38 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<configuration debug = "true" scan = "true" scanPeriod = "30 minutes">
+    <appender name = "consoleAppender"
+              class = "ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <charset>UTF-8</charset>
+            <Pattern>
+                .%d{HH:mm:ss.SSS} [%thread] %-5level %logger{255} - %msg %n
+            </Pattern>
+        </encoder>
+    </appender>
+
+    <appender name = "dailyRollingFileAppender"
+              class = "ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>../logs/bsoftlab-goods-30.log</File>
+        <rollingPolicy class = "ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>
+                ../logs/bsoftlab-goods-30-%d{yyyy-MM-dd}.log
+            </FileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <charset>UTF-8</charset>
+            <Pattern>%d{yyyy-MM-dd_HH:mm:ss.SSS} [%thread] %-5level %logger{255} - %msg %n</Pattern>
+        </encoder>
+    </appender>
+
+    <logger name = "net.bsoftlab" additivity = "false">
+        <level value = "DEBUG" />
+        <appender-ref ref = "consoleAppender" />
+        <appender-ref ref = "dailyRollingFileAppender"/>
+    </logger>
+
+    <root>
+        <level value = "DEBUG" />
+        <appender-ref ref = "consoleAppender" />
+    </root>
+</configuration>
