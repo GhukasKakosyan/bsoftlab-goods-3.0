@@ -96,7 +96,7 @@ public class UnitofmsrWebController {
 
     @ExceptionHandler(value = {Throwable.class})
     public ResponseEntity<Message> handleException(Throwable throwable) {
-        String error = Functions.getPrintStackTrace(throwable);
+        String error = Functions.ThrowableToString.apply(throwable);
         Message message = this.messageFactory.getInternalServerErrorMessage(error);
         HttpHeaders httpHeaders = new HttpHeaders();
         return new ResponseEntity<>(message, httpHeaders,

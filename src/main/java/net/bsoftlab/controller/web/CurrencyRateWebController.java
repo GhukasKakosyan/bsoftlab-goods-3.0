@@ -18,6 +18,7 @@ import net.bsoftlab.service.exception.ServiceException;
 import net.bsoftlab.service.CurrencyRateService;
 import net.bsoftlab.service.CurrencyService;
 
+import net.bsoftlab.utility.Functions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
@@ -42,10 +43,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-import java.io.PrintWriter;
-import java.io.StringWriter;
 import java.util.List;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 @Controller
@@ -119,12 +117,7 @@ public class CurrencyRateWebController {
 
     @ExceptionHandler(value = {Throwable.class})
     public ResponseEntity<Message> handleException(Throwable throwable) {
-        Function <Throwable, String> stackTraceToStringFunction = throwableParameter -> {
-            StringWriter stringWriter = new StringWriter();
-            throwableParameter.printStackTrace(new PrintWriter(stringWriter));
-            return stringWriter.toString();
-        };
-        String error = stackTraceToStringFunction.apply(throwable);
+        String error = Functions.ThrowableToString.apply(throwable);
         Message message = this.messageFactory.getInternalServerErrorMessage(error);
         HttpHeaders httpHeaders = new HttpHeaders();
         return new ResponseEntity<>(message, httpHeaders,

@@ -2,13 +2,15 @@ package net.bsoftlab.utility;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.util.function.Function;
 
 public interface Functions {
-    static String getPrintStackTrace (Throwable throwable) {
+
+    Function<Throwable, String> ThrowableToString = throwableParameter -> {
         StringWriter stringWriter = new StringWriter();
-        throwable.printStackTrace(new PrintWriter(stringWriter));
+        throwableParameter.printStackTrace(new PrintWriter(stringWriter));
         return stringWriter.toString();
-    }
+    };
 
     static int calculateFirst(int start, int size, int realSize) {
         int first = 0;

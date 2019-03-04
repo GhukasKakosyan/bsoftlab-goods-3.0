@@ -116,7 +116,7 @@ public class SalePriceRestController {
         } else if(throwable instanceof HttpMessageConversionException) {
             message = this.messageFactory.getMessage(ParameterHttpBodyNotConvertedMessageCode);
         } else {
-            String error = Functions.getPrintStackTrace(throwable);
+            String error = Functions.ThrowableToString.apply(throwable);
             message = this.messageFactory.getInternalServerErrorMessage(error);
         }
         HttpHeaders httpHeaders = new HttpHeaders();
