@@ -1,0 +1,163 @@
+<jsp:root xmlns = "http://www.w3.org/1999/xhtml" version = "2.1"
+          xmlns:jsp = "http://java.sun.com/JSP/Page"
+          xmlns:core = "http://java.sun.com/jsp/jstl/core"
+          xmlns:form = "http://www.springframework.org/tags/form">
+
+    <jsp:directive.page buffer = "512kb"/>
+    <jsp:directive.page contentType = "text/html"/>
+    <jsp:directive.page info = "currencyListWebViewer"/>
+    <jsp:directive.page isELIgnored = "false"/>
+    <jsp:directive.page pageEncoding = "utf-8"/>
+
+    <core:set var = "contextPath" scope = "page"
+              value = "${pageContext.request.contextPath}"/>
+
+    <jsp:useBean id = "message" scope = "request"
+                 class = "net.bsoftlab.message.Message">
+        <jsp:setProperty name = "message" property = "code" value = ""/>
+        <jsp:setProperty name = "message" property = "armenianText" value = ""/>
+        <jsp:setProperty name = "message" property = "englishText" value = ""/>
+    </jsp:useBean>
+
+    <html>
+        <head>
+            <meta charset = "utf-8"/>
+            <meta http-equiv = "x-ua-compatible" content = "IE=edge"/>
+            <meta name = "viewport" content = "width = device-width, initial-scale = 1"/>
+            <meta name = "description" content = ""/>
+            <meta name = "author" content = ""/>
+
+            <title>ANALITIKA WEB - Տեղեկատուներ \ Տարադրամներ \ Ցուցակ</title>
+        </head>
+
+        <jsp:body>
+            <br/>
+            <h2 align = "center">ՏԵՂԵԿԱՏՈՒՆԵՐ \ ՏԱՐԱԴՐԱՄՆԵՐ \ ՑՈՒՑԱԿ</h2>
+            <core:if test = "${not empty message.armenianText}">
+                <h3 align = "center">
+                    <b><core:out value = "${message.armenianText}"/></b>
+                </h3>
+            </core:if>
+            <!--@elvariable id="currencyResourceListContainer" type="net.bsoftlab.resource.container.CurrencyResourceListContainer"-->
+            <form:form commandName = "currencyResourceListContainer"
+                       modelAttribute = "currencyResourceListContainer">
+
+                <table align = "center">
+                    <tr align = "center">
+                        <td align = "center">
+                            <input type = "submit" align = "center"
+                                   value = "Ավելացնել նորը"
+                                   formaction = "${contextPath}/currencies/add"
+                                   formmethod = "post"/>
+                        </td>
+                        <td align = "center">
+                            <input type = "submit" align = "center"
+                                   value = "Խմբագրել ընտրվածը"
+                                   formaction = "${contextPath}/currencies/edit"
+                                   formmethod = "post"/>
+                        </td>
+                        <td align = "center">
+                            <input type = "submit" align = "center"
+                                   value = "Հեռացնել ընտրվածը"
+                                   formaction = "${contextPath}/currencies/delete"
+                                   formmethod = "post"/>
+                        </td>
+                        <td align = "center">
+                            <input type = "submit" align = "center"
+                                   value = "Վերադառնալ գլխավոր էջ"
+                                   formaction = "${contextPath}/"
+                                   formmethod = "post"/>
+                        </td>
+                    </tr>
+                </table>
+                <br/>
+                <table align = "center">
+                    <tr align = "center">
+                        <td align = "center"/>
+                        <td align = "center"><b>ԿՈԴ</b></td>
+                        <td align = "center"><b>ԱՆՎԱՆՈՒՄ</b></td>
+                        <td align = "center"><b>ԸՆԴԼԱՅՆՎԱԾ ԱՆՎԱՆՈՒՄ</b></td>
+                        <td align = "center"><b>ԵՐԿԻՐ</b></td>
+                        <td align = "center"><b>ԼՐԱՑՈՒՑՒՉ ՏԵՂԵԿՈՒԹՅՈՒՆՆԵՐ</b></td>
+                    </tr>
+                    <core:if test = "${not empty currencyResourceListContainer.currencyResourceList}">
+                        <core:forEach items = "${currencyResourceListContainer.currencyResourceList}"
+                                      var = "currencyResource" varStatus = "curStatus">
+
+                            <core:set var = "index" value = "${curStatus.index}" scope = "page"/>
+                            <tr align = "center">
+                                <td align = "left">
+                                    <form:checkbox
+                                            path = "currencyResourceList[${index}].selected"
+                                            title = "Նշել տարադրամը"/>
+                                </td>
+                                <td align = "left">
+                                    <form:input
+                                            path = "currencyResourceList[${index}].code"
+                                            disabled = "false" readonly = "true" size = "3"/>
+                                </td>
+                                <td align = "left">
+                                    <form:input
+                                            path = "currencyResourceList[${index}].shortName"
+                                            disabled = "false" readonly = "true" size = "10"/>
+                                </td>
+                                <td align = "left">
+                                    <form:input
+                                            path = "currencyResourceList[${index}].longName"
+                                            disabled = "false" readonly = "true" size = "40"/>
+                                </td>
+                                <td align = "left">
+                                    <form:input
+                                            path = "currencyResourceList[${index}].country"
+                                            disabled = "false" readonly = "true" size = "40"/>
+                                </td>
+                                <td align = "left">
+                                    <form:input
+                                            path = "currencyResourceList[${index}].additionalInformation"
+                                            disabled = "false" readonly = "true" size = "60"/>
+                                </td>
+                            </tr>
+                        </core:forEach>
+                    </core:if>
+                    <tr align = "center">
+                        <td align = "center"/>
+                        <td align = "center"><b>ԿՈԴ</b></td>
+                        <td align = "center"><b>ԱՆՎԱՆՈՒՄ</b></td>
+                        <td align = "center"><b>ԸՆԴԼԱՅՆՎԱԾ ԱՆՎԱՆՈՒՄ</b></td>
+                        <td align = "center"><b>ԵՐԿՐԻ ԱՆՎԱՆՈՒՄ</b></td>
+                        <td align = "center"><b>ԼՐԱՑՈՒՑՒՉ ՏԵՂԵԿՈՒԹՅՈՒՆՆԵՐ</b></td>
+                    </tr>
+                </table>
+                <br/>
+                <table align = "center">
+                    <tr align = "center">
+                        <td align = "center">
+                            <input type = "submit" align = "center"
+                                   value = "Ավելացնել նորը"
+                                   formaction = "${contextPath}/currencies/add"
+                                   formmethod = "post"/>
+                        </td>
+                        <td align = "center">
+                            <input type = "submit" align = "center"
+                                   value = "Խմբագրել ընտրվածը"
+                                   formaction = "${contextPath}/currencies/edit"
+                                   formmethod = "post"/>
+                        </td>
+                        <td align = "center">
+                            <input type = "submit" align = "center"
+                                   value = "Հեռացնել ընտրվածները"
+                                   formaction = "${contextPath}/currencies/delete"
+                                   formmethod = "post"/>
+                        </td>
+                        <td align = "center">
+                            <input type = "submit" align = "center"
+                                   value = "Վերադառնալ գլխավոր էջ"
+                                   formaction = "${contextPath}/"
+                                   formmethod = "post"/>
+                        </td>
+                    </tr>
+                </table>
+            </form:form>
+        </jsp:body>
+    </html>
+</jsp:root>

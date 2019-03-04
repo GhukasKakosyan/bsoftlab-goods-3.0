@@ -1,0 +1,196 @@
+<jsp:root xmlns = "http://www.w3.org/1999/xhtml" version = "2.1"
+          xmlns:jsp = "http://java.sun.com/JSP/Page"
+          xmlns:core = "http://java.sun.com/jsp/jstl/core"
+          xmlns:form = "http://www.springframework.org/tags/form">
+
+    <jsp:directive.page buffer = "512kb"/>
+    <jsp:directive.page contentType = "text/html"/>
+    <jsp:directive.page info = "departmentEditWebViewer"/>
+    <jsp:directive.page isELIgnored = "false"/>
+    <jsp:directive.page pageEncoding = "utf-8"/>
+
+    <core:set var = "contextPath" scope = "page"
+              value = "${pageContext.request.contextPath}"/>
+
+    <jsp:useBean id = "message" scope = "request"
+                 class = "net.bsoftlab.message.Message">
+        <jsp:setProperty name = "message" property = "code" value = ""/>
+        <jsp:setProperty name = "message" property = "armenianText" value = ""/>
+        <jsp:setProperty name = "message" property = "englishText" value = ""/>
+    </jsp:useBean>
+
+    <html>
+        <head>
+            <meta charset = "utf-8"/>
+            <meta http-equiv = "x-ua-compatible" content = "IE=edge"/>
+            <meta name = "viewport" content = "width = device-width, initial-scale = 1"/>
+            <meta name = "description" content = ""/>
+            <meta name = "author" content = ""/>
+
+            <title>ANALITIKA WEB - Տեղեկատուներ \ Բաժանմունքներ \ Խմբագրել բաժանմունքը</title>
+        </head>
+
+        <jsp:body>
+            <br/>
+            <h2 align = "center">ՏԵՂԵԿԱՏՈՒՆԵՐ \ ԲԱԺԱՆՄՈՒՆՔՆԵՐ \ ԽՄԲԱԳՐԵԼ ԲԱԺԱՆՄՈՒՆՔԸ</h2>
+            <core:if test = "${not empty message.armenianText}">
+                <h3 align = "center">
+                    <b><core:out value = "${message.armenianText}"/></b>
+                </h3>
+            </core:if>
+            <!--@elvariable id="departmentResource" type="net.bsoftlab.resource.DepartmentResource"-->
+            <form:form commandName = "departmentResource"
+                       modelAttribute = "departmentResource">
+
+                <table align = "center">
+                    <tr align = "center">
+                        <td align = "right"><b>Կոդ</b></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:input path = "code"
+                                        disabled = "false" readonly = "true" tabindex = "1"
+                                        size = "8" maxlength = "8"
+                                        title = "Նիշերի քանակը = 8"/>
+                        </td>
+                    </tr>
+                    <tr/>
+                    <tr align = "center">
+                        <td align = "right"><b>Անվանում</b></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:input path = "name"
+                                        disabled = "false" readonly = "false" tabindex = "2"
+                                        size = "80" maxlength = "100"
+                                        title = "Նիշերի առավելագույն քանակը = 100"/>
+                        </td>
+                    </tr>
+                    <tr/>
+                    <tr align = "center">
+                        <td align = "right"><b>Հասցե.Փողոց, Տուն</b></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:input path = "addressResource.street"
+                                        disabled = "false" readonly = "false" tabindex = "3"
+                                        size = "80" maxlength = "100"
+                                        title = "Նիշերի առավելագույն քանակը = 100"/>
+                        </td>
+                    </tr>
+                    <tr/>
+                    <tr align = "center">
+                        <td align = "right"><b>Հասցե.Փոստի կոդ</b></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:input path = "addressResource.pincode"
+                                        disabled = "false" readonly = "false" tabindex = "4"
+                                        size = "20" maxlength = "20"
+                                        title = "Նիշերի առավելագույն քանակը = 20"/>
+                        </td>
+                    </tr>
+                    <tr/>
+                    <tr align = "center">
+                        <td align = "right"><b>Հասցե.Քաղաք</b></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:input path = "addressResource.city"
+                                        disabled = "false" readonly = "false" tabindex = "5"
+                                        size = "80" maxlength = "100"
+                                        title = "Նիշերի առավելագույն քանակը = 100"/>
+                        </td>
+                    </tr>
+                    <tr/>
+                    <tr align = "center">
+                        <td align = "right"><b>Հասցե.Մարզ</b></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:input path = "addressResource.state"
+                                        disabled = "false" readonly = "false" tabindex = "6"
+                                        size = "80" maxlength = "100"
+                                        title = "Նիշերի առավելագույն քանակը = 100"/>
+                        </td>
+                    </tr>
+                    <tr/>
+                    <tr align = "center">
+                        <td align = "right"><b>Հասցե.Երկիր</b></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:input path = "addressResource.country"
+                                        disabled = "false" readonly = "false" tabindex = "7"
+                                        size = "80" maxlength = "100"
+                                        title = "Նիշերի առավելագույն քանակը = 100"/>
+                        </td>
+                    </tr>
+                    <tr/>
+                    <tr align = "center">
+                        <td align = "right"><b>Հեռախոսի համարներ</b></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:input path = "phones"
+                                        disabled = "false" readonly = "false" tabindex = "8"
+                                        size = "80" maxlength = "100"
+                                        title = "Նիշերի առավելագույն քանակը = 100"/>
+                        </td>
+                    </tr>
+                    <tr/>
+                    <tr align = "center">
+                        <td align = "right"><b>Ֆաքսի համարներ</b></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:input path = "faxes"
+                                        disabled = "false" readonly = "false" tabindex = "9"
+                                        size = "80" maxlength = "100"
+                                        title = "Նիշերի առավելագույն քանակը = 100"/>
+                        </td>
+                    </tr>
+                    <tr/>
+                    <tr align = "center">
+                        <td align = "right"><b>Կայքի հասցե</b></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:input path = "webSite"
+                                        disabled = "false" readonly = "false" tabindex = "10"
+                                        size = "80" maxlength = "100"
+                                        title = "Նիշերի առավելագույն քանակը = 100"/>
+                        </td>
+                    </tr>
+                    <tr/>
+                    <tr align = "center">
+                        <td align = "right"><b>Էլեկտրոնային փոստ</b></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:input path = "emailAddress"
+                                        disabled = "false" readonly = "false" tabindex = "11"
+                                        size = "80" maxlength = "100"
+                                        title = "Նիշերի առավելագույն քանակը = 100"/>
+                        </td>
+                    </tr>
+                    <tr/>
+                    <tr align = "center">
+                        <td align = "right"><b>Լրացուցիչ տեղեկություններ</b></td>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <form:textarea path = "additionalInformation"
+                                           disabled = "false" readonly = "false" tabindex = "12"
+                                           cols = "80" rows = "6"
+                                           title = "Նիշերի առավելագույն քանակը = 100"/>
+                        </td>
+                    </tr>
+                    <tr/>
+                    <tr align = "center">
+                        <td align = "right"/>
+                        <td align = "left"/>
+                        <td align = "left">
+                            <input type = "submit" align = "center"
+                                   value = "Գրանցել փոփոխությունները"
+                                   formaction = "${contextPath}/departments/update"
+                                   formmethod = "post"/>
+                            <input type = "submit" align = "center"
+                                   value = "Բաժանմունքների ցուցակ"
+                                   formaction = "${contextPath}/departments/list"
+                                   formmethod = "post"/>
+                        </td>
+                    </tr>
+                </table>
+            </form:form>
+        </jsp:body>
+    </html>
+</jsp:root>

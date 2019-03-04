@@ -1,0 +1,153 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:context = "http://www.springframework.org/schema/context"
+       xmlns:security = "http://www.springframework.org/schema/security"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/security
+       http://www.springframework.org/schema/security/spring-security.xsd">
+
+    <context:annotation-config/>
+
+    <bean id = "bCryptPasswordEncoder"
+          class = "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder">
+        <constructor-arg name = "strength" value = "11"/>
+    </bean>
+
+    <security:authentication-manager alias = "authenticationManager">
+        <security:authentication-provider user-service-ref = "userDetailsServiceImpl">
+            <security:password-encoder ref = "bCryptPasswordEncoder"/>
+        </security:authentication-provider>
+    </security:authentication-manager>
+
+    <security:http auto-config = "true" use-expressions = "true"
+                   authentication-manager-ref = "authenticationManager">
+        <security:intercept-url pattern = "/insert" access = "isAnonymous()"
+                                requires-channel = "https"/>
+        <security:intercept-url pattern = "/login" access = "isAnonymous()"
+                                requires-channel = "https"/>
+        <security:intercept-url pattern = "/signin" access = "isAnonymous()"
+                                requires-channel = "https"/>
+        <security:intercept-url pattern = "/register" access = "isAnonymous()"
+                                requires-channel = "https"/>
+
+        <security:intercept-url pattern = "/" access = "isAuthenticated()"
+                                requires-channel = "https"/>
+        <security:intercept-url pattern = "/index" access = "isAuthenticated()"
+                                requires-channel = "https"/>
+
+        <security:intercept-url pattern = "/currencies/list" requires-channel = "https"
+                                access = "hasAuthority('permission.currency.read')"/>
+        <security:intercept-url pattern = "/currencies/delete" requires-channel = "https"
+                                access = "hasAuthority('permission.currency.delete')"/>
+        <security:intercept-url pattern = "/currencies/add" requires-channel = "https"
+                                access = "hasAuthority('permission.currency.insert')"/>
+        <security:intercept-url pattern = "/currencies/edit" requires-channel = "https"
+                                access = "hasAuthority('permission.currency.update')"/>
+        <security:intercept-url pattern = "/currencies/insert" requires-channel = "https"
+                                access = "hasAuthority('permission.currency.insert')"/>
+        <security:intercept-url pattern = "/currencies/update" requires-channel = "https"
+                                access = "hasAuthority('permission.currency.update')"/>
+
+        <security:intercept-url pattern = "/currenciesrates/list" requires-channel = "https"
+                                access = "hasAuthority('permission.currencyRate.read')"/>
+        <security:intercept-url pattern = "/currenciesrates/delete" requires-channel = "https"
+                                access = "hasAuthority('permission.currencyRate.delete')"/>
+        <security:intercept-url pattern = "/currenciesrates/add" requires-channel = "https"
+                                access = "hasAuthority('permission.currencyRate.insert')"/>
+        <security:intercept-url pattern = "/currenciesrates/edit" requires-channel = "https"
+                                access = "hasAuthority('permission.currencyRate.update')"/>
+        <security:intercept-url pattern = "/currenciesrates/insert" requires-channel = "https"
+                                access = "hasAuthority('permission.currencyRate.insert')"/>
+        <security:intercept-url pattern = "/currenciesrates/update" requires-channel = "https"
+                                access = "hasAuthority('permission.currencyRate.update')"/>
+
+        <security:intercept-url pattern = "/departments/list" requires-channel = "https"
+                                access = "hasAuthority('permission.department.read')"/>
+        <security:intercept-url pattern = "/departments/delete" requires-channel = "https"
+                                access = "hasAuthority('permission.department.delete')"/>
+        <security:intercept-url pattern = "/departments/add" requires-channel = "https"
+                                access = "hasAuthority('permission.department.insert')"/>
+        <security:intercept-url pattern = "/departments/edit" requires-channel = "https"
+                                access = "hasAuthority('permission.department.update')"/>
+        <security:intercept-url pattern = "/departments/insert" requires-channel = "https"
+                                access = "hasAuthority('permission.department.insert')"/>
+        <security:intercept-url pattern = "/departments/update" requires-channel = "https"
+                                access = "hasAuthority('permission.department.update')"/>
+
+        <security:intercept-url pattern = "/groups/list" requires-channel = "https"
+                                access = "hasAuthority('permission.group.read')"/>
+        <security:intercept-url pattern = "/groups/delete" requires-channel = "https"
+                                access = "hasAuthority('permission.group.delete')"/>
+        <security:intercept-url pattern = "/groups/add" requires-channel = "https"
+                                access = "hasAuthority('permission.group.insert')"/>
+        <security:intercept-url pattern = "/groups/edit" requires-channel = "https"
+                                access = "hasAuthority('permission.group.update')"/>
+        <security:intercept-url pattern = "/groups/insert" requires-channel = "https"
+                                access = "hasAuthority('permission.group.insert')"/>
+        <security:intercept-url pattern = "/groups/update" requires-channel = "https"
+                                access = "hasAuthority('permission.group.update')"/>
+
+        <security:intercept-url pattern = "/matvalues/list" requires-channel = "https"
+                                access = "hasAuthority('permission.matvalue.read')"/>
+        <security:intercept-url pattern = "/matvalues/add" requires-channel = "https"
+                                access = "hasAuthority('permission.matvalue.insert')"/>
+        <security:intercept-url pattern = "/matvalues/delete" requires-channel = "https"
+                                access = "hasAuthority('permission.matvalue.delete')"/>
+        <security:intercept-url pattern = "/matvalues/edit" requires-channel = "https"
+                                access = "hasAuthority('permission.matvalue.update')"/>
+        <security:intercept-url pattern = "/matvalues/insert" requires-channel = "https"
+                                access = "hasAuthority('permission.matvalue.insert')"/>
+        <security:intercept-url pattern = "/matvalues/update" requires-channel = "https"
+                                access = "hasAuthority('permission.matvalue.update')"/>
+
+        <security:intercept-url pattern = "/saleprices/list" requires-channel = "https"
+                                access = "hasAuthority('permission.salePrice.read')"/>
+        <security:intercept-url pattern = "/saleprices/delete" requires-channel = "https"
+                                access = "hasAuthority('permission.salePrice.delete')"/>
+        <security:intercept-url pattern = "/saleprices/add" requires-channel = "https"
+                                access = "hasAuthority('permission.salePrice.insert')"/>
+        <security:intercept-url pattern = "/saleprices/edit" requires-channel = "https"
+                                access = "hasAuthority('permission.salePrice.update')"/>
+        <security:intercept-url pattern = "/saleprices/insert" requires-channel = "https"
+                                access = "hasAuthority('permission.salePrice.insert')"/>
+        <security:intercept-url pattern = "/saleprices/update" requires-channel = "https"
+                                access = "hasAuthority('permission.salePrice.update')"/>
+
+        <security:intercept-url pattern = "/unitsofmsrs/list" requires-channel = "https"
+                                access = "hasAuthority('permission.unitofmsr.read')"/>
+        <security:intercept-url pattern = "/unitsofmsrs/delete" requires-channel = "https"
+                                access = "hasAuthority('permission.unitofmsr.delete')"/>
+        <security:intercept-url pattern = "/unitsofmsrs/add" requires-channel = "https"
+                                access = "hasAuthority('permission.unitofmsr.insert')"/>
+        <security:intercept-url pattern = "/unitsofmsrs/edit" requires-channel = "https"
+                                access = "hasAuthority('permission.unitofmsr.update')"/>
+        <security:intercept-url pattern = "/unitsofmsrs/insert" requires-channel = "https"
+                                access = "hasAuthority('permission.unitofmsr.insert')"/>
+        <security:intercept-url pattern = "/unitsofmsrs/update" requires-channel = "https"
+                                access = "hasAuthority('permission.unitofmsr.update')"/>
+
+        <security:access-denied-handler error-page = "/index"/>
+
+        <security:form-login authentication-failure-url = "/signin"
+                             always-use-default-target = "true"
+                             default-target-url = "/"
+                             login-page = "/signin"
+                             login-processing-url = "/login"
+                             username-parameter = "username" password-parameter = "password"/>
+        <security:logout logout-url = "/signout" logout-success-url = "/signin"
+                         invalidate-session = "true" delete-cookies = "JSESSIONID"/>
+        <security:csrf disabled = "true"/>
+    </security:http>
+
+    <security:global-method-security
+            authentication-manager-ref = "authenticationManager"
+            jsr250-annotations = "enabled"
+            pre-post-annotations = "enabled"
+            secured-annotations = "enabled">
+    </security:global-method-security>
+
+</beans>
