@@ -6,42 +6,328 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00c6bbb9-d7a4-4483-a070-3fb1170e2427" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/utility/Functions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/CurrencyRateRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/CurrencyRateRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/CurrencyRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/CurrencyRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/DepartmentRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/DepartmentRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/GroupRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/GroupRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/MatvalueRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/MatvalueRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/PermissionRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/PermissionRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/RoleRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/RoleRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/SalePriceRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/SalePriceRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/UnitofmsrRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/UnitofmsrRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/WorkmanRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/WorkmanRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/CurrencyRateWebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/CurrencyRateWebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/CurrencyWebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/CurrencyWebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/DepartmentWebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/DepartmentWebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/GroupWebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/GroupWebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/MatvalueWebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/MatvalueWebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/SalePriceWebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/SalePriceWebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/UnitofmsrWebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/UnitofmsrWebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/WorkmanWebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/WorkmanWebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyRateDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyRateDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/DepartmentDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/DepartmentDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/GroupDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/GroupDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/MatvalueDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/MatvalueDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/SalePriceDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/SalePriceDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/UnitofmsrDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/UnitofmsrDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/CurrencyDaoJpaTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/CurrencyDaoJpaTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/CurrencyRateDaoJpaTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/CurrencyRateDaoJpaTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/DepartmentDaoJpaTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/DepartmentDaoJpaTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/GroupDaoJpaTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/GroupDaoJpaTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/MatvalueDaoJpaTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/MatvalueDaoJpaTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/SalePriceDaoJpaTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/SalePriceDaoJpaTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/UnitofmsrDaoJpaTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/UnitofmsrDaoJpaTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/utility/UtilityFunctions.java" beforeDir="false" />
+    <list default="true" id="00c6bbb9-d7a4-4483-a070-3fb1170e2427" name="Default" comment="Merge branch 'master' of https://github.com/GhukasKakosyan/bsoftlab-goods-3.0&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/RoleRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/SalePriceRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/UnitofmsrRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/WorkmanRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/CurrencyRateWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/DepartmentWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/GroupWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/MatvalueWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/SalePriceWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/UnitofmsrWebController.java">
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/META-INF/bsoftlab-goods-3.0-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/META-INF/bsoftlab-goods-3.0-security.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/META-INF/bsoftlab-goods-3.0-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/META-INF/bsoftlab-goods-3.0-views.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/database/database-data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/database/database-ddl.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/database/database.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/messages/AddressValidation.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/messages/CurrencyRateValidation.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/messages/CurrencyValidation.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/messages/DepartmentValidation.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/messages/GroupValidation.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/messages/MatvalueValidation.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/messages/ParameterValidation.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/messages/PermissionValidation.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/messages/RoleValidation.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/messages/SalePriceValidation.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/messages/UnitofmsrValidation.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/messages/WorkmanValidation.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/controller/rest/CurrencyRateRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/controller/rest/CurrencyRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/controller/rest/DepartmentRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/controller/rest/GroupRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/controller/rest/MatvalueRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/controller/rest/PermissionRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/controller/rest/RoleRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/controller/rest/SalePriceRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/controller/rest/UnitofmsrRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/controller/rest/WorkmanRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/controller/web/CurrencyRateWebController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/controller/web/CurrencyWebController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/controller/web/DepartmentWebController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/controller/web/GroupWebController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/controller/web/MatvalueWebController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/controller/web/SalePriceWebController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/controller/web/UnitofmsrWebController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/controller/web/WorkmanWebController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/CurrencyDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/CurrencyRateDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/DepartmentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/GroupDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/MatvalueDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/PermissionDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/RoleDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/SalePriceDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/UnitofmsrDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/WorkmanDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jdbc/core/CurrencyDaoJdbcTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jdbc/core/CurrencyRateDaoJdbcTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jdbc/core/DepartmentDaoJdbcTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jdbc/core/GroupDaoJdbcTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jdbc/core/MatvalueDaoJdbcTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jdbc/core/PermissionDaoJdbcTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jdbc/core/RoleDaoJdbcTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jdbc/core/SalePriceDaoJdbcTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jdbc/core/UnitofmsrDaoJdbcTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jdbc/core/WorkmanDaoJdbcTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jdbc/mapper/CurrencyMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jdbc/mapper/CurrencyRateMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jdbc/mapper/DepartmentMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jdbc/mapper/GroupMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jdbc/mapper/MatvalueMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jdbc/mapper/PermissionMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jdbc/mapper/RoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jdbc/mapper/SalePriceMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jdbc/mapper/UnitofmsrMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jdbc/mapper/WorkmanMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jpa/CurrencyDaoJpaTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jpa/CurrencyRateDaoJpaTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jpa/DepartmentDaoJpaTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jpa/GroupDaoJpaTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jpa/MatvalueDaoJpaTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jpa/PermissionDaoJpaTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jpa/RoleDaoJpaTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jpa/SalePriceDaoJpaTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jpa/UnitofmsrDaoJpaTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/dao/template/jpa/WorkmanDaoJpaTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/interceptor/UnicodeInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/message/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/message/MessageFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/model/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/model/Currency.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/model/CurrencyRate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/model/Department.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/model/Group.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/model/Matvalue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/model/Permission.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/model/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/model/SalePrice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/model/Unitofmsr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/model/Workman.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/AddressResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/CurrencyRateResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/CurrencyResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/DepartmentResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/GroupResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/MatvalueResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/PermissionResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/RoleResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/SalePriceResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/UnitofmsrResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/WorkmanResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/assembler/AddressResourceAssembler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/assembler/CurrencyRateResourceAssembler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/assembler/CurrencyResourceAssembler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/assembler/DepartmentResourceAssembler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/assembler/GroupResourceAssembler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/assembler/MatvalueResourceAssembler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/assembler/PermissionResourceAssembler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/assembler/RoleResourceAssembler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/assembler/SalePriceResourceAssembler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/assembler/UnitofmsrResourceAssembler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/assembler/WorkmanResourceAssembler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/container/CurrencyRateResourceListContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/container/CurrencyResourceListContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/container/DepartmentResourceListContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/container/GroupResourceListContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/container/MatvalueResourceListContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/container/RoleResourceListContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/container/SalePriceResourceListContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/container/UnitofmsrResourceListContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/converter/entity/AddressConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/converter/entity/CurrencyConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/converter/entity/CurrencyRateConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/converter/entity/DepartmentConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/converter/entity/GroupConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/converter/entity/MatvalueConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/converter/entity/PermissionConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/converter/entity/RoleConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/converter/entity/SalePriceConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/converter/entity/UnitofmsrConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/converter/entity/WorkmanConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/converter/type/DateToStringConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/converter/type/DoubleToStringConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/converter/type/IntegerToStringConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/converter/type/StringToDateConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/converter/type/StringToDoubleConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/converter/type/StringToIntegerConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/formatter/CurrencyResourceFormatter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/formatter/DepartmentResourceFormatter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/formatter/GroupResourceFormatter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/formatter/MatvalueResourceFormatter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/formatter/RoleResourceFormatter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/formatter/UnitofmsrResourceFormatter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/validator/AddressResourceValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/validator/CurrencyRateResourceValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/validator/CurrencyResourceValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/validator/DepartmentResourceValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/validator/GroupResourceValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/validator/MatvalueResourceValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/validator/RoleResourceValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/validator/SalePriceResourceValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/validator/UnitofmsrResourceValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/resource/validator/WorkmanResourceValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/security/SecurityService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/security/SecurityServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/security/UserDetailsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/CurrencyRateService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/CurrencyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/DepartmentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/GroupService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/MatvalueService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/PermissionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/RoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/SalePriceService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/UnitofmsrService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/WorkmanService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/aspect/DeletingEntityServiceAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/aspect/GettingEntityListServiceAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/aspect/GettingEntityServiceAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/aspect/InsertingEntityServiceAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/aspect/UpdatingEntityServiceAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/exception/ServiceException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/implement/CurrencyRateServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/implement/CurrencyServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/implement/DepartmentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/implement/GroupServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/implement/MatvalueServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/implement/PermissionServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/implement/RoleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/implement/SalePriceServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/implement/UnitofmsrServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/service/implement/WorkmanServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/classes/net/bsoftlab/utility/Functions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/ant-1.9.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/ant-launcher-1.9.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/asm-5.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/aspectjrt-1.8.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/aspectjtools-1.8.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/aspectjweaver-1.8.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/bcprov-jdk15-1.45.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/byte-buddy-1.8.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/cas-client-core-3.3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/cglib-3.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/classmate-1.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/commons-codec-1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/commons-collections-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/commons-httpclient-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/commons-lang-2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/dom4j-1.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/esapi-2.0GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/guice-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/hibernate-commons-annotations-5.0.4.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/hibernate-core-5.3.6.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/hibernate-validator-6.0.13.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/httpclient-4.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/httpcore-4.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/jackson-annotations-2.8.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/jackson-core-2.8.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/jackson-databind-2.8.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/jackson-dataformat-xml-2.8.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/jackson-dataformat-yaml-2.8.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/jackson-datatype-jsr310-2.8.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/jackson-jaxrs-base-2.8.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/jackson-jaxrs-json-provider-2.8.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/jackson-module-jaxb-annotations-2.8.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/jandex-2.0.5.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/javassist-3.23.1-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/jcip-annotations-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/jcl-over-slf4j-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/joda-time-1.6.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/jul-to-slf4j-1.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/log4j-over-slf4j-1.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/logback-access-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/mysql-connector-java-8.0.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/nekohtml-1.9.20.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/not-yet-commons-ssl-0.3.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/openid4java-nodeps-0.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/opensaml-2.5.1-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/openws-1.4.2-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/protobuf-java-3.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/serializer-2.7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/snakeyaml-1.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-aop-4.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-aspects-4.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-beans-4.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-context-4.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-context-support-4.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-core-4.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-data-commons-1.9.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-expression-4.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-hateoas-0.20.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-instrument-4.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-instrument-tomcat-4.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-jdbc-4.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-jms-4.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-ldap-core-2.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-messaging-4.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-orm-4.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-oxm-4.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-security-acl-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-security-aspects-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-security-cas-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-security-config-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-security-core-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-security-crypto-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-security-data-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-security-ldap-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-security-openid-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-security-taglibs-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-security-web-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-tx-4.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-web-4.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-webmvc-4.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-webmvc-portlet-4.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/spring-websocket-4.3.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/stax2-api-3.1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/taglibs-standard-compat-1.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/taglibs-standard-jstlel-1.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/validation-api-2.0.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/velocity-1.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/woodstox-core-5.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/xalan-2.7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/xercesImpl-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/xml-apis-1.4.01.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/xml-resolver-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/xmlsec-1.4.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/lib/xmltooling-1.3.2-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/currencies/add.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/currencies/edit.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/currencies/list.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/currenciesrates/add.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/currenciesrates/edit.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/currenciesrates/list.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/departments/add.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/departments/edit.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/departments/list.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/groups/add.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/groups/edit.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/groups/list.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/index.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/matvalues/add.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/matvalues/edit.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/matvalues/list.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/register.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/saleprices/add.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/saleprices/edit.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/saleprices/list.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/signin.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/unitsofmsrs/add.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/unitsofmsrs/edit.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/views/unitsofmsrs/list.jspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bsoftlab-goods-3.0/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
     </list>
     <ignored path="bsoftlab-goods-3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1127,7 +1413,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2221309000" />
+    <option name="totallyTimeSpent" value="2221506000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1159,7 +1445,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" show_stripe_button="false" weight="0.39967373" />
       <window_info anchor="bottom" id="TODO" order="6" show_stripe_button="false" weight="0.32952693" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5075643" side_tool="true" weight="0.5863192" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32899022" />
       <window_info anchor="bottom" id="Spring" order="9" show_stripe_button="false" weight="0.32952693" />
       <window_info anchor="bottom" id="Terminal" order="10" show_stripe_button="false" weight="0.32952693" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" show_stripe_button="false" weight="0.32952693" />
@@ -1233,6 +1519,8 @@
     <ignored-roots>
       <path value="$USER_HOME$" />
     </ignored-roots>
+    <MESSAGE value="Merge branch 'master' of https://github.com/GhukasKakosyan/bsoftlab-goods-3.0&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/RoleRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/SalePriceRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/UnitofmsrRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/WorkmanRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/CurrencyRateWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/DepartmentWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/GroupWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/MatvalueWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/SalePriceWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/UnitofmsrWebController.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/GhukasKakosyan/bsoftlab-goods-3.0&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/RoleRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/SalePriceRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/UnitofmsrRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/WorkmanRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/CurrencyRateWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/DepartmentWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/GroupWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/MatvalueWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/SalePriceWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/UnitofmsrWebController.java" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -1344,23 +1632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/RoleRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="860">
-          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/SalePriceRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/UnitofmsrRestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1413,13 +1684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/DepartmentWebController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/CurrencyWebController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -1427,30 +1691,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/CurrencyRateWebController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/CurrencyRateRestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="118" selection-start-line="118" selection-end-line="118" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/utility/Functions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1622,10 +1866,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/utility/UtilityFunctions.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/utility/UtilityFunctions.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/RoleRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        <state relative-caret-position="195">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/SalePriceRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/CurrencyRateWebController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/DepartmentWebController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/utility/Functions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
