@@ -7,7 +7,7 @@ import net.bsoftlab.model.Group;
 import net.bsoftlab.model.Matvalue;
 import net.bsoftlab.model.SalePrice;
 import net.bsoftlab.model.Unitofmsr;
-import net.bsoftlab.utility.UtilityFunctions;
+import net.bsoftlab.utility.Functions;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
@@ -27,7 +27,6 @@ import java.util.List;
 public class MatvalueDaoJdbcTemplate implements MatvalueDao {
 
     private JdbcTemplate jdbcTemplate;
-    private UtilityFunctions utilityFunctions = null;
 
     @Autowired
     public MatvalueDaoJdbcTemplate(
@@ -39,12 +38,6 @@ public class MatvalueDaoJdbcTemplate implements MatvalueDao {
     public void destroy(){}
     @PostConstruct
     public void init(){}
-
-    @Autowired
-    public void setUtilityFunctions(
-            UtilityFunctions utilityFunctions) {
-        this.utilityFunctions = utilityFunctions;
-    }
 
     @Override
     public void deleteMatvalue(Matvalue matvalue) {
@@ -209,8 +202,8 @@ public class MatvalueDaoJdbcTemplate implements MatvalueDao {
             return null;
         }
 
-        int first = this.utilityFunctions.calculateFirst(start, size, matvalueList.size());
-        int quantity = this.utilityFunctions.calculateQuantity(start, size, matvalueList.size());
+        int first = Functions.calculateFirst(start, size, matvalueList.size());
+        int quantity = Functions.calculateQuantity(start, size, matvalueList.size());
         List<Matvalue> matvalueSubList = matvalueList.subList(first, quantity);
         if(matvalueSubList.isEmpty()) {
             return null;
@@ -292,8 +285,8 @@ public class MatvalueDaoJdbcTemplate implements MatvalueDao {
             return null;
         }
 
-        int first = this.utilityFunctions.calculateFirst(start, size, matvalueListGroup.size());
-        int quantity = this.utilityFunctions.calculateQuantity(start, size, matvalueListGroup.size());
+        int first = Functions.calculateFirst(start, size, matvalueListGroup.size());
+        int quantity = Functions.calculateQuantity(start, size, matvalueListGroup.size());
         List<Matvalue> matvalueSubListGroup = matvalueListGroup.subList(first, quantity);
         if(matvalueSubListGroup.isEmpty()) {
             return null;
@@ -377,8 +370,8 @@ public class MatvalueDaoJdbcTemplate implements MatvalueDao {
             return null;
         }
 
-        int first = this.utilityFunctions.calculateFirst(start, size, matvalueListUnitofmsr.size());
-        int quantity = this.utilityFunctions.calculateQuantity(start, size, matvalueListUnitofmsr.size());
+        int first = Functions.calculateFirst(start, size, matvalueListUnitofmsr.size());
+        int quantity = Functions.calculateQuantity(start, size, matvalueListUnitofmsr.size());
         List<Matvalue> matvalueSubListUnitofmsr = matvalueListUnitofmsr.subList(first, quantity);
         if(matvalueSubListUnitofmsr.isEmpty()) {
             return null;

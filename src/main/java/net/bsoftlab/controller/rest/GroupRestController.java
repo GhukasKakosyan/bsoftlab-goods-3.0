@@ -3,13 +3,12 @@ package net.bsoftlab.controller.rest;
 import net.bsoftlab.message.Message;
 import net.bsoftlab.message.MessageFactory;
 import net.bsoftlab.model.Group;
-import net.bsoftlab.service.exception.ServiceException;
-import net.bsoftlab.service.GroupService;
-import net.bsoftlab.utility.UtilityFunctions;
-
 import net.bsoftlab.resource.assembler.GroupResourceAssembler;
 import net.bsoftlab.resource.GroupResource;
 import net.bsoftlab.resource.validator.GroupResourceValidator;
+import net.bsoftlab.service.exception.ServiceException;
+import net.bsoftlab.service.GroupService;
+import net.bsoftlab.utility.Functions;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
@@ -76,7 +75,6 @@ public class GroupRestController {
 
     private ConversionService conversionService = null;
     private MessageFactory messageFactory = null;
-    private UtilityFunctions utilityFunctions = null;
 
     @Autowired
     public GroupRestController(
@@ -104,11 +102,6 @@ public class GroupRestController {
             MessageFactory messageFactory) {
         this.messageFactory = messageFactory;
     }
-    @Autowired
-    public void setUtilityFunctions(
-            UtilityFunctions utilityFunctions) {
-        this.utilityFunctions = utilityFunctions;
-    }
 
     @ExceptionHandler(value = {Throwable.class})
     public ResponseEntity<Message> handleException(Throwable throwable) {
@@ -123,7 +116,7 @@ public class GroupRestController {
         } else if(throwable instanceof HttpMessageConversionException) {
             message = this.messageFactory.getMessage(ParameterHttpBodyNotConvertedMessageCode);
         } else {
-            String error = this.utilityFunctions.getPrintStackTrace(throwable);
+            String error = Functions.getPrintStackTrace(throwable);
             message = this.messageFactory.getInternalServerErrorMessage(error);
         }
         HttpHeaders httpHeaders = new HttpHeaders();

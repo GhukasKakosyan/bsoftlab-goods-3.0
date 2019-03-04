@@ -3,7 +3,7 @@ package net.bsoftlab.dao.template.jdbc.core;
 import net.bsoftlab.dao.GroupDao;
 import net.bsoftlab.dao.template.jdbc.mapper.GroupMapper;
 import net.bsoftlab.model.Group;
-import net.bsoftlab.utility.UtilityFunctions;
+import net.bsoftlab.utility.Functions;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
@@ -22,7 +22,6 @@ import java.util.List;
 public class GroupDaoJdbcTemplate implements GroupDao {
 
     private JdbcTemplate jdbcTemplate;
-    private UtilityFunctions utilityFunctions = null;
 
     @Autowired
     public GroupDaoJdbcTemplate(
@@ -34,12 +33,6 @@ public class GroupDaoJdbcTemplate implements GroupDao {
     public void destroy() {}
     @PostConstruct
     public void init() {}
-
-    @Autowired
-    public void setUtilityFunctions(
-            UtilityFunctions utilityFunctions) {
-        this.utilityFunctions = utilityFunctions;
-    }
 
     @Override
     public void deleteGroup(Group group) {
@@ -105,8 +98,8 @@ public class GroupDaoJdbcTemplate implements GroupDao {
             return null;
         }
 
-        int first = this.utilityFunctions.calculateFirst(start, size, groupList.size());
-        int quantity = this.utilityFunctions.calculateQuantity(start, size, groupList.size());
+        int first = Functions.calculateFirst(start, size, groupList.size());
+        int quantity = Functions.calculateQuantity(start, size, groupList.size());
         List<Group> groupSubList = groupList.subList(first, quantity);
         if(groupSubList.isEmpty()) {
             return null;

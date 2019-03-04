@@ -2,9 +2,8 @@ package net.bsoftlab.dao.template.jpa;
 
 import net.bsoftlab.dao.UnitofmsrDao;
 import net.bsoftlab.model.Unitofmsr;
-import net.bsoftlab.utility.UtilityFunctions;
+import net.bsoftlab.utility.Functions;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
@@ -23,7 +22,6 @@ import java.util.List;
 public class UnitofmsrDaoJpaTemplate implements UnitofmsrDao {
 
     private EntityManager entityManager = null;
-    private UtilityFunctions utilityFunctions = null;
 
     @PreDestroy
     public void destroy() {}
@@ -34,11 +32,6 @@ public class UnitofmsrDaoJpaTemplate implements UnitofmsrDao {
     public void setEntityManager(
             EntityManager entityManager) {
         this.entityManager = entityManager;
-    }
-    @Autowired
-    public void setUtilityFunctions(
-            UtilityFunctions utilityFunctions) {
-        this.utilityFunctions = utilityFunctions;
     }
 
     @Override
@@ -76,8 +69,8 @@ public class UnitofmsrDaoJpaTemplate implements UnitofmsrDao {
         if(unitofmsrList == null || unitofmsrList.isEmpty()) {
             return null;
         }
-        int first = this.utilityFunctions.calculateFirst(start, size, unitofmsrList.size());
-        int quantity = this.utilityFunctions.calculateQuantity(start, size, unitofmsrList.size());
+        int first = Functions.calculateFirst(start, size, unitofmsrList.size());
+        int quantity = Functions.calculateQuantity(start, size, unitofmsrList.size());
         List<Unitofmsr> unitofmsrSubList = unitofmsrList.subList(first, quantity);
         if(unitofmsrSubList.isEmpty()) {
             return null;

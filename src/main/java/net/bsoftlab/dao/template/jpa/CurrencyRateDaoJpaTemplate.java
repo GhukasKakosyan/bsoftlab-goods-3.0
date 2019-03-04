@@ -3,9 +3,8 @@ package net.bsoftlab.dao.template.jpa;
 import net.bsoftlab.dao.CurrencyRateDao;
 import net.bsoftlab.model.Currency;
 import net.bsoftlab.model.CurrencyRate;
-import net.bsoftlab.utility.UtilityFunctions;
+import net.bsoftlab.utility.Functions;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
@@ -26,7 +25,6 @@ import java.util.List;
 public class CurrencyRateDaoJpaTemplate implements CurrencyRateDao {
 
     private EntityManager entityManager = null;
-    private UtilityFunctions utilityFunctions = null;
 
     @PreDestroy
     public void destroy() {}
@@ -37,11 +35,6 @@ public class CurrencyRateDaoJpaTemplate implements CurrencyRateDao {
     public void setEntityManager(
             EntityManager entityManager) {
         this.entityManager = entityManager;
-    }
-    @Autowired
-    public void setUtilityFunctions(
-            UtilityFunctions utilityFunctions) {
-        this.utilityFunctions = utilityFunctions;
     }
 
     @Override
@@ -116,8 +109,8 @@ public class CurrencyRateDaoJpaTemplate implements CurrencyRateDao {
         if(currencyRateList == null || currencyRateList.isEmpty()) {
             return null;
         }
-        int first = this.utilityFunctions.calculateFirst(start, size, currencyRateList.size());
-        int quantity = this.utilityFunctions.calculateQuantity(start, size, currencyRateList.size());
+        int first = Functions.calculateFirst(start, size, currencyRateList.size());
+        int quantity = Functions.calculateQuantity(start, size, currencyRateList.size());
         List<CurrencyRate> currencyRateSubList = currencyRateList.subList(first, quantity);
         if(currencyRateSubList.isEmpty()) {
             return null;
@@ -140,8 +133,8 @@ public class CurrencyRateDaoJpaTemplate implements CurrencyRateDao {
         if(currencyRateList == null || currencyRateList.isEmpty()) {
             return null;
         }
-        int first = this.utilityFunctions.calculateFirst(start, size, currencyRateList.size());
-        int quantity = this.utilityFunctions.calculateQuantity(start, size, currencyRateList.size());
+        int first = Functions.calculateFirst(start, size, currencyRateList.size());
+        int quantity = Functions.calculateQuantity(start, size, currencyRateList.size());
         List<CurrencyRate> currencyRateSubList = currencyRateList.subList(first, quantity);
         if(currencyRateSubList.isEmpty()) {
             return null;
