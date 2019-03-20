@@ -37,13 +37,13 @@ public class DepartmentServiceImpl implements DepartmentService {
     public void init(){}
 
     @Autowired
-    @Qualifier("departmentDaoJpaTemplate")
+    @Qualifier("departmentDaoJdbcTemplate")
     public void setDepartmentDao(
             DepartmentDao departmentDao) {
         this.departmentDao = departmentDao;
     }
     @Autowired
-    @Qualifier("salePriceDaoJpaTemplate")
+    @Qualifier("salePriceDaoJdbcTemplate")
     public void setSalePriceDao(
             SalePriceDao salePriceDao) {
         this.salePriceDao = salePriceDao;

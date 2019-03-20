@@ -47,25 +47,25 @@ public class SalePriceServiceImpl implements SalePriceService {
     public void init(){}
 
     @Autowired
-    @Qualifier("currencyDaoJpaTemplate")
+    @Qualifier("currencyDaoJdbcTemplate")
     public void setCurrencyDao(
             CurrencyDao currencyDao) {
         this.currencyDao = currencyDao;
     }
     @Autowired
-    @Qualifier("departmentDaoJpaTemplate")
+    @Qualifier("departmentDaoJdbcTemplate")
     public void setDepartmentDao(
             DepartmentDao departmentDao) {
         this.departmentDao = departmentDao;
     }
     @Autowired
-    @Qualifier("matvalueDaoJpaTemplate")
+    @Qualifier("matvalueDaoJdbcTemplate")
     public void setMatvalueDao(
             MatvalueDao matvalueDao) {
         this.matvalueDao = matvalueDao;
     }
     @Autowired
-    @Qualifier("salePriceDaoJpaTemplate")
+    @Qualifier("salePriceDaoJdbcTemplate")
     public void setSalePriceDao(
             SalePriceDao salePriceDao) {
         this.salePriceDao = salePriceDao;

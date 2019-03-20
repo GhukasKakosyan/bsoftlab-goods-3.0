@@ -40,19 +40,19 @@ public class CurrencyServiceImpl implements CurrencyService {
     public void init(){}
 
     @Autowired
-    @Qualifier("currencyDaoJpaTemplate")
+    @Qualifier("currencyDaoJdbcTemplate")
     public void setCurrencyDao(
             CurrencyDao currencyDao) {
         this.currencyDao = currencyDao;
     }
     @Autowired
-    @Qualifier("currencyRateDaoJpaTemplate")
+    @Qualifier("currencyRateDaoJdbcTemplate")
     public void setCurrencyRateDao(
             CurrencyRateDao currencyRateDao) {
         this.currencyRateDao = currencyRateDao;
     }
     @Autowired
-    @Qualifier("salePriceDaoJpaTemplate")
+    @Qualifier("salePriceDaoJdbcTemplate")
     public void setSalePriceDao(
             SalePriceDao salePriceDao) {
         this.salePriceDao = salePriceDao;

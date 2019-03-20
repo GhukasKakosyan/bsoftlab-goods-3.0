@@ -37,13 +37,13 @@ public class GroupServiceImpl implements GroupService {
     public void init(){}
 
     @Autowired
-    @Qualifier("groupDaoJpaTemplate")
+    @Qualifier("groupDaoJdbcTemplate")
     public void setGroupDao(
             GroupDao groupDao) {
         this.groupDao = groupDao;
     }
     @Autowired
-    @Qualifier("matvalueDaoJpaTemplate")
+    @Qualifier("matvalueDaoJdbcTemplate")
     public void setMatvalueDao(
             MatvalueDao matvalueDao) {
         this.matvalueDao = matvalueDao;

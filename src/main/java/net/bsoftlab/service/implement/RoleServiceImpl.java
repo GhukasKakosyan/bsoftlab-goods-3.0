@@ -23,7 +23,7 @@ public class RoleServiceImpl implements RoleService {
     private RoleDao roleDao = null;
 
     @Autowired
-    @Qualifier("roleDaoJpaTemplate")
+    @Qualifier("roleDaoJdbcTemplate")
     public void setRoleDao(RoleDao roleDao) {
         this.roleDao = roleDao;
     }

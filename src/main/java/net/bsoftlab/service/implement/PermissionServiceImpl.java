@@ -23,7 +23,7 @@ public class PermissionServiceImpl implements PermissionService {
     private PermissionDao permissionDao = null;
 
     @Autowired
-    @Qualifier("permissionDaoJpaTemplate")
+    @Qualifier("permissionDaoJdbcTemplate")
     public void setPermissionDao(
             PermissionDao permissionDao) {
         this.permissionDao = permissionDao;

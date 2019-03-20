@@ -41,7 +41,7 @@ public class WorkmanServiceImpl implements WorkmanService {
         this.bCryptPasswordEncoder = bCryptPasswordEncoder;
     }
     @Autowired
-    @Qualifier("workmanDaoJpaTemplate")
+    @Qualifier("workmanDaoJdbcTemplate")
     public void setWorkmanDao(
             WorkmanDao workmanDao) {
         this.workmanDao = workmanDao;

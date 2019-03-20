@@ -43,19 +43,19 @@ public class MatvalueServiceImpl implements MatvalueService {
     public void init(){}
 
     @Autowired
-    @Qualifier("groupDaoJpaTemplate")
+    @Qualifier("groupDaoJdbcTemplate")
     public void setGroupDao(
             GroupDao groupDao) {
         this.groupDao = groupDao;
     }
     @Autowired
-    @Qualifier("matvalueDaoJpaTemplate")
+    @Qualifier("matvalueDaoJdbcTemplate")
     public void setMatvalueDao(
             MatvalueDao matvalueDao) {
         this.matvalueDao = matvalueDao;
     }
     @Autowired
-    @Qualifier("unitofmsrDaoJpaTemplate")
+    @Qualifier("unitofmsrDaoJdbcTemplate")
     public void setUnitofmsrDao(
             UnitofmsrDao unitofmsrDao) {
         this.unitofmsrDao = unitofmsrDao;

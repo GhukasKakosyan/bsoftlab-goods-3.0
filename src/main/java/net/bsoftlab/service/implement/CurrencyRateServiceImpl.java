@@ -39,13 +39,15 @@ public class CurrencyRateServiceImpl implements CurrencyRateService {
     public void init() {}
 
     @Autowired
-    @Qualifier("currencyDaoJpaTemplate")
-    public void setCurrencyDao(CurrencyDao currencyDao) {
+    @Qualifier("currencyDaoJdbcTemplate")
+    public void setCurrencyDao(
+            CurrencyDao currencyDao) {
         this.currencyDao = currencyDao;
     }
     @Autowired
-    @Qualifier("currencyRateDaoJpaTemplate")
-    public void setCurrencyRateDao(CurrencyRateDao currencyRateDao) {
+    @Qualifier("currencyRateDaoJdbcTemplate")
+    public void setCurrencyRateDao(
+            CurrencyRateDao currencyRateDao) {
         this.currencyRateDao = currencyRateDao;
     }
 

@@ -37,13 +37,13 @@ public class UnitofmsrServiceImpl implements UnitofmsrService {
     public void init(){}
 
     @Autowired
-    @Qualifier("matvalueDaoJpaTemplate")
+    @Qualifier("matvalueDaoJdbcTemplate")
     public void setMatvalueDao(
             MatvalueDao matvalueDao) {
         this.matvalueDao = matvalueDao;
     }
     @Autowired
-    @Qualifier("unitofmsrDaoJpaTemplate")
+    @Qualifier("unitofmsrDaoJdbcTemplate")
     public void setUnitofmsrDao(
             UnitofmsrDao unitofmsrDao) {
         this.unitofmsrDao = unitofmsrDao;
