@@ -53,10 +53,10 @@ public class RoleDaoJdbcTemplate implements RoleDao {
                             "refroles.Name " +
                             "FROM refroles " +
                             "WHERE refroles.ID = :idRoleParameter";
-            role = this.namedParameterJdbcTemplate.queryForObject(
-                    roleSelectStatementSql,
-                    new MapSqlParameterSource("idRoleParameter", ID),
-                    new RoleMapper());
+            role = this.namedParameterJdbcTemplate
+                    .queryForObject(roleSelectStatementSql,
+                            new MapSqlParameterSource("idRoleParameter", ID),
+                            new RoleMapper());
         } catch (EmptyResultDataAccessException emptyResultDataAccessException) {
             return null;
         }
@@ -64,14 +64,15 @@ public class RoleDaoJdbcTemplate implements RoleDao {
         String permissionsRoleSelectStatementSql =
                 "SELECT refpermissions.ID, " +
                         "refpermissions.Name " +
-                        "FROM refpermissions, refrolespermissions " +
-                        "WHERE refrolespermissions.PermissionID = refpermissions.ID " +
-                        "AND refrolespermissions.RoleID = :idRoleParameter " +
+                        "FROM refpermissions " +
+                        "INNER JOIN refrolespermissions " +
+                        "ON refpermissions.ID = refrolespermissions.PermissionID " +
+                        "WHERE refrolespermissions.RoleID = :idRoleParameter " +
                         "ORDER BY refpermissions.ID";
-        List<Permission> permissionListRole = this.namedParameterJdbcTemplate.query(
-                permissionsRoleSelectStatementSql,
-                new MapSqlParameterSource("idRoleParameter", ID),
-                new PermissionMapper());
+        List<Permission> permissionListRole = this.namedParameterJdbcTemplate
+                .query(permissionsRoleSelectStatementSql,
+                        new MapSqlParameterSource("idRoleParameter", ID),
+                        new PermissionMapper());
         if (permissionListRole != null && !permissionListRole.isEmpty()) {
             role.setPermissions(new HashSet<>());
             role.getPermissions().addAll(permissionListRole);
@@ -91,15 +92,17 @@ public class RoleDaoJdbcTemplate implements RoleDao {
                         "refworkmans.Country, " +
                         "refroles.ID AS RoleID, " +
                         "refroles.Name AS RoleName " +
-                        "FROM refroles, refworkmans, refworkmansroles " +
-                        "WHERE refworkmansroles.WorkmanID = refworkmans.ID " +
-                        "AND refworkmansroles.RoleID = refroles.ID " +
+                        "FROM refworkmansroles " +
+                        "INNER JOIN refroles " +
+                        "ON refworkmansroles.RoleID = refroles.ID " +
+                        "INNER JOIN refworkmans " +
+                        "ON refworkmansroles.WorkmanID = refworkmans.ID " +
                         "AND refworkmansroles.RoleID = :idRoleParameter " +
                         "ORDER BY refworkmans.ID ASC";
-        List<Workman> workmanListRole = this.namedParameterJdbcTemplate.query(
-                workmansRoleSelectStatementSql,
-                new MapSqlParameterSource("idRoleParameter", ID),
-                new WorkmanMapper());
+        List<Workman> workmanListRole = this.namedParameterJdbcTemplate
+                .query(workmansRoleSelectStatementSql,
+                        new MapSqlParameterSource("idRoleParameter", ID),
+                        new WorkmanMapper());
         if (workmanListRole != null && !workmanListRole.isEmpty()) {
             role.setWorkmans(new HashSet<>());
             role.getWorkmans().addAll(workmanListRole);
@@ -114,8 +117,10 @@ public class RoleDaoJdbcTemplate implements RoleDao {
                         "refroles.Name " +
                         "FROM refroles " +
                         "ORDER BY refroles.ID ASC";
-        List<Role> roleList = this.namedParameterJdbcTemplate.query(
-                rolesSelectStatementSql, new EmptySqlParameterSource(), new RoleMapper());
+        List<Role> roleList = this.namedParameterJdbcTemplate
+                .query(rolesSelectStatementSql,
+                        new EmptySqlParameterSource(),
+                        new RoleMapper());
         if (roleList == null || roleList.isEmpty()) {
             return null;
         }
@@ -124,10 +129,12 @@ public class RoleDaoJdbcTemplate implements RoleDao {
                 "SELECT refrolespermissions.RoleID, " +
                         "refpermissions.ID AS PermissionID, " +
                         "refpermissions.Name AS PermissionName " +
-                        "FROM refpermissions, refrolespermissions " +
-                        "WHERE refpermissions.ID = refrolespermissions.PermissionID " +
+                        "FROM refrolespermissions " +
+                        "INNER JOIN refpermissions " +
+                        "ON refrolespermissions.PermissionID = refpermissions.ID " +
                         "ORDER BY refrolespermissions.RoleID ASC, " +
-                        "refrolespermissions.PermissionID ASC, refrolespermissions.ID ASC";
+                        "refrolespermissions.PermissionID ASC, " +
+                        "refrolespermissions.ID ASC";
         SqlRowSet permissionsRolesSqlRowSet = this.namedParameterJdbcTemplate
                 .queryForRowSet(permissionsRolesSelectStatementSql,
                         new EmptySqlParameterSource());
@@ -147,8 +154,8 @@ public class RoleDaoJdbcTemplate implements RoleDao {
         }
 
         String workmansRolesSelectStatementSql =
-                "SELECT refroles.ID AS RoleID, " +
-                        "refworkmans.ID, " +
+                "SELECT refworkmansroles.RoleID, " +
+                        "refworkmansroles.WorkmanID, " +
                         "refworkmans.Name, " +
                         "refworkmans.Password, " +
                         "refworkmans.FirstName, " +
@@ -159,19 +166,21 @@ public class RoleDaoJdbcTemplate implements RoleDao {
                         "refworkmans.City, " +
                         "refworkmans.State, " +
                         "refworkmans.Country " +
-                        "FROM refroles, refworkmans, refworkmansroles " +
-                        "WHERE refworkmansroles.WorkmanID = refworkmans.ID " +
-                        "AND refworkmansroles.RoleID = refroles.ID " +
-                        "ORDER BY refroles.ID ASC, refworkmans.ID ASC";
-        SqlRowSet workmansRolesSqlRowSet = this.namedParameterJdbcTemplate.queryForRowSet(
-                workmansRolesSelectStatementSql, new EmptySqlParameterSource());
+                        "FROM refworkmansroles " +
+                        "INNER JOIN refworkmans " +
+                        "ON refworkmansroles.WorkmanID = refworkmans.ID " +
+                        "ORDER BY refworkmansroles.RoleID ASC, " +
+                        "refworkmansroles.WorkmanID ASC";
+        SqlRowSet workmansRolesSqlRowSet = this.namedParameterJdbcTemplate
+                .queryForRowSet(workmansRolesSelectStatementSql,
+                        new EmptySqlParameterSource());
 
         if (workmansRolesSqlRowSet != null) {
             for (Role role : roleList) {
                 while (workmansRolesSqlRowSet.next()) {
                     if (role.getID().equals(workmansRolesSqlRowSet.getInt("RoleID"))) {
                         Workman workman = new Workman();
-                        workman.setID(workmansRolesSqlRowSet.getInt("ID"));
+                        workman.setID(workmansRolesSqlRowSet.getInt("WorkmanID"));
                         workman.setName(workmansRolesSqlRowSet.getString("Name"));
                         workman.setPassword(workmansRolesSqlRowSet.getString("Password"));
                         workman.setFirstName(workmansRolesSqlRowSet.getString("FirstName"));

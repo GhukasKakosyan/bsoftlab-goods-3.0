@@ -103,9 +103,10 @@ public class CurrencyRateDaoJdbcTemplate implements CurrencyRateDao {
                             "refcurrenciesrates.Date, " +
                             "refcurrenciesrates.Rate, " +
                             "refcurrenciesrates.Quantity " +
-                            "FROM refcurrencies, refcurrenciesrates " +
-                            "WHERE refcurrencies.Code = refcurrenciesrates.CurrencyCode " +
-                            "AND refcurrenciesrates.ID = ?";
+                            "FROM refcurrenciesrates " +
+                            "INNER JOIN refcurrencies " +
+                            "ON refcurrenciesrates.CurrencyCode = refcurrencies.Code " +
+                            "WHERE refcurrenciesrates.ID = ?";
             return this.jdbcTemplate.queryForObject(currencyRateSelectStatementSQL,
                     new Object[]{ID},
                     new CurrencyRateMapper());
@@ -127,9 +128,10 @@ public class CurrencyRateDaoJdbcTemplate implements CurrencyRateDao {
                             "refcurrenciesrates.Date, " +
                             "refcurrenciesrates.Rate, " +
                             "refcurrenciesrates.Quantity " +
-                            "FROM refcurrencies, refcurrenciesrates " +
-                            "WHERE refcurrenciesrates.CurrencyCode = refcurrencies.Code " +
-                            "AND NOT refcurrenciesrates.ID = ? " +
+                            "FROM refcurrenciesrates " +
+                            "INNER JOIN refcurrencies " +
+                            "ON refcurrenciesrates.CurrencyCode = refcurrencies.Code " +
+                            "WHERE NOT refcurrenciesrates.ID = ? " +
                             "AND refcurrenciesrates.CurrencyCode = ? " +
                             "AND refcurrenciesrates.Date = ? ";
             return this.jdbcTemplate.queryForObject(currencyRateSelectStatementSql,
@@ -152,8 +154,9 @@ public class CurrencyRateDaoJdbcTemplate implements CurrencyRateDao {
                         "refcurrenciesrates.Date, " +
                         "refcurrenciesrates.Rate, " +
                         "refcurrenciesrates.Quantity " +
-                        "FROM refcurrencies, refcurrenciesrates " +
-                        "WHERE refcurrencies.Code = refcurrenciesrates.CurrencyCode " +
+                        "FROM refcurrenciesrates " +
+                        "INNER JOIN refcurrencies " +
+                        "ON refcurrenciesrates.CurrencyCode = refcurrencies.Code " +
                         "ORDER BY refcurrenciesrates.Date DESC, " +
                         "refcurrenciesrates.ID DESC";
         List<CurrencyRate> currencyRateList = this.jdbcTemplate.query(
@@ -183,9 +186,10 @@ public class CurrencyRateDaoJdbcTemplate implements CurrencyRateDao {
                         "refcurrenciesrates.Date, " +
                         "refcurrenciesrates.Rate, " +
                         "refcurrenciesrates.Quantity " +
-                        "FROM refcurrencies, refcurrenciesrates " +
+                        "FROM refcurrenciesrates " +
+                        "INNER JOIN refcurrencies " +
+                        "ON refcurrenciesrates.CurrencyCode = refcurrencies.Code " +
                         "WHERE refcurrenciesrates.CurrencyCode = ? " +
-                        "AND refcurrenciesrates.CurrencyCode = refcurrencies.Code " +
                         "ORDER BY refcurrenciesrates.Date DESC, refcurrenciesrates.ID DESC";
         List<CurrencyRate> currencyRateList = this.jdbcTemplate.query(
                 currencyRateListSelectStatementSql,

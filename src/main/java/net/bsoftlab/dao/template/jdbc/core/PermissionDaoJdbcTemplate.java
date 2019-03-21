@@ -43,10 +43,10 @@ public class PermissionDaoJdbcTemplate implements PermissionDao {
                             "refpermissions.Name " +
                             "FROM refpermissions " +
                             "WHERE refpermissions.ID = :idPermissionParameter";
-            return this.namedParameterJdbcTemplate.queryForObject(
-                    permissionSelectStatementSql,
-                    new MapSqlParameterSource("idPermissionParameter", ID),
-                    new PermissionMapper());
+            return this.namedParameterJdbcTemplate
+                    .queryForObject(permissionSelectStatementSql,
+                            new MapSqlParameterSource("idPermissionParameter", ID),
+                            new PermissionMapper());
         } catch (EmptyResultDataAccessException emptyResultDataAccessException) {
             return null;
         }
@@ -60,10 +60,11 @@ public class PermissionDaoJdbcTemplate implements PermissionDao {
                             "refpermissions.Name " +
                             "FROM refpermissions " +
                             "WHERE refpermissions.Name = :namePermissionParameter";
-            return this.namedParameterJdbcTemplate.queryForObject(
-                    permissionSelectStatementSql,
-                    new MapSqlParameterSource().addValue("namePermissionParameter", name),
-                    new PermissionMapper());
+            return this.namedParameterJdbcTemplate
+                    .queryForObject(permissionSelectStatementSql,
+                            new MapSqlParameterSource()
+                                    .addValue("namePermissionParameter", name),
+                            new PermissionMapper());
         } catch (EmptyResultDataAccessException emptyResultDataAccessException) {
             return null;
         }
@@ -76,9 +77,10 @@ public class PermissionDaoJdbcTemplate implements PermissionDao {
                         "refpermissions.Name " +
                         "FROM refpermissions " +
                         "ORDER BY refpermissions.ID ASC";
-        List<Permission> permissionList = this.namedParameterJdbcTemplate.query(
-                permissionsSelectStatementSql,
-                new EmptySqlParameterSource(), new PermissionMapper());
+        List<Permission> permissionList = this.namedParameterJdbcTemplate
+                .query(permissionsSelectStatementSql,
+                        new EmptySqlParameterSource(),
+                        new PermissionMapper());
         if (permissionList == null || permissionList.isEmpty()) {
             return null;
         }
