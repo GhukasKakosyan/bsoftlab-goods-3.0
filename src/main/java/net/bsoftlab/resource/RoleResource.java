@@ -59,6 +59,8 @@ public class RoleResource extends ResourceSupport
 
     @Override
     public String toString() {
-        return this.code + ", " + this.name;
+        return "[" +
+                this.code + ", " +
+                this.name + "]";
     }
 }

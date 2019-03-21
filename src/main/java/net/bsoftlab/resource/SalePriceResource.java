@@ -118,12 +118,13 @@ public class SalePriceResource extends ResourceSupport
 
     @Override
     public String toString() {
-        return this.code + ", " +
+        return "[" +
+                this.code + ", " +
                 this.matvalueResource + "; " +
                 this.departmentResource + "; " +
                 this.currencyResource + "; " +
                 this.date + ", " +
                 this.price + ", " +
-                this.quantity;
+                this.quantity + "]";
     }
 }

@@ -72,8 +72,9 @@ public class Unitofmsr implements Comparable<Unitofmsr>, Serializable {
 
     @Override
     public String toString() {
-        return this.code + ", " +
+        return "[" +
+                this.code + ", " +
                 this.shortName + ", " +
-                this.longName;
+                this.longName + "]";
     }
 }

@@ -91,6 +91,8 @@ public class Role implements Comparable<Role>, Serializable {
 
     @Override
     public String toString() {
-        return this.ID + ", " + this.name;
+        return "[" +
+                this.ID + ", " +
+                this.name + "]";
     }
 }

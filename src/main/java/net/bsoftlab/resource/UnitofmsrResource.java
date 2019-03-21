@@ -64,8 +64,9 @@ public class UnitofmsrResource extends ResourceSupport
 
     @Override
     public String toString() {
-        return this.code + ", " +
+        return "[" +
+                this.code + ", " +
                 this.shortName + ", " +
-                this.longName;
+                this.longName + "]";
     }
 }

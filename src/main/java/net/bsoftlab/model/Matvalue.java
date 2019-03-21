@@ -101,9 +101,10 @@ public class Matvalue implements Comparable<Matvalue>, Serializable {
 
     @Override
     public String toString() {
-        return this.code + ", " +
+        return "[" +
+                this.code + ", " +
                 this.name + ", " +
                 this.unitofmsr + ", " +
-                this.group;
+                this.group + "]";
     }
 }

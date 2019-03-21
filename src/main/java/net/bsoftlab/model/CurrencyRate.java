@@ -108,10 +108,11 @@ public class CurrencyRate implements Comparable<CurrencyRate>, Serializable {
 
     @Override
     public String toString() {
-        return this.ID + ", " +
+        return "[" +
+                this.ID + ", " +
                 this.currency + ", " +
                 this.date + ", " +
                 this.rate + ", " +
-                this.quantity;
+                this.quantity + "]";
     }
 }

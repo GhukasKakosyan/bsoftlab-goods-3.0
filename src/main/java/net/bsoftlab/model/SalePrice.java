@@ -135,12 +135,13 @@ public class SalePrice implements Comparable<SalePrice>, Serializable {
 
     @Override
     public String toString() {
-        return this.ID + ", " +
+        return "[" +
+                this.ID + ", " +
                 this.matvalue + ", " +
                 this.department + ", " +
                 this.currency + ", " +
                 this.date + ", " +
                 this.price + ", " +
-                this.quantity;
+                this.quantity + "]";
     }
 }

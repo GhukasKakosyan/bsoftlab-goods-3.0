@@ -73,10 +73,11 @@ public class AddressResource implements Comparable<AddressResource> {
 
     @Override
     public String toString() {
-        return this.country + ", " +
+        return "[" +
+                this.country + ", " +
                 this.state + ", " +
                 this.city + ", " +
                 this.pincode + ", " +
-                this.street;
+                this.street + "]";
     }
 }

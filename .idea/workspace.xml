@@ -8,6 +8,29 @@
   <component name="ChangeListManager">
     <list default="true" id="00c6bbb9-d7a4-4483-a070-3fb1170e2427" name="Default" comment="Activate jdbc dao">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/WorkmanDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/WorkmanDaoJdbcTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Currency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/CurrencyRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/CurrencyRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Matvalue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Matvalue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Permission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/SalePrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/SalePrice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Unitofmsr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Unitofmsr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Workman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Workman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/AddressResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/AddressResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/CurrencyRateResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/CurrencyRateResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/CurrencyResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/CurrencyResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/DepartmentResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/DepartmentResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/GroupResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/GroupResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/MatvalueResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/MatvalueResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/PermissionResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/PermissionResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/RoleResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/RoleResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/SalePriceResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/SalePriceResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/UnitofmsrResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/UnitofmsrResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/WorkmanResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/WorkmanResource.java" afterDir="false" />
     </list>
     <ignored path="bsoftlab-goods-3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,29 +104,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Matvalue.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Permission.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Role.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/SalePrice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Workman.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyDaoJdbcTemplate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/DepartmentDaoJdbcTemplate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/GroupDaoJdbcTemplate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/MatvalueDaoJdbcTemplate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/SalePriceDaoJdbcTemplate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/UnitofmsrDaoJdbcTemplate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/utility/UtilityFunctions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/CurrencyDaoJpaTemplate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/CurrencyRateDaoJpaTemplate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/DepartmentDaoJpaTemplate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/GroupDaoJpaTemplate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/MatvalueDaoJpaTemplate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/SalePriceDaoJpaTemplate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/UnitofmsrDaoJpaTemplate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/CurrencyRateWebController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/CurrencyWebController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/DepartmentWebController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/GroupWebController.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/MatvalueWebController.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/SalePriceWebController.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/UnitofmsrWebController.java" />
@@ -132,6 +132,29 @@
         <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/WorkmanServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/CurrencyRateServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/META-INF/bsoftlab-goods-3.0-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/WorkmanDaoJdbcTemplate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Workman.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Unitofmsr.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/SalePrice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Permission.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Group.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Matvalue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Department.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/CurrencyRate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Currency.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Address.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/AddressResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/CurrencyRateResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/CurrencyResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/DepartmentResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/GroupResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/MatvalueResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/PermissionResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/RoleResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/SalePriceResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/UnitofmsrResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/WorkmanResource.java" />
       </list>
     </option>
   </component>
@@ -192,6 +215,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="bsoftlab-goods-3.0" type="58d84e3e:PackageViewProjectNode" />
+              <item name="bsoftlab-goods-3.0" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,17 +254,6 @@
             <path>
               <item name="bsoftlab-goods-3.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="bsoftlab-goods-3.0" type="58d84e3e:PackageViewProjectNode" />
-              <item name="bsoftlab-goods-3.0" type="616d4139:PackageViewModuleNode" />
             </path>
           </expand>
           <select />
@@ -1103,6 +1126,7 @@
       <workItem from="1552922251903" duration="2528000" />
       <workItem from="1552997769140" duration="1218000" />
       <workItem from="1553077236004" duration="9516000" />
+      <workItem from="1553153912899" duration="16357000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/GhukasKakosyan/bsoftlab-goods-3.0&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/RoleRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/SalePriceRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/UnitofmsrRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/WorkmanRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/CurrencyRateWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/DepartmentWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/GroupWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/MatvalueWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/SalePriceWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/UnitofmsrWebController.java">
       <created>1551705560623</created>
@@ -1165,7 +1189,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2247841000" />
+    <option name="totallyTimeSpent" value="2264198000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1179,7 +1203,7 @@
   <component name="ToolWindowManager">
     <frame x="-5" y="-5" width="1376" height="738" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" x="495" y="57" width="376" height="614" id="Project" order="0" sideWeight="0.49429038" weight="0.30786687" />
+      <window_info content_ui="combo" x="495" y="57" width="376" height="614" id="Project" order="0" sideWeight="0.49429038" visible="true" weight="0.30786687" />
       <window_info id="Structure" order="1" show_stripe_button="false" weight="0.24962178" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Web" order="3" show_stripe_button="false" sideWeight="0.50570965" side_tool="true" weight="0.24962178" />
@@ -1191,7 +1215,7 @@
       <window_info id="Capture Tool" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" show_stripe_button="false" weight="0.32084692" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49167928" weight="0.5228013" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49167928" visible="true" weight="0.5228013" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" show_stripe_button="false" weight="0.39967373" />
@@ -1218,7 +1242,7 @@
       <window_info anchor="right" id="Bean Validation" order="7" show_stripe_button="false" />
       <window_info active="true" anchor="right" id="Maven Projects" order="8" visible="true" weight="0.19894099" />
       <window_info anchor="right" id="Capture Analysis" order="9" />
-      <window_info active="true" anchor="right" id="Maven" order="10" visible="true" weight="0.1452345" />
+      <window_info anchor="right" id="Maven" order="10" visible="true" weight="0.1452345" />
       <window_info anchor="right" id="Theme Preview" order="11" />
     </layout>
     <layout-to-restore>
@@ -1337,290 +1361,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/CurrencyRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="118" column="81" selection-start-line="118" selection-start-column="81" selection-end-line="118" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/DepartmentRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="118" column="81" selection-start-line="118" selection-start-column="81" selection-end-line="118" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/GroupRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="118" column="81" selection-start-line="118" selection-start-column="81" selection-end-line="118" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/MatvalueRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="118" column="81" selection-start-line="118" selection-start-column="81" selection-end-line="118" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/PermissionRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="96" column="81" selection-start-line="96" selection-start-column="81" selection-end-line="96" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/RoleRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="96" column="81" selection-start-line="96" selection-start-column="81" selection-end-line="96" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/SalePriceRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="118" column="81" selection-start-line="118" selection-start-column="81" selection-end-line="118" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/UnitofmsrRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="118" column="81" selection-start-line="118" selection-start-column="81" selection-end-line="118" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/WorkmanRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="109" column="81" selection-start-line="109" selection-start-column="81" selection-end-line="109" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/rest/CurrencyRateRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="118" column="72" lean-forward="true" selection-start-line="118" selection-start-column="72" selection-end-line="118" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/interceptor/UnicodeInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Currency.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/converter/entity/AddressConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="47" lean-forward="true" selection-start-column="47" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/DepartmentDaoJdbcTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/UnitofmsrDaoJdbcTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/bsoftlab-goods-3.0-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/CurrencyServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/DepartmentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/GroupServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/MatvalueServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="57" column="42" lean-forward="true" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/PermissionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/RoleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/SalePriceServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="67" column="42" lean-forward="true" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/UnitofmsrServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/database/database.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/CurrencyDaoJpaTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/mapper/CurrencyMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyDaoJdbcTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyRateDaoJdbcTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="92" column="13" lean-forward="true" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/aspect/DeletingEntityServiceAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/aspect/GettingEntityListServiceAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/CurrencyRateService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/CurrencyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/utility/Functions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/CurrencyRateWebController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1334">
@@ -1635,16 +1375,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1300">
           <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/CurrencyRateServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="860">
-          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1677,13 +1407,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/database/database-data.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/bsoftlab-goods-3.0-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="83" column="57" selection-start-line="83" selection-start-column="57" selection-end-line="83" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/bsoftlab-goods-3.0-security.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-458" />
@@ -1696,33 +1419,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/WorkmanServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-718">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Workman.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyRateDaoJdbcTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        <state relative-caret-position="600">
+          <caret line="92" column="13" lean-forward="true" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/WorkmanDaoJdbcTemplate.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/CurrencyRateDaoJpaTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/mapper/WorkmanMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/mapper/RoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/mapper/PermissionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ab687e6b-4720-47f8-ae5f-b2d50188656a/schema/materials/table/refrolespermissions">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <caret lean-forward="true" />
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/WorkmanDaoJpaTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="120">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding>
             <element signature="e#2083#2084#0" expanded="true" />
             <element signature="e#2148#2149#0" expanded="true" />
@@ -1730,17 +1478,259 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Workman.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="155" column="33" selection-start-line="155" selection-start-column="33" selection-end-line="155" selection-end-column="33" />
+          <folding>
+            <element signature="e#4090#4091#0" expanded="true" />
+            <element signature="e#4156#4157#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Unitofmsr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="75" column="16" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/model/SalePrice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="138" column="16" selection-start-line="138" selection-start-column="16" selection-end-line="138" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Role.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
+        <state relative-caret-position="432">
+          <caret line="95" column="16" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2540#2541#0" expanded="true" />
             <element signature="e#2603#2604#0" expanded="true" />
-            <element signature="e#3022#3023#0" expanded="true" />
-            <element signature="e#3071#3072#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Permission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Matvalue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="104" column="16" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="75" column="16" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Department.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="144" column="16" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/model/CurrencyRate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="111" column="16" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Currency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="97" column="16" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="94" column="16" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/AddressResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/CurrencyRateResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="96" column="16" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/CurrencyResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/DepartmentResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="120" column="49" lean-forward="true" selection-start-line="120" selection-start-column="49" selection-end-line="120" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/GroupResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/MatvalueResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/PermissionResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/RoleResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/SalePriceResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="127" column="36" lean-forward="true" selection-start-line="127" selection-start-column="36" selection-end-line="127" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/UnitofmsrResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/WorkmanResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="119" column="38" selection-start-line="119" selection-start-column="38" selection-end-line="119" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/WorkmanDaoJdbcTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="206" selection-start-line="206" selection-end-line="206" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/CurrencyRateServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/CurrencyServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/DepartmentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/GroupServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="45" column="41" lean-forward="true" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/MatvalueServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="57" column="42" lean-forward="true" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/PermissionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/RoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/SalePriceServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="67" column="42" lean-forward="true" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/UnitofmsrServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="45" column="42" lean-forward="true" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/WorkmanServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/bsoftlab-goods-3.0-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
         </state>
       </provider>
     </entry>

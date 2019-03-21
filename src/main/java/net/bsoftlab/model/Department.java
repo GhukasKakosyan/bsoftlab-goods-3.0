@@ -141,13 +141,14 @@ public class Department implements Comparable<Department>, Serializable {
 
     @Override
     public String toString() {
-        return this.code + ", " +
+        return "[" +
+                this.code + ", " +
                 this.name + ", " +
                 this.address + ", " +
                 this.phones + ", " +
                 this.faxes + ", " +
                 this.webSite + ", " +
                 this.emailAddress + ", " +
-                this.additionalInformation;
+                this.additionalInformation + "]";
     }
 }

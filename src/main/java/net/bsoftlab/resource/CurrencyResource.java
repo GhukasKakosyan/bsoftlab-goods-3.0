@@ -84,10 +84,11 @@ public class CurrencyResource extends ResourceSupport
 
     @Override
     public String toString() {
-        return this.code + ", " +
+        return "[" +
+                this.code + ", " +
                 this.shortName + ", " +
                 this.longName + ", " +
                 this.country + ", " +
-                this.additionalInformation;
+                this.additionalInformation + "]";
     }
 }

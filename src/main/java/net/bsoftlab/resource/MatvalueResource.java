@@ -77,9 +77,10 @@ public class MatvalueResource extends ResourceSupport
 
     @Override
     public String toString() {
-        return this.code + ", " +
+        return "[" +
+                this.code + ", " +
                 this.name + ", " +
                 this.unitofmsrResource + "; " +
-                this.groupResource;
+                this.groupResource + "]";
     }
 }

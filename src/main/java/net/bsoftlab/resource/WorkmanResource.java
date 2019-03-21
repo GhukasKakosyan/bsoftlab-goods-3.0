@@ -110,12 +110,13 @@ public class WorkmanResource extends ResourceSupport
 
     @Override
     public String toString() {
-        return this.code + ", " +
+        return "[" +
+                this.code + ", " +
                 this.name + ", " +
                 this.firstName + ", " +
                 this.lastName + ", " +
                 this.phones + ", " +
                 this.addressResource + ", " +
-                this.roleResource;
+                this.roleResource + "]";
     }
 }

@@ -64,8 +64,9 @@ public class GroupResource extends ResourceSupport
 
     @Override
     public String toString() {
-        return this.code + ", " +
+        return "[" +
+                this.code + ", " +
                 this.name + ", " +
-                this.enhancedName;
+                this.enhancedName + "]";
     }
 }

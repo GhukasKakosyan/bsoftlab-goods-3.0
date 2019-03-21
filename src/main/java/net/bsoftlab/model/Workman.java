@@ -147,11 +147,12 @@ public class Workman implements Comparable<Workman>, Serializable {
 
     @Override
     public String toString() {
-        return this.ID + ", " +
+        return "[" +
+                this.ID + ", " +
                 this.name + ", " +
                 this.firstName + ", " +
                 this.lastName + ", " +
                 this.phones + ", " +
-                this.address;
+                this.address + "]";
     }
 }

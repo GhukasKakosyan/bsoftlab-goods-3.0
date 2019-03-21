@@ -66,6 +66,8 @@ public class Permission implements Comparable<Permission>, Serializable {
 
     @Override
     public String toString() {
-        return this.ID + ", " + this.name;
+        return "[" +
+                this.ID + ", " +
+                this.name + "]";
     }
 }

@@ -91,10 +91,11 @@ public class Address implements Comparable<Address>, Serializable {
 
     @Override
     public String toString() {
-        return this.country + ", " +
+        return "[" +
+                this.country + ", " +
                 this.state + ", " +
                 this.city + ", " +
                 this.pincode + ", " +
-                this.street;
+                this.street + "]";
     }
 }

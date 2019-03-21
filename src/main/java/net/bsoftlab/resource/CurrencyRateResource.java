@@ -93,10 +93,11 @@ public class CurrencyRateResource extends ResourceSupport
 
     @Override
     public String toString() {
-        return this.code + ", " +
+        return "[" +
+                this.code + ", " +
                 this.currencyResource + ", " +
                 this.date + ", " +
                 this.rate + ", " +
-                this.quantity;
+                this.quantity + "]";
     }
 }
