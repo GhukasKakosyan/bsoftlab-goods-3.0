@@ -50,9 +50,9 @@ public class SalePriceDaoJdbcTemplate implements SalePriceDao {
                         "WHERE refpricesofmatvalues.ID = :idSalePriceParameter";
         Map<String, Integer> mapParameterSalePriceDeleteStatementSql =
                 Collections.singletonMap("idSalePriceParameter", salePrice.getID());
-        this.namedParameterJdbcTemplate.update(
-                salePriceDeleteStatementSql,
-                mapParameterSalePriceDeleteStatementSql);
+        this.namedParameterJdbcTemplate
+                .update(salePriceDeleteStatementSql,
+                        mapParameterSalePriceDeleteStatementSql);
     }
 
     @Override
@@ -74,8 +74,9 @@ public class SalePriceDaoJdbcTemplate implements SalePriceDao {
                         .addValue("dateParameter", salePrice.getDate())
                         .addValue("priceParameter", salePrice.getPrice())
                         .addValue("quantityParameter", salePrice.getQuantity());
-        this.namedParameterJdbcTemplate.update(salePriceInsertStatementSql,
-                sqlParameterSourceSalePriceInsertStatementSql);
+        this.namedParameterJdbcTemplate
+                .update(salePriceInsertStatementSql,
+                        sqlParameterSourceSalePriceInsertStatementSql);
     }
 
     @Override
@@ -98,9 +99,9 @@ public class SalePriceDaoJdbcTemplate implements SalePriceDao {
                         .addValue("priceParameter", salePrice.getPrice())
                         .addValue("quantityParameter", salePrice.getQuantity())
                         .addValue("idSalePriceParameter", salePrice.getID());
-        this.namedParameterJdbcTemplate.update(
-                salePriceUpdateStatementSql,
-                sqlParameterSourceSalePriceUpdateStatementSql);
+        this.namedParameterJdbcTemplate
+                .update(salePriceUpdateStatementSql,
+                        sqlParameterSourceSalePriceUpdateStatementSql);
     }
 
     @Override
@@ -182,10 +183,10 @@ public class SalePriceDaoJdbcTemplate implements SalePriceDao {
                             "INNER JOIN refunitsofmsrs " +
                             "ON refmatvalues.UnitofmsrCode = refunitsofmsrs.Code " +
                             "WHERE refpricesofmatvalues.ID = :idSalePriceParameter ";
-            return this.namedParameterJdbcTemplate.queryForObject(
-                    salePriceSelectStatementSql,
-                    new MapSqlParameterSource("idSalePriceParameter", ID),
-                    new SalePriceMapper());
+            return this.namedParameterJdbcTemplate
+                    .queryForObject(salePriceSelectStatementSql,
+                            new MapSqlParameterSource("idSalePriceParameter", ID),
+                            new SalePriceMapper());
         } catch (EmptyResultDataAccessException emptyResultDataAccessException) {
             return null;
         }
@@ -246,10 +247,11 @@ public class SalePriceDaoJdbcTemplate implements SalePriceDao {
                             .addValue("matvalueCodeParameter", matvalue.getCode())
                             .addValue("dateParameter", date)
                             .addValue("IDParameter", ID);
-            return this.namedParameterJdbcTemplate.queryForObject(
-                    salePriceSelectStatementSql,
-                    sqlParameterSourceSalePriceSelectStatementSql,
-                    new SalePriceMapper());
+            return this.namedParameterJdbcTemplate
+                    .queryForObject(
+                            salePriceSelectStatementSql,
+                            sqlParameterSourceSalePriceSelectStatementSql,
+                            new SalePriceMapper());
         } catch (EmptyResultDataAccessException emptyResultDataAccessException) {
             return null;
         }
@@ -300,9 +302,10 @@ public class SalePriceDaoJdbcTemplate implements SalePriceDao {
                         "ON refmatvalues.UnitofmsrCode = refunitsofmsrs.Code " +
                         "ORDER BY refpricesofmatvalues.Date DESC, " +
                         "refpricesofmatvalues.ID DESC";
-        List<SalePrice> salePriceList = this.namedParameterJdbcTemplate.query(
-                salePriceListSelectStatementSql,
-                new EmptySqlParameterSource(), new SalePriceMapper());
+        List<SalePrice> salePriceList = this.namedParameterJdbcTemplate
+                .query(salePriceListSelectStatementSql,
+                        new EmptySqlParameterSource(),
+                        new SalePriceMapper());
         if (salePriceList == null || salePriceList.isEmpty()) {
             return null;
         }
@@ -364,10 +367,10 @@ public class SalePriceDaoJdbcTemplate implements SalePriceDao {
                         "WHERE refpricesofmatvalues.CurrencyCode = :currencyCodeParameter " +
                         "ORDER BY refpricesofmatvalues.Date DESC, " +
                         "refpricesofmatvalues.ID DESC ";
-        List<SalePrice> salePriceListCurrency = this.namedParameterJdbcTemplate.query(
-                salePriceListCurrencySelectStatementSql,
-                new MapSqlParameterSource("currencyCodeParameter", currency.getCode()),
-                new SalePriceMapper());
+        List<SalePrice> salePriceListCurrency = this.namedParameterJdbcTemplate
+                .query(salePriceListCurrencySelectStatementSql,
+                        new MapSqlParameterSource("currencyCodeParameter", currency.getCode()),
+                        new SalePriceMapper());
         if (salePriceListCurrency == null || salePriceListCurrency.isEmpty()) {
             return null;
         }
@@ -430,10 +433,10 @@ public class SalePriceDaoJdbcTemplate implements SalePriceDao {
                         "WHERE refpricesofmatvalues.DepartmentCode = :departmentCodeParameter " +
                         "ORDER BY refpricesofmatvalues.Date DESC, " +
                         "refpricesofmatvalues.ID DESC ";
-        List<SalePrice> salePriceListDepartment = this.namedParameterJdbcTemplate.query(
-                salePriceListDepartmentSelectStatementSql,
-                new MapSqlParameterSource("departmentCodeParameter", department.getCode()),
-                new SalePriceMapper());
+        List<SalePrice> salePriceListDepartment = this.namedParameterJdbcTemplate
+                .query(salePriceListDepartmentSelectStatementSql,
+                        new MapSqlParameterSource("departmentCodeParameter", department.getCode()),
+                        new SalePriceMapper());
         if (salePriceListDepartment == null || salePriceListDepartment.isEmpty()) {
             return null;
         }
@@ -496,10 +499,10 @@ public class SalePriceDaoJdbcTemplate implements SalePriceDao {
                         "WHERE refpricesofmatvalues.MatvalueCode = :matvalueCodeParameter " +
                         "ORDER BY refpricesofmatvalues.Date DESC, " +
                         "refpricesofmatvalues.ID DESC";
-        List<SalePrice> salePriceListMatvalue = this.namedParameterJdbcTemplate.query(
-                salePriceListMatvalueSelectStatementSql,
-                new MapSqlParameterSource("matvalueCodeParameter", matvalue.getCode()),
-                new SalePriceMapper());
+        List<SalePrice> salePriceListMatvalue = this.namedParameterJdbcTemplate
+                .query(salePriceListMatvalueSelectStatementSql,
+                        new MapSqlParameterSource("matvalueCodeParameter", matvalue.getCode()),
+                        new SalePriceMapper());
         if (salePriceListMatvalue == null || salePriceListMatvalue.isEmpty()) {
             return null;
         }

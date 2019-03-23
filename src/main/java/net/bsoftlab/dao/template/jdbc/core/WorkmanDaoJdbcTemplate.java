@@ -245,7 +245,8 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                     "SELECT refroles.ID, " +
                             "refroles.Name " +
                             "FROM refworkmansroles " +
-                            "INNER JOIN refroles ON refworkmansroles.RoleID = refroles.ID " +
+                            "INNER JOIN refroles " +
+                            "ON refworkmansroles.RoleID = refroles.ID " +
                             "WHERE refworkmansroles.WorkmanID = ?";
             List<Role> rolesWorkman = this.jdbcTemplate
                     .query(rolesWorkmanSelectStatementSql,

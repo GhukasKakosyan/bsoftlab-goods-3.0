@@ -19,7 +19,6 @@ import org.springframework.stereotype.Repository;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-import java.util.HashSet;
 import java.util.List;
 
 @Repository
@@ -270,7 +269,6 @@ public class MatvalueDaoJdbcTemplate implements MatvalueDao {
         }
 
         for(Matvalue matvalue : matvalueSubList) {
-            matvalue.setSalePriceSet(new HashSet<>());
             salePriceList.stream().filter(salePrice -> salePrice.getMatvalue().getCode()
                     .equals(matvalue.getCode())).forEach(salePrice ->
                     matvalue.getSalePriceSet().add(salePrice));
@@ -362,9 +360,8 @@ public class MatvalueDaoJdbcTemplate implements MatvalueDao {
         }
 
         for(Matvalue matvalue : matvalueSubListGroup) {
-            matvalue.setSalePriceSet(new HashSet<>());
-            salePriceListGroup.stream().filter(salePrice -> matvalue
-                    .getCode().equals(salePrice.getMatvalue().getCode()))
+            salePriceListGroup.stream().filter(salePrice ->
+                    matvalue.getCode().equals(salePrice.getMatvalue().getCode()))
                     .forEach(salePrice -> matvalue.getSalePriceSet().add(salePrice));
         }
         return matvalueSubListGroup;

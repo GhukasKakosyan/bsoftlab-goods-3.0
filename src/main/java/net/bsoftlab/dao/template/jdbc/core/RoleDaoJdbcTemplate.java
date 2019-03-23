@@ -23,7 +23,6 @@ import org.springframework.stereotype.Repository;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-import java.util.HashSet;
 import java.util.List;
 
 @Repository
@@ -74,7 +73,6 @@ public class RoleDaoJdbcTemplate implements RoleDao {
                         new MapSqlParameterSource("idRoleParameter", ID),
                         new PermissionMapper());
         if (permissionListRole != null && !permissionListRole.isEmpty()) {
-            role.setPermissions(new HashSet<>());
             role.getPermissions().addAll(permissionListRole);
         }
 
@@ -104,7 +102,6 @@ public class RoleDaoJdbcTemplate implements RoleDao {
                         new MapSqlParameterSource("idRoleParameter", ID),
                         new WorkmanMapper());
         if (workmanListRole != null && !workmanListRole.isEmpty()) {
-            role.setWorkmans(new HashSet<>());
             role.getWorkmans().addAll(workmanListRole);
         }
         return role;
