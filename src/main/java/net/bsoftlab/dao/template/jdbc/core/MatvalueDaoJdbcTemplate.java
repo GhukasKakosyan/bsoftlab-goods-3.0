@@ -258,10 +258,11 @@ public class MatvalueDaoJdbcTemplate implements MatvalueDao {
                         "ON refpricesofmatvalues.MatvalueCode = refmatvalues.Code " +
                         "INNER JOIN refunitsofmsrs " +
                         "ON refmatvalues.UnitofmsrCode = refunitsofmsrs.Code " +
-                        "INNER JOIN refgroups ON refmatvalues.GroupCode = refgroups.Code " +
-                        "WHERE refpricesofmatvalues.MatvalueCode = refmatvalues.Code " +
+                        "INNER JOIN refgroups " +
+                        "ON refmatvalues.GroupCode = refgroups.Code " +
                         "ORDER BY refpricesofmatvalues.MatvalueCode ASC, " +
-                        "refpricesofmatvalues.Date DESC, refpricesofmatvalues.ID DESC";
+                        "refpricesofmatvalues.Date DESC, " +
+                        "refpricesofmatvalues.ID DESC";
         List<SalePrice> salePriceList = this.jdbcTemplate.query(
                 salePriceSetSelectStatementSql, new SalePriceMapper());
         if (salePriceList == null || salePriceList.isEmpty()) {

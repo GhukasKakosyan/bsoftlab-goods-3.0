@@ -75,16 +75,18 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                 "SELECT refworkmans.ID " +
                         "FROM refworkmans " +
                         "WHERE refworkmans.Name = ?";
-        Integer ID = this.jdbcTemplate.queryForObject(nameWorkmanSelectStatementSql,
-                new Object[]{workman.getName()}, Integer.class);
+        Integer ID = this.jdbcTemplate
+                .queryForObject(nameWorkmanSelectStatementSql,
+                        new Object[]{workman.getName()}, Integer.class);
         workman.setID(ID);
 
         String workmanRoleInsertStatementSql =
                 "INSERT INTO refworkmansroles " +
                         "(WorkmanID, RoleID) VALUES (?, ?)";
         for (Role role : workman.getRoles()) {
-            this.jdbcTemplate.update(workmanRoleInsertStatementSql,
-                    workman.getID(), role.getID());
+            this.jdbcTemplate
+                    .update(workmanRoleInsertStatementSql,
+                            workman.getID(), role.getID());
         }
     }
 
@@ -144,15 +146,18 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                             "refworkmans.Country " +
                             "FROM refworkmans " +
                             "WHERE refworkmans.ID = ?";
-            Workman workman = this.jdbcTemplate.queryForObject(
-                    workmanSelectStatementSql, new Object[]{ID}, new WorkmanMapper());
+            Workman workman = this.jdbcTemplate
+                    .queryForObject(workmanSelectStatementSql,
+                            new Object[]{ID},
+                            new WorkmanMapper());
 
             String rolesWorkmanSelectStatementSql =
                     "SELECT refroles.ID, " +
                             "refroles.Name " +
-                            "FROM refroles, refworkmansroles " +
-                            "WHERE refworkmansroles.RoleID = refroles.ID " +
-                            "AND refworkmansroles.WorkmanID = ?";
+                            "FROM refworkmansroles " +
+                            "INNER JOIN refroles " +
+                            "ON refworkmansroles.RoleID = refroles.ID " +
+                            "WHERE refworkmansroles.WorkmanID = ?";
             List<Role> rolesWorkman = this.jdbcTemplate
                     .query(rolesWorkmanSelectStatementSql,
                             new Object[]{ID},
@@ -168,12 +173,14 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                 String permissionsRoleSelectStatementSql =
                         "SELECT refpermissions.ID, " +
                                 "refpermissions.Name " +
-                                "FROM refpermissions, refrolespermissions " +
-                                "WHERE refrolespermissions.PermissionID = refpermissions.ID " +
-                                "AND refrolespermissions.RoleID = ?";
-                List<Permission> permissionsRole = this.jdbcTemplate.query(
-                        permissionsRoleSelectStatementSql, new Object[]{role.getID()},
-                        new PermissionMapper());
+                                "FROM refrolespermissions " +
+                                "INNER JOIN refpermissions " +
+                                "ON refrolespermissions.PermissionID = refpermissions.ID " +
+                                "WHERE refrolespermissions.RoleID = ?";
+                List<Permission> permissionsRole = this.jdbcTemplate
+                        .query(permissionsRoleSelectStatementSql,
+                                new Object[]{role.getID()},
+                                new PermissionMapper());
 
                 if (permissionsRole != null && !permissionsRole.isEmpty()) {
                     role.getPermissions().addAll(permissionsRole);
@@ -191,12 +198,14 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                                 "refworkmans.City, " +
                                 "refworkmans.State, " +
                                 "refworkmans.Country " +
-                        "FROM refworkmans, refworkmansroles " +
-                        "WHERE refworkmansroles.WorkmanID = refworkmans.ID " +
-                                "AND refworkmansroles.RoleID = ?";
-                List<Workman> workmansRole = this.jdbcTemplate.query(
-                        workmansRoleSelectStatementSql, new Object[]{role.getID()},
-                        new WorkmanMapper());
+                                "FROM refworkmansroles " +
+                                "INNER JOIN refworkmans " +
+                                "ON refworkmansroles.WorkmanID = refworkmans.ID " +
+                                "WHERE refworkmansroles.RoleID = ?";
+                List<Workman> workmansRole = this.jdbcTemplate
+                        .query(workmansRoleSelectStatementSql,
+                                new Object[]{role.getID()},
+                                new WorkmanMapper());
 
                 if (workmansRole != null && !workmansRole.isEmpty()) {
                     role.getWorkmans().addAll(workmansRole);
@@ -227,21 +236,21 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                             "FROM refworkmans " +
                             "WHERE refworkmans.Name = ? " +
                             "AND NOT refworkmans.ID = ?";
-            Workman workman = this.jdbcTemplate.queryForObject(
-                    workmanSelectStatementSql,
-                    new Object[]{name, ID},
-                    new WorkmanMapper());
+            Workman workman = this.jdbcTemplate
+                    .queryForObject(workmanSelectStatementSql,
+                            new Object[]{name, ID},
+                            new WorkmanMapper());
 
             String rolesWorkmanSelectStatementSql =
                     "SELECT refroles.ID, " +
                             "refroles.Name " +
-                            "FROM refroles, refworkmansroles " +
-                            "WHERE refroles.ID = refworkmansroles.RoleID " +
-                            "AND refworkmansroles.WorkmanID = ?";
-            List<Role> rolesWorkman = this.jdbcTemplate.query(
-                    rolesWorkmanSelectStatementSql,
-                    new Object[]{workman.getID()},
-                    new RoleMapper());
+                            "FROM refworkmansroles " +
+                            "INNER JOIN refroles ON refworkmansroles.RoleID = refroles.ID " +
+                            "WHERE refworkmansroles.WorkmanID = ?";
+            List<Role> rolesWorkman = this.jdbcTemplate
+                    .query(rolesWorkmanSelectStatementSql,
+                            new Object[]{workman.getID()},
+                            new RoleMapper());
 
             if (rolesWorkman == null || rolesWorkman.isEmpty()) {
                 return workman;
@@ -253,13 +262,14 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                 String permissionsRoleSelectStatementSql =
                         "SELECT refpermissions.ID, " +
                                 "refpermissions.Name " +
-                                "FROM refpermissions, refrolespermissions " +
-                                "WHERE refrolespermissions.PermissionID = refpermissions.ID " +
+                                "FROM refrolespermissions " +
+                                "INNER JOIN refpermissions " +
+                                "ON refrolespermissions.PermissionID = refpermissions.ID " +
                                 "AND refrolespermissions.RoleID = ?";
-                List<Permission> permissionsRole = this.jdbcTemplate.query(
-                        permissionsRoleSelectStatementSql,
-                        new Object[]{role.getID()},
-                        new PermissionMapper());
+                List<Permission> permissionsRole = this.jdbcTemplate
+                        .query(permissionsRoleSelectStatementSql,
+                                new Object[]{role.getID()},
+                                new PermissionMapper());
 
                 if (permissionsRole != null && !permissionsRole.isEmpty()) {
                     role.getPermissions().addAll(permissionsRole);
@@ -277,13 +287,14 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                                 "refworkmans.City, " +
                                 "refworkmans.State, " +
                                 "refworkmans.Country " +
-                                "FROM refworkmans, refworkmansroles " +
-                                "WHERE refworkmansroles.WorkmanID = refworkmans.ID " +
+                                "FROM refworkmansroles " +
+                                "INNER JOIN refworkmans " +
+                                "ON refworkmansroles.WorkmanID = refworkmans.ID " +
                                 "AND refworkmansroles.RoleID = ?";
-                List<Workman> workmansRole = this.jdbcTemplate.query(
-                        workmansRoleSelectStatementSql,
-                        new Object[]{role.getID()},
-                        new WorkmanMapper());
+                List<Workman> workmansRole = this.jdbcTemplate
+                        .query(workmansRoleSelectStatementSql,
+                                new Object[]{role.getID()},
+                                new WorkmanMapper());
 
                 if (workmansRole != null && !workmansRole.isEmpty()) {
                     role.getWorkmans().addAll(workmansRole);
@@ -312,8 +323,8 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                         "refworkmans.Country " +
                         "FROM refworkmans " +
                         "ORDER BY refworkmans.ID ASC";
-        List<Workman> workmanList = this.jdbcTemplate.query(
-                workmansSelectStatementSql, new WorkmanMapper());
+        List<Workman> workmanList = this.jdbcTemplate
+                .query(workmansSelectStatementSql, new WorkmanMapper());
 
         if (workmanList == null || workmanList.isEmpty()) {
             return null;
@@ -324,8 +335,8 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                         "refroles.Name " +
                         "FROM refroles " +
                         "ORDER BY refroles.ID ASC";
-        List<Role> roleList = this.jdbcTemplate.query(
-                rolesSelectStatementSql, new RoleMapper());
+        List<Role> roleList = this.jdbcTemplate
+                .query(rolesSelectStatementSql, new RoleMapper());
 
         String permissionsSelectStatementSql =
                 "SELECT refpermissions.ID, " +
