@@ -246,9 +246,9 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
             String rolesWorkmanSelectStatementSql =
                     "SELECT refroles.ID, " +
                             "refroles.Name " +
-                            "FROM refworkmansroles " +
-                            "INNER JOIN refroles " +
-                            "ON refworkmansroles.RoleID = refroles.ID " +
+                            "FROM refroles " +
+                            "INNER JOIN refworkmansroles " +
+                            "ON refroles.ID = refworkmansroles.RoleID " +
                             "WHERE refworkmansroles.WorkmanID = ?" +
                             "ORDER BY refworkmansroles.RoleID ASC";
             List<Role> rolesWorkman = this.jdbcTemplate
@@ -266,9 +266,9 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                 String permissionsRoleSelectStatementSql =
                         "SELECT refpermissions.ID, " +
                                 "refpermissions.Name " +
-                                "FROM refrolespermissions " +
-                                "INNER JOIN refpermissions " +
-                                "ON refrolespermissions.PermissionID = refpermissions.ID " +
+                                "FROM refpermissions " +
+                                "INNER JOIN refrolespermissions " +
+                                "ON refpermissions.ID = refrolespermissions.PermissionID " +
                                 "WHERE refrolespermissions.RoleID = ?" +
                                 "ORDER BY refrolespermissions.PermissionID ASC";
                 List<Permission> permissionsRole = this.jdbcTemplate
@@ -292,9 +292,9 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                                 "refworkmans.City, " +
                                 "refworkmans.State, " +
                                 "refworkmans.Country " +
-                                "FROM refworkmansroles " +
-                                "INNER JOIN refworkmans " +
-                                "ON refworkmansroles.WorkmanID = refworkmans.ID " +
+                                "FROM refworkmans " +
+                                "INNER JOIN refworkmansroles " +
+                                "ON refworkmans.ID = refworkmansroles.WorkmanID " +
                                 "WHERE refworkmansroles.RoleID = ?" +
                                 "ORDER BY refworkmansroles.WorkmanID ASC";
                 List<Workman> workmansRole = this.jdbcTemplate
