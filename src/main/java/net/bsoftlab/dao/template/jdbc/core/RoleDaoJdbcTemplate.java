@@ -63,11 +63,11 @@ public class RoleDaoJdbcTemplate implements RoleDao {
         String permissionsRoleSelectStatementSql =
                 "SELECT refpermissions.ID, " +
                         "refpermissions.Name " +
-                        "FROM refpermissions " +
-                        "INNER JOIN refrolespermissions " +
-                        "ON refpermissions.ID = refrolespermissions.PermissionID " +
+                        "FROM refrolespermissions " +
+                        "INNER JOIN refpermissions " +
+                        "ON refrolespermissions.PermissionID = refpermissions.ID " +
                         "WHERE refrolespermissions.RoleID = :idRoleParameter " +
-                        "ORDER BY refpermissions.ID";
+                        "ORDER BY refrolespermissions.PermissionID";
         List<Permission> permissionListRole = this.namedParameterJdbcTemplate
                 .query(permissionsRoleSelectStatementSql,
                         new MapSqlParameterSource("idRoleParameter", ID),
@@ -95,8 +95,8 @@ public class RoleDaoJdbcTemplate implements RoleDao {
                         "ON refworkmansroles.RoleID = refroles.ID " +
                         "INNER JOIN refworkmans " +
                         "ON refworkmansroles.WorkmanID = refworkmans.ID " +
-                        "AND refworkmansroles.RoleID = :idRoleParameter " +
-                        "ORDER BY refworkmans.ID ASC";
+                        "WHERE refworkmansroles.RoleID = :idRoleParameter " +
+                        "ORDER BY refworkmansroles.WorkmanID ASC";
         List<Workman> workmanListRole = this.namedParameterJdbcTemplate
                 .query(workmansRoleSelectStatementSql,
                         new MapSqlParameterSource("idRoleParameter", ID),
