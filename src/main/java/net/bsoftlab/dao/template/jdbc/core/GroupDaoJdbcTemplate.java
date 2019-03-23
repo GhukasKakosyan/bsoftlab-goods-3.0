@@ -91,7 +91,7 @@ public class GroupDaoJdbcTemplate implements GroupDao {
                         "refgroups.Name, " +
                         "refgroups.EnhancedName " +
                         "FROM refgroups " +
-                        "ORDER BY refgroups.Code";
+                        "ORDER BY refgroups.Code ASC";
         groupList = this.jdbcTemplate
                 .query(groupListSelectStatementSql, new GroupMapper());
         if (groupList == null || groupList.isEmpty()) {

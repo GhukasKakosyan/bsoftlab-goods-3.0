@@ -101,7 +101,7 @@ public class CurrencyDaoJdbcTemplate implements CurrencyDao {
                         "refcurrencies.Country, " +
                         "refcurrencies.AdditionalInformation " +
                         "FROM refcurrencies " +
-                        "ORDER BY refcurrencies.Code";
+                        "ORDER BY refcurrencies.Code ASC";
         List<Currency> currencyList = this.jdbcTemplate
                 .query(currencyListSelectStatementSql, new CurrencyMapper());
         if (currencyList == null || currencyList.isEmpty()) {

@@ -67,7 +67,7 @@ public class RoleDaoJdbcTemplate implements RoleDao {
                         "INNER JOIN refpermissions " +
                         "ON refrolespermissions.PermissionID = refpermissions.ID " +
                         "WHERE refrolespermissions.RoleID = :idRoleParameter " +
-                        "ORDER BY refrolespermissions.PermissionID";
+                        "ORDER BY refrolespermissions.PermissionID ASC";
         List<Permission> permissionListRole = this.namedParameterJdbcTemplate
                 .query(permissionsRoleSelectStatementSql,
                         new MapSqlParameterSource("idRoleParameter", ID),

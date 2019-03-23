@@ -62,8 +62,7 @@ public class PermissionDaoJdbcTemplate implements PermissionDao {
                             "WHERE refpermissions.Name = :namePermissionParameter";
             return this.namedParameterJdbcTemplate
                     .queryForObject(permissionSelectStatementSql,
-                            new MapSqlParameterSource()
-                                    .addValue("namePermissionParameter", name),
+                            new MapSqlParameterSource().addValue("namePermissionParameter", name),
                             new PermissionMapper());
         } catch (EmptyResultDataAccessException emptyResultDataAccessException) {
             return null;

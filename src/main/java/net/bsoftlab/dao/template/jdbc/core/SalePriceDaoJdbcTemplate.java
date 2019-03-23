@@ -300,7 +300,9 @@ public class SalePriceDaoJdbcTemplate implements SalePriceDao {
                         "ON refmatvalues.GroupCode = refgroups.Code " +
                         "INNER JOIN refunitsofmsrs " +
                         "ON refmatvalues.UnitofmsrCode = refunitsofmsrs.Code " +
-                        "ORDER BY refpricesofmatvalues.Date DESC, " +
+                        "ORDER BY refpricesofmatvalues.DepartmentCode ASC, " +
+                        "refpricesofmatvalues.MatvalueCode ASC, " +
+                        "refpricesofmatvalues.Date DESC, " +
                         "refpricesofmatvalues.ID DESC";
         List<SalePrice> salePriceList = this.namedParameterJdbcTemplate
                 .query(salePriceListSelectStatementSql,
@@ -365,7 +367,9 @@ public class SalePriceDaoJdbcTemplate implements SalePriceDao {
                         "INNER JOIN refgroups " +
                         "ON refmatvalues.GroupCode = refgroups.Code " +
                         "WHERE refpricesofmatvalues.CurrencyCode = :currencyCodeParameter " +
-                        "ORDER BY refpricesofmatvalues.Date DESC, " +
+                        "ORDER BY refpricesofmatvalues.DepartmentCode ASC, " +
+                        "refpricesofmatvalues.MatvalueCode ASC, " +
+                        "refpricesofmatvalues.Date DESC, " +
                         "refpricesofmatvalues.ID DESC ";
         List<SalePrice> salePriceListCurrency = this.namedParameterJdbcTemplate
                 .query(salePriceListCurrencySelectStatementSql,
@@ -431,7 +435,9 @@ public class SalePriceDaoJdbcTemplate implements SalePriceDao {
                         "INNER JOIN refgroups " +
                         "ON refmatvalues.GroupCode = refgroups.Code " +
                         "WHERE refpricesofmatvalues.DepartmentCode = :departmentCodeParameter " +
-                        "ORDER BY refpricesofmatvalues.Date DESC, " +
+                        "ORDER BY refpricesofmatvalues.DepartmentCode ASC, " +
+                        "refpricesofmatvalues.MatvalueCode ASC, " +
+                        "refpricesofmatvalues.Date DESC, " +
                         "refpricesofmatvalues.ID DESC ";
         List<SalePrice> salePriceListDepartment = this.namedParameterJdbcTemplate
                 .query(salePriceListDepartmentSelectStatementSql,
@@ -497,7 +503,9 @@ public class SalePriceDaoJdbcTemplate implements SalePriceDao {
                         "INNER JOIN refgroups " +
                         "ON refmatvalues.GroupCode = refgroups.Code " +
                         "WHERE refpricesofmatvalues.MatvalueCode = :matvalueCodeParameter " +
-                        "ORDER BY refpricesofmatvalues.Date DESC, " +
+                        "ORDER BY refpricesofmatvalues.DepartmentCode ASC, " +
+                        "refpricesofmatvalues.MatvalueCode ASC, " +
+                        "refpricesofmatvalues.Date DESC, " +
                         "refpricesofmatvalues.ID DESC";
         List<SalePrice> salePriceListMatvalue = this.namedParameterJdbcTemplate
                 .query(salePriceListMatvalueSelectStatementSql,

@@ -92,7 +92,7 @@ public class UnitofmsrDaoJdbcTemplate implements UnitofmsrDao {
                         "refunitsofmsrs.ShortName, " +
                         "refunitsofmsrs.LongName " +
                         "FROM refunitsofmsrs " +
-                        "ORDER BY refunitsofmsrs.Code";
+                        "ORDER BY refunitsofmsrs.Code ASC";
         List<Unitofmsr> unitofmsrList = this.jdbcTemplate
                 .query(unitofmsrListSelectStatementSql, new UnitofmsrMapper());
         if (unitofmsrList == null || unitofmsrList.isEmpty()) {
