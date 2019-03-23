@@ -249,7 +249,7 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                             "FROM refroles " +
                             "INNER JOIN refworkmansroles " +
                             "ON refroles.ID = refworkmansroles.RoleID " +
-                            "WHERE refworkmansroles.WorkmanID = ?" +
+                            "WHERE refworkmansroles.WorkmanID = ? " +
                             "ORDER BY refworkmansroles.RoleID ASC";
             List<Role> rolesWorkman = this.jdbcTemplate
                     .query(rolesWorkmanSelectStatementSql,
@@ -269,7 +269,7 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                                 "FROM refpermissions " +
                                 "INNER JOIN refrolespermissions " +
                                 "ON refpermissions.ID = refrolespermissions.PermissionID " +
-                                "WHERE refrolespermissions.RoleID = ?" +
+                                "WHERE refrolespermissions.RoleID = ? " +
                                 "ORDER BY refrolespermissions.PermissionID ASC";
                 List<Permission> permissionsRole = this.jdbcTemplate
                         .query(permissionsRoleSelectStatementSql,
@@ -295,7 +295,7 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                                 "FROM refworkmans " +
                                 "INNER JOIN refworkmansroles " +
                                 "ON refworkmans.ID = refworkmansroles.WorkmanID " +
-                                "WHERE refworkmansroles.RoleID = ?" +
+                                "WHERE refworkmansroles.RoleID = ? " +
                                 "ORDER BY refworkmansroles.WorkmanID ASC";
                 List<Workman> workmansRole = this.jdbcTemplate
                         .query(workmansRoleSelectStatementSql,
