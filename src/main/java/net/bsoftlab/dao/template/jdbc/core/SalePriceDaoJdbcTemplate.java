@@ -47,7 +47,7 @@ public class SalePriceDaoJdbcTemplate implements SalePriceDao {
     public void deleteSalePrice(SalePrice salePrice) {
         String salePriceDeleteStatementSql =
                 "DELETE FROM refpricesofmatvalues " +
-                        "WHERE refpricesofmatvalues.ID = :idSalePriceParameter";
+                        "WHERE refpricesofmatvalues.ID = :idSalePriceParameter ";
         Map<String, Integer> mapParameterSalePriceDeleteStatementSql =
                 Collections.singletonMap("idSalePriceParameter", salePrice.getID());
         this.namedParameterJdbcTemplate
@@ -89,7 +89,7 @@ public class SalePriceDaoJdbcTemplate implements SalePriceDao {
                         "refpricesofmatvalues.Date = :dateParameter, " +
                         "refpricesofmatvalues.Price = :priceParameter, " +
                         "refpricesofmatvalues.Quantity = :quantityParameter " +
-                        "WHERE refpricesofmatvalues.ID = :idSalePriceParameter";
+                        "WHERE refpricesofmatvalues.ID = :idSalePriceParameter ";
         SqlParameterSource sqlParameterSourceSalePriceUpdateStatementSql =
                 new MapSqlParameterSource()
                         .addValue("codeMatvalueParameter", salePrice.getMatvalue().getCode())
@@ -248,8 +248,7 @@ public class SalePriceDaoJdbcTemplate implements SalePriceDao {
                             .addValue("dateParameter", date)
                             .addValue("IDParameter", ID);
             return this.namedParameterJdbcTemplate
-                    .queryForObject(
-                            salePriceSelectStatementSql,
+                    .queryForObject(salePriceSelectStatementSql,
                             sqlParameterSourceSalePriceSelectStatementSql,
                             new SalePriceMapper());
         } catch (EmptyResultDataAccessException emptyResultDataAccessException) {

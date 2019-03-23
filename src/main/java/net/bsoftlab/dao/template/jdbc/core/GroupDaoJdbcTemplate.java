@@ -38,7 +38,7 @@ public class GroupDaoJdbcTemplate implements GroupDao {
     public void deleteGroup(Group group) {
         String groupDeleteStatementSql =
                 "DELETE FROM refgroups " +
-                        "WHERE refgroups.Code = ?";
+                        "WHERE refgroups.Code = ? ";
         this.jdbcTemplate.update(groupDeleteStatementSql, group.getCode());
     }
 
@@ -59,8 +59,8 @@ public class GroupDaoJdbcTemplate implements GroupDao {
         String groupUpdateStatementSql =
                 "UPDATE refgroups " +
                         "SET refgroups.Name = ?, " +
-                        "refgroups.EnhancedName = ?" +
-                        "WHERE refgroups.Code = ?";
+                        "refgroups.EnhancedName = ? " +
+                        "WHERE refgroups.Code = ? ";
         this.jdbcTemplate.update(groupUpdateStatementSql,
                 group.getName(),
                 group.getEnhancedName(),
@@ -75,7 +75,7 @@ public class GroupDaoJdbcTemplate implements GroupDao {
                             "refgroups.Name, " +
                             "refgroups.EnhancedName " +
                             "FROM refgroups " +
-                            "WHERE refgroups.Code = ?";
+                            "WHERE refgroups.Code = ? ";
             return this.jdbcTemplate.queryForObject(groupSelectStatementSql,
                     new Object[]{code}, new GroupMapper());
         } catch (EmptyResultDataAccessException emptyResultDataAccessException) {

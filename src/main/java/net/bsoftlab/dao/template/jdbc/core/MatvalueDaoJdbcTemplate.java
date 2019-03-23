@@ -42,7 +42,7 @@ public class MatvalueDaoJdbcTemplate implements MatvalueDao {
     public void deleteMatvalue(Matvalue matvalue) {
         String matvalueDeleteStatementSql =
                 "DELETE FROM refmatvalues " +
-                        "WHERE refmatvalues.Code = ?";
+                        "WHERE refmatvalues.Code = ? ";
         this.jdbcTemplate.update(matvalueDeleteStatementSql, matvalue.getCode());
     }
 
@@ -66,7 +66,7 @@ public class MatvalueDaoJdbcTemplate implements MatvalueDao {
                         "SET refmatvalues.Name = ?, " +
                         "refmatvalues.UnitofmsrCode = ?, " +
                         "refmatvalues.GroupCode = ? " +
-                        "WHERE refmatvalues.Code = ?";
+                        "WHERE refmatvalues.Code = ? ";
         this.jdbcTemplate.update(matvalueUpdateStatementSql,
                 matvalue.getName(),
                 matvalue.getUnitofmsr().getCode(),
@@ -125,7 +125,7 @@ public class MatvalueDaoJdbcTemplate implements MatvalueDao {
                             "ON refmatvalues.GroupCode = refgroups.Code " +
                             "INNER JOIN refunitsofmsrs " +
                             "ON refmatvalues.UnitofmsrCode = refunitsofmsrs.Code " +
-                            "WHERE refmatvalues.Code = ?";
+                            "WHERE refmatvalues.Code = ? ";
             matvaluePersistent = this.jdbcTemplate
                     .queryForObject(matvalueSelectStatementSql,
                             new Object[]{code}, new MatvalueMapper());
@@ -174,7 +174,7 @@ public class MatvalueDaoJdbcTemplate implements MatvalueDao {
                         "ON refmatvalues.GroupCode = refgroups.Code " +
                         "INNER JOIN refunitsofmsrs " +
                         "ON refmatvalues.UnitofmsrCode = refunitsofmsrs.Code " +
-                        "WHERE refpricesofmatvalues.MatvalueCode = ?" +
+                        "WHERE refpricesofmatvalues.MatvalueCode = ? " +
                         "ORDER BY refpricesofmatvalues.DepartmentCode ASC, " +
                         "refpricesofmatvalues.MatvalueCode ASC, " +
                         "refpricesofmatvalues.Date DESC, " +
@@ -295,7 +295,7 @@ public class MatvalueDaoJdbcTemplate implements MatvalueDao {
                         "ON refmatvalues.GroupCode = refgroups.Code " +
                         "INNER JOIN refunitsofmsrs " +
                         "ON refmatvalues.UnitofmsrCode = refunitsofmsrs.Code " +
-                        "WHERE refmatvalues.GroupCode = ?" +
+                        "WHERE refmatvalues.GroupCode = ? " +
                         "ORDER BY refmatvalues.Code ASC";
         List<Matvalue> matvalueListGroup = this.jdbcTemplate.query(
                 matvalueListGroupSelectStatementSql,
@@ -388,7 +388,7 @@ public class MatvalueDaoJdbcTemplate implements MatvalueDao {
                         "ON refmatvalues.UnitofmsrCode = refunitsofmsrs.Code " +
                         "INNER JOIN refgroups " +
                         "ON refmatvalues.GroupCode = refgroups.Code " +
-                        "WHERE refmatvalues.UnitofmsrCode = ?" +
+                        "WHERE refmatvalues.UnitofmsrCode = ? " +
                         "ORDER BY refmatvalues.Code ASC";
         List<Matvalue> matvalueListUnitofmsr = this.jdbcTemplate
                 .query(matvalueListUnitofmsrSelectStatementSql,

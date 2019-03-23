@@ -43,12 +43,12 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
     public void deleteWorkman(Workman workman) {
         String workmanRoleDeleteStatementSql =
                 "DELETE FROM refworkmansroles " +
-                        "WHERE refworkmansroles.WorkmanID = ?";
+                        "WHERE refworkmansroles.WorkmanID = ? ";
         this.jdbcTemplate.update(workmanRoleDeleteStatementSql, workman.getID());
 
         String workmanDeleteStatementSql =
                 "DELETE FROM refworkmans " +
-                        "WHERE refworkmans.ID = ?";
+                        "WHERE refworkmans.ID = ? ";
         this.jdbcTemplate.update(workmanDeleteStatementSql, workman.getID());
     }
 
@@ -74,7 +74,7 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
         String nameWorkmanSelectStatementSql =
                 "SELECT refworkmans.ID " +
                         "FROM refworkmans " +
-                        "WHERE refworkmans.Name = ?";
+                        "WHERE refworkmans.Name = ? ";
         Integer ID = this.jdbcTemplate
                 .queryForObject(nameWorkmanSelectStatementSql,
                         new Object[]{workman.getName()}, Integer.class);
@@ -104,7 +104,7 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                         "refworkmans.City = ?, " +
                         "refworkmans.State = ?, " +
                         "refworkmans.Country = ? " +
-                        "WHERE refworkmans.ID = ?";
+                        "WHERE refworkmans.ID = ? ";
         this.jdbcTemplate.update(workmanUpdateStatementSql,
                 workman.getName(),
                 workman.getPassword(),
@@ -122,7 +122,7 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                 "UPDATE refworkmansroles " +
                         "SET refworkmansroles.WorkmanID = ?, " +
                         "refworkmansroles.RoleID = ? " +
-                        "WHERE refworkmansroles.WorkmanID = ?";
+                        "WHERE refworkmansroles.WorkmanID = ? ";
         for (Role role : workman.getRoles()) {
             this.jdbcTemplate.update(workmanRoleUpdateStatementSql,
                     workman.getID(), role.getID(), workman.getID());
@@ -145,7 +145,7 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                             "refworkmans.State, " +
                             "refworkmans.Country " +
                             "FROM refworkmans " +
-                            "WHERE refworkmans.ID = ?";
+                            "WHERE refworkmans.ID = ? ";
             Workman workman = this.jdbcTemplate
                     .queryForObject(workmanSelectStatementSql,
                             new Object[]{ID},
@@ -157,7 +157,7 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                             "FROM refworkmansroles " +
                             "INNER JOIN refroles " +
                             "ON refworkmansroles.RoleID = refroles.ID " +
-                            "WHERE refworkmansroles.WorkmanID = ?";
+                            "WHERE refworkmansroles.WorkmanID = ? ";
             List<Role> rolesWorkman = this.jdbcTemplate
                     .query(rolesWorkmanSelectStatementSql,
                             new Object[]{ID},
@@ -176,7 +176,7 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                                 "FROM refrolespermissions " +
                                 "INNER JOIN refpermissions " +
                                 "ON refrolespermissions.PermissionID = refpermissions.ID " +
-                                "WHERE refrolespermissions.RoleID = ?" +
+                                "WHERE refrolespermissions.RoleID = ? " +
                                 "ORDER BY refrolespermissions.PermissionID ASC";
                 List<Permission> permissionsRole = this.jdbcTemplate
                         .query(permissionsRoleSelectStatementSql,
@@ -202,7 +202,7 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                                 "FROM refworkmansroles " +
                                 "INNER JOIN refworkmans " +
                                 "ON refworkmansroles.WorkmanID = refworkmans.ID " +
-                                "WHERE refworkmansroles.RoleID = ?" +
+                                "WHERE refworkmansroles.RoleID = ? " +
                                 "ORDER BY refworkmansroles.WorkmanID ASC";
                 List<Workman> workmansRole = this.jdbcTemplate
                         .query(workmansRoleSelectStatementSql,
@@ -237,7 +237,7 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                             "refworkmans.Country " +
                             "FROM refworkmans " +
                             "WHERE refworkmans.Name = ? " +
-                            "AND NOT refworkmans.ID = ?";
+                            "AND NOT refworkmans.ID = ? ";
             Workman workman = this.jdbcTemplate
                     .queryForObject(workmanSelectStatementSql,
                             new Object[]{name, ID},
@@ -246,9 +246,9 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
             String rolesWorkmanSelectStatementSql =
                     "SELECT refroles.ID, " +
                             "refroles.Name " +
-                            "FROM refroles " +
-                            "INNER JOIN refworkmansroles " +
-                            "ON refroles.ID = refworkmansroles.RoleID " +
+                            "FROM refworkmansroles " +
+                            "INNER JOIN refroles " +
+                            "ON refworkmansroles.RoleID = refroles.ID " +
                             "WHERE refworkmansroles.WorkmanID = ? " +
                             "ORDER BY refworkmansroles.RoleID ASC";
             List<Role> rolesWorkman = this.jdbcTemplate
@@ -266,9 +266,9 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                 String permissionsRoleSelectStatementSql =
                         "SELECT refpermissions.ID, " +
                                 "refpermissions.Name " +
-                                "FROM refpermissions " +
-                                "INNER JOIN refrolespermissions " +
-                                "ON refpermissions.ID = refrolespermissions.PermissionID " +
+                                "FROM refrolespermissions " +
+                                "INNER JOIN refpermissions " +
+                                "ON refrolespermissions.PermissionID = refpermissions.ID " +
                                 "WHERE refrolespermissions.RoleID = ? " +
                                 "ORDER BY refrolespermissions.PermissionID ASC";
                 List<Permission> permissionsRole = this.jdbcTemplate
@@ -292,9 +292,9 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
                                 "refworkmans.City, " +
                                 "refworkmans.State, " +
                                 "refworkmans.Country " +
-                                "FROM refworkmans " +
-                                "INNER JOIN refworkmansroles " +
-                                "ON refworkmans.ID = refworkmansroles.WorkmanID " +
+                                "FROM refworkmansroles " +
+                                "INNER JOIN refworkmans " +
+                                "ON refworkmansroles.WorkmanID = refworkmans.ID " +
                                 "WHERE refworkmansroles.RoleID = ? " +
                                 "ORDER BY refworkmansroles.WorkmanID ASC";
                 List<Workman> workmansRole = this.jdbcTemplate
