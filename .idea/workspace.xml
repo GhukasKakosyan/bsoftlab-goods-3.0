@@ -8,14 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="00c6bbb9-d7a4-4483-a070-3fb1170e2427" name="Default" comment="Implementing INNER JOIN in SQL queries">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyRateDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyRateDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/DepartmentDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/DepartmentDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/GroupDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/GroupDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/MatvalueDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/MatvalueDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/SalePriceDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/SalePriceDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/UnitofmsrDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/UnitofmsrDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/WorkmanDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/WorkmanDaoJdbcTemplate.java" afterDir="false" />
     </list>
     <ignored path="bsoftlab-goods-3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -241,11 +233,6 @@
               <item name="bsoftlab-goods-3.0" type="58d84e3e:PackageViewProjectNode" />
               <item name="bsoftlab-goods-3.0" type="616d4139:PackageViewModuleNode" />
             </path>
-            <path>
-              <item name="bsoftlab-goods-3.0" type="58d84e3e:PackageViewProjectNode" />
-              <item name="bsoftlab-goods-3.0" type="616d4139:PackageViewModuleNode" />
-              <item name="net.bsoftlab.dao.template.jdbc.core" type="1f31426a:PackageElementNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -258,7 +245,7 @@
     <property name="Repository.Attach.Sources" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553350999759" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553354303394" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -1117,7 +1104,7 @@
       <workItem from="1552997769140" duration="1218000" />
       <workItem from="1553077236004" duration="9516000" />
       <workItem from="1553153912899" duration="26670000" />
-      <workItem from="1553318353808" duration="21723000" />
+      <workItem from="1553318353808" duration="23005000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/GhukasKakosyan/bsoftlab-goods-3.0&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/RoleRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/SalePriceRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/UnitofmsrRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/WorkmanRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/CurrencyRateWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/DepartmentWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/GroupWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/MatvalueWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/SalePriceWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/UnitofmsrWebController.java">
       <created>1551705560623</created>
@@ -1224,7 +1211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553350610390</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Implementing INNER JOIN in SQL queries">
+      <created>1553352406915</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1553352406915</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1236,7 +1230,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2296234000" />
+    <option name="totallyTimeSpent" value="2297516000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1250,7 +1244,7 @@
   <component name="ToolWindowManager">
     <frame x="-5" y="-5" width="1376" height="738" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" x="495" y="57" width="376" height="614" id="Project" order="0" sideWeight="0.49429038" visible="true" weight="0.25340393" />
+      <window_info content_ui="combo" x="495" y="57" width="376" height="614" id="Project" order="0" sideWeight="0.49429038" weight="0.25340393" />
       <window_info id="Structure" order="1" show_stripe_button="false" weight="0.24962178" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Web" order="3" show_stripe_button="false" sideWeight="0.50570965" side_tool="true" weight="0.24962178" />
@@ -1409,18 +1403,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="95" column="16" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2540#2541#0" expanded="true" />
-            <element signature="e#2603#2604#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Group.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
@@ -1801,6 +1783,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="523">
           <caret line="411" column="1" lean-forward="true" selection-start-line="411" selection-start-column="1" selection-end-line="411" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/MatvalueDaoJpaTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="168" column="1" lean-forward="true" selection-start-line="168" selection-start-column="1" selection-end-line="168" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
