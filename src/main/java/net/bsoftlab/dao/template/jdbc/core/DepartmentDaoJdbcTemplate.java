@@ -38,7 +38,7 @@ public class DepartmentDaoJdbcTemplate implements DepartmentDao {
     public void deleteDepartment(Department department) {
         String departmentDeleteStatementSQL =
                 "DELETE FROM refdepartments " +
-                        "WHERE refdepartments.Code = ? ";
+                        "WHERE refdepartments.Code = ?";
         this.jdbcTemplate.update(departmentDeleteStatementSQL, department.getCode());
     }
 
@@ -79,7 +79,7 @@ public class DepartmentDaoJdbcTemplate implements DepartmentDao {
                         "refdepartments.WebSite = ?, " +
                         "refdepartments.EmailAddress = ?, " +
                         "refdepartments.AdditionalInformation = ? " +
-                        "WHERE refdepartments.Code = ? ";
+                        "WHERE refdepartments.Code = ?";
         this.jdbcTemplate.update(departmentUpdateStatementSql,
                 department.getName(),
                 department.getAddress().getStreet(),
@@ -112,7 +112,7 @@ public class DepartmentDaoJdbcTemplate implements DepartmentDao {
                             "refdepartments.EmailAddress, " +
                             "refdepartments.AdditionalInformation " +
                             "FROM refdepartments " +
-                            "WHERE refdepartments.Code = ? ";
+                            "WHERE refdepartments.Code = ?";
             return this.jdbcTemplate.queryForObject(
                     departmentSelectStatementSQL,
                     new Object[]{code}, new DepartmentMapper());

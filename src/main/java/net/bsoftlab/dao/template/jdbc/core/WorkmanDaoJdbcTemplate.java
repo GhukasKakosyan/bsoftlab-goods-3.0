@@ -44,12 +44,12 @@ public class WorkmanDaoJdbcTemplate implements WorkmanDao {
     public void deleteWorkman(Workman workman) {
         String workmanRoleDeleteStatementSql =
                 "DELETE FROM refworkmansroles " +
-                        "WHERE refworkmansroles.WorkmanID = ? ";
+                        "WHERE refworkmansroles.WorkmanID = ?";
         this.jdbcTemplate.update(workmanRoleDeleteStatementSql, workman.getID());
 
         String workmanDeleteStatementSql =
                 "DELETE FROM refworkmans " +
-                        "WHERE refworkmans.ID = ? ";
+                        "WHERE refworkmans.ID = ?";
         this.jdbcTemplate.update(workmanDeleteStatementSql, workman.getID());
     }
 

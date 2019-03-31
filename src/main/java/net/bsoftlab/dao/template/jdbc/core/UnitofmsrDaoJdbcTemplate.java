@@ -60,7 +60,7 @@ public class UnitofmsrDaoJdbcTemplate implements UnitofmsrDao {
                 "UPDATE refunitsofmsrs " +
                         "SET refunitsofmsrs.ShortName = ?, " +
                         "refunitsofmsrs.LongName = ? " +
-                        "WHERE refunitsofmsrs.Code = ? ";
+                        "WHERE refunitsofmsrs.Code = ?";
         this.jdbcTemplate.update(unitofmsrUpdateStatementSql,
                 unitofmsr.getShortName(),
                 unitofmsr.getLongName(),
@@ -75,7 +75,7 @@ public class UnitofmsrDaoJdbcTemplate implements UnitofmsrDao {
                             "refunitsofmsrs.ShortName, " +
                             "refunitsofmsrs.LongName " +
                             "FROM refunitsofmsrs " +
-                            "WHERE refunitsofmsrs.Code = ? ";
+                            "WHERE refunitsofmsrs.Code = ?";
             return this.jdbcTemplate
                     .queryForObject(unitofmsrSelectStatementSql,
                             new Object[]{code}, new UnitofmsrMapper());

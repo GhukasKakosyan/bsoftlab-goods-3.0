@@ -47,7 +47,7 @@ public class SalePriceDaoJdbcTemplate implements SalePriceDao {
     public void deleteSalePrice(SalePrice salePrice) {
         String salePriceDeleteStatementSql =
                 "DELETE FROM refpricesofmatvalues " +
-                        "WHERE refpricesofmatvalues.ID = :idSalePriceParameter ";
+                        "WHERE refpricesofmatvalues.ID = :idSalePriceParameter";
         Map<String, Integer> mapParameterSalePriceDeleteStatementSql =
                 Collections.singletonMap("idSalePriceParameter", salePrice.getID());
         this.namedParameterJdbcTemplate
@@ -89,7 +89,7 @@ public class SalePriceDaoJdbcTemplate implements SalePriceDao {
                         "refpricesofmatvalues.Date = :dateParameter, " +
                         "refpricesofmatvalues.Price = :priceParameter, " +
                         "refpricesofmatvalues.Quantity = :quantityParameter " +
-                        "WHERE refpricesofmatvalues.ID = :idSalePriceParameter ";
+                        "WHERE refpricesofmatvalues.ID = :idSalePriceParameter";
         SqlParameterSource sqlParameterSourceSalePriceUpdateStatementSql =
                 new MapSqlParameterSource()
                         .addValue("codeMatvalueParameter", salePrice.getMatvalue().getCode())
@@ -182,7 +182,7 @@ public class SalePriceDaoJdbcTemplate implements SalePriceDao {
                             "ON refmatvalues.GroupCode = refgroups.Code " +
                             "INNER JOIN refunitsofmsrs " +
                             "ON refmatvalues.UnitofmsrCode = refunitsofmsrs.Code " +
-                            "WHERE refpricesofmatvalues.ID = :idSalePriceParameter ";
+                            "WHERE refpricesofmatvalues.ID = :idSalePriceParameter";
             return this.namedParameterJdbcTemplate
                     .queryForObject(salePriceSelectStatementSql,
                             new MapSqlParameterSource("idSalePriceParameter", ID),
@@ -240,7 +240,7 @@ public class SalePriceDaoJdbcTemplate implements SalePriceDao {
                             "WHERE refpricesofmatvalues.DepartmentCode = :departmentCodeParameter " +
                             "AND refpricesofmatvalues.MatvalueCode = :matvalueCodeParameter " +
                             "AND refpricesofmatvalues.Date = :dateParameter " +
-                            "AND NOT refpricesofmatvalues.ID = :IDParameter ";
+                            "AND NOT refpricesofmatvalues.ID = :IDParameter";
             SqlParameterSource sqlParameterSourceSalePriceSelectStatementSql =
                     new MapSqlParameterSource()
                             .addValue("departmentCodeParameter", department.getCode())

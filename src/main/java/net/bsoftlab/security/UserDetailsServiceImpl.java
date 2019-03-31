@@ -3,6 +3,7 @@ package net.bsoftlab.security;
 import net.bsoftlab.model.Permission;
 import net.bsoftlab.model.Role;
 import net.bsoftlab.model.Workman;
+
 import net.bsoftlab.service.WorkmanService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,20 +47,21 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         Set<Role> roles = workman.getRoles();
         Set<GrantedAuthority> grantedAuthorities = new HashSet<>();
         for (Role role : roles) {
-            if (role.getPermissions() != null && !role.getPermissions().isEmpty()) {
-                for (Permission permission : role.getPermissions()) {
-                    boolean permissionAdded = false;
-                    for (GrantedAuthority grantedAuthorityItem : grantedAuthorities) {
-                        if (permission.getName().equals(grantedAuthorityItem.getAuthority())) {
-                            permissionAdded = true;
-                            break;
-                        }
+            if (role.getPermissions() == null || role.getPermissions().isEmpty()) {
+                continue;
+            }
+            for (Permission permission : role.getPermissions()) {
+                boolean permissionAdded = false;
+                for (GrantedAuthority grantedAuthorityItem : grantedAuthorities) {
+                    if (permission.getName().equals(grantedAuthorityItem.getAuthority())) {
+                        permissionAdded = true;
+                        break;
                     }
-                    if (!permissionAdded) {
-                        GrantedAuthority grantedAuthority =
-                                new SimpleGrantedAuthority(permission.getName());
-                        grantedAuthorities.add(grantedAuthority);
-                    }
+                }
+                if (!permissionAdded) {
+                    GrantedAuthority grantedAuthority =
+                            new SimpleGrantedAuthority(permission.getName());
+                    grantedAuthorities.add(grantedAuthority);
                 }
             }
         }

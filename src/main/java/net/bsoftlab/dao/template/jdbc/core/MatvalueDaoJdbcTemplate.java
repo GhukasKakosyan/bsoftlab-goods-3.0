@@ -3,10 +3,12 @@ package net.bsoftlab.dao.template.jdbc.core;
 import net.bsoftlab.dao.MatvalueDao;
 import net.bsoftlab.dao.template.jdbc.mapper.MatvalueMapper;
 import net.bsoftlab.dao.template.jdbc.mapper.SalePriceMapper;
+
 import net.bsoftlab.model.Group;
 import net.bsoftlab.model.Matvalue;
 import net.bsoftlab.model.SalePrice;
 import net.bsoftlab.model.Unitofmsr;
+
 import net.bsoftlab.utility.Functions;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +44,7 @@ public class MatvalueDaoJdbcTemplate implements MatvalueDao {
     public void deleteMatvalue(Matvalue matvalue) {
         String matvalueDeleteStatementSql =
                 "DELETE FROM refmatvalues " +
-                        "WHERE refmatvalues.Code = ? ";
+                        "WHERE refmatvalues.Code = ?";
         this.jdbcTemplate.update(matvalueDeleteStatementSql, matvalue.getCode());
     }
 
@@ -66,7 +68,7 @@ public class MatvalueDaoJdbcTemplate implements MatvalueDao {
                         "SET refmatvalues.Name = ?, " +
                         "refmatvalues.UnitofmsrCode = ?, " +
                         "refmatvalues.GroupCode = ? " +
-                        "WHERE refmatvalues.Code = ? ";
+                        "WHERE refmatvalues.Code = ?";
         this.jdbcTemplate.update(matvalueUpdateStatementSql,
                 matvalue.getName(),
                 matvalue.getUnitofmsr().getCode(),
@@ -125,7 +127,7 @@ public class MatvalueDaoJdbcTemplate implements MatvalueDao {
                             "ON refmatvalues.GroupCode = refgroups.Code " +
                             "INNER JOIN refunitsofmsrs " +
                             "ON refmatvalues.UnitofmsrCode = refunitsofmsrs.Code " +
-                            "WHERE refmatvalues.Code = ? ";
+                            "WHERE refmatvalues.Code = ?";
             matvaluePersistent = this.jdbcTemplate
                     .queryForObject(matvalueSelectStatementSql,
                             new Object[]{code}, new MatvalueMapper());

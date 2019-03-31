@@ -33,8 +33,8 @@ public class SecurityServiceImpl implements SecurityService {
     }
     @Autowired
     public void setUserDetailsService(
-            UserDetailsService userDetailsService) {
-        this.userDetailsService = userDetailsService;
+            UserDetailsService userDetailsServiceImpl) {
+        this.userDetailsService = userDetailsServiceImpl;
     }
 
     @Override

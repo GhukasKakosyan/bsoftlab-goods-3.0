@@ -40,7 +40,7 @@ public class CurrencyRateDaoJdbcTemplate implements CurrencyRateDao {
     public void deleteCurrencyRate(CurrencyRate currencyRate) {
         String currencyRateDeleteStatementSql =
                 "DELETE FROM refcurrenciesrates " +
-                        "WHERE refcurrenciesrates.ID = ? ";
+                        "WHERE refcurrenciesrates.ID = ?";
         this.jdbcTemplate.update(currencyRateDeleteStatementSql, currencyRate.getID());
     }
 
@@ -65,7 +65,7 @@ public class CurrencyRateDaoJdbcTemplate implements CurrencyRateDao {
                         "refcurrenciesrates.Date = ?, " +
                         "refcurrenciesrates.Rate = ?, " +
                         "refcurrenciesrates.Quantity = ? " +
-                        "WHERE refcurrenciesrates.ID = ? ";
+                        "WHERE refcurrenciesrates.ID = ?";
         this.jdbcTemplate.update(currencyRateUpdateStatementSQL,
                 currencyRate.getCurrency().getCode(),
                 currencyRate.getDate(),
@@ -80,8 +80,7 @@ public class CurrencyRateDaoJdbcTemplate implements CurrencyRateDao {
             String existCurrencyRateSelectStatementSql =
                     "SELECT refcurrenciesrates.CurrencyCode " +
                             "FROM refcurrenciesrates " +
-                            "WHERE refcurrenciesrates.CurrencyCode = ? " +
-                            "LIMIT 1";
+                            "WHERE refcurrenciesrates.CurrencyCode = ? LIMIT 1";
             this.jdbcTemplate.queryForObject(existCurrencyRateSelectStatementSql,
                     new Object[]{currency.getCode()}, String.class);
             return true;
@@ -106,7 +105,7 @@ public class CurrencyRateDaoJdbcTemplate implements CurrencyRateDao {
                             "FROM refcurrenciesrates " +
                             "INNER JOIN refcurrencies " +
                             "ON refcurrenciesrates.CurrencyCode = refcurrencies.Code " +
-                            "WHERE refcurrenciesrates.ID = ? ";
+                            "WHERE refcurrenciesrates.ID = ?";
             return this.jdbcTemplate.queryForObject(currencyRateSelectStatementSQL,
                     new Object[]{ID},
                     new CurrencyRateMapper());
@@ -133,7 +132,7 @@ public class CurrencyRateDaoJdbcTemplate implements CurrencyRateDao {
                             "ON refcurrenciesrates.CurrencyCode = refcurrencies.Code " +
                             "WHERE NOT refcurrenciesrates.ID = ? " +
                             "AND refcurrenciesrates.CurrencyCode = ? " +
-                            "AND refcurrenciesrates.Date = ? ";
+                            "AND refcurrenciesrates.Date = ?";
             return this.jdbcTemplate.queryForObject(currencyRateSelectStatementSql,
                     new Object[]{ID, currency.getCode(), date},
                     new CurrencyRateMapper());

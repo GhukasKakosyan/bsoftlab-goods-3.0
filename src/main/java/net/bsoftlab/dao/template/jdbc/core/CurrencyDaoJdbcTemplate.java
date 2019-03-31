@@ -38,7 +38,7 @@ public class CurrencyDaoJdbcTemplate implements CurrencyDao {
     public void deleteCurrency(Currency currency) {
         String currencyDeleteStatementSql =
                 "DELETE FROM refcurrencies " +
-                        "WHERE refcurrencies.Code = ? ";
+                        "WHERE refcurrencies.Code = ?";
         this.jdbcTemplate.update(currencyDeleteStatementSql, currency.getCode());
     }
 
@@ -64,7 +64,7 @@ public class CurrencyDaoJdbcTemplate implements CurrencyDao {
                         "refcurrencies.LongName = ?, " +
                         "refcurrencies.Country = ?, " +
                         "refcurrencies.AdditionalInformation = ? " +
-                        "WHERE refcurrencies.Code = ? ";
+                        "WHERE refcurrencies.Code = ?";
         this.jdbcTemplate.update(currencyUpdateStatementSQL,
                 currency.getShortName(),
                 currency.getLongName(),
@@ -83,7 +83,7 @@ public class CurrencyDaoJdbcTemplate implements CurrencyDao {
                             "refcurrencies.Country, " +
                             "refcurrencies.AdditionalInformation " +
                             "FROM refcurrencies " +
-                            "WHERE refcurrencies.Code = ? ";
+                            "WHERE refcurrencies.Code = ?";
             return this.jdbcTemplate.queryForObject(
                     currencySelectStatementSQL,
                     new Object[]{code}, new CurrencyMapper());
