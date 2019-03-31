@@ -7,17 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00c6bbb9-d7a4-4483-a070-3fb1170e2427" name="Default" comment="Implementing INNER JOIN in SQL queries">
+      <change afterPath="$PROJECT_DIR$/src/main/filters/filter.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyRateDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyRateDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/DepartmentDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/DepartmentDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/GroupDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/GroupDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/MatvalueDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/MatvalueDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/SalePriceDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/SalePriceDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/UnitofmsrDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/UnitofmsrDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/WorkmanDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/WorkmanDaoJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/security/SecurityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/security/SecurityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/security/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/security/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="bsoftlab-goods-3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,8 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/CurrencyServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/DepartmentServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/GroupServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/MatvalueServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/PermissionServiceImpl.java" />
@@ -141,6 +132,8 @@
         <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/MatvalueDaoJpaTemplate.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/security/SecurityServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/bsoftlab/security/UserDetailsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
@@ -167,16 +160,16 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="bsoftlab-goods-3.0" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="bsoftlab-goods" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="bsoftlab-goods-3.0" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="bsoftlab-goods" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="bsoftlab-goods-3.0" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="bsoftlab-goods" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
         </path>
       </expand>
@@ -202,7 +195,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -214,6 +206,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,19 +218,6 @@
               <item name="bsoftlab-goods-3.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="bsoftlab-goods-3.0" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bsoftlab-goods-3.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bsoftlab-goods-3.0" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bsoftlab-goods-3.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bsoftlab-goods-3.0" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bsoftlab-goods-3.0" type="b2602c69:ProjectViewProjectNode" />
@@ -255,7 +235,7 @@
     <property name="Repository.Attach.Sources" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553430827795" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554047079158" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -1118,7 +1098,9 @@
       <workItem from="1553411290779" duration="6101000" />
       <workItem from="1553435000000" duration="2491000" />
       <workItem from="1553494031414" duration="597000" />
-      <workItem from="1554014524867" duration="3095000" />
+      <workItem from="1554014524867" duration="3369000" />
+      <workItem from="1554024449186" duration="1119000" />
+      <workItem from="1554027759911" duration="11078000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/GhukasKakosyan/bsoftlab-goods-3.0&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/RoleRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/SalePriceRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/UnitofmsrRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/WorkmanRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/CurrencyRateWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/DepartmentWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/GroupWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/MatvalueWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/SalePriceWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/UnitofmsrWebController.java">
       <created>1551705560623</created>
@@ -1239,7 +1221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553428848112</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Implementing INNER JOIN in SQL queries">
+      <created>1554023991235</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1554023991235</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1251,7 +1240,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2309800000" />
+    <option name="totallyTimeSpent" value="2322271000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1265,7 +1254,7 @@
   <component name="ToolWindowManager">
     <frame x="-5" y="-5" width="1376" height="738" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" x="495" y="57" width="376" height="614" id="Project" order="0" sideWeight="0.49429038" weight="0.25340393" />
+      <window_info content_ui="combo" x="495" y="57" width="376" height="614" id="Project" order="0" sideWeight="0.49429038" weight="0.295764" />
       <window_info id="Structure" order="1" show_stripe_button="false" weight="0.24962178" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Web" order="3" show_stripe_button="false" sideWeight="0.50570965" side_tool="true" weight="0.24962178" />
@@ -1424,69 +1413,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/resource/WorkmanResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="119" column="38" selection-start-line="119" selection-start-column="38" selection-end-line="119" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/DepartmentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/GroupServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="45" column="41" lean-forward="true" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/MatvalueServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="57" column="42" lean-forward="true" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/PermissionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/RoleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/SalePriceServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="67" column="42" lean-forward="true" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/UnitofmsrServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="45" column="42" lean-forward="true" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/bsoftlab-goods-3.0-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/4.0.2.RELEASE/spring-security-core-4.0.2.RELEASE-sources.jar!/org/springframework/security/access/annotation/Secured.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="523">
@@ -1819,10 +1745,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/artifacts/bsoftlab_goods_3_0_war_exploded.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/artifacts/bsoftlab_goods_3_0_war.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" column="58" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/messages/AddressValidation.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/filters/filter.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8580">
+          <caret line="429" lean-forward="true" selection-start-line="429" selection-end-line="429" />
         </state>
       </provider>
     </entry>

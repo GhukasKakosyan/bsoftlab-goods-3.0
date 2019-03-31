@@ -11,6 +11,13 @@
     <artifactId>bsoftlab-goods</artifactId>
     <version>3.0</version>
     <packaging>war</packaging>
+    <name>bsoftlab-goods</name>
+    <description>
+        Currencies. Currencies rates. Departments.
+        Groups. Units of measures. Goods. Services. Sale prices.
+        Add new. Edit or delete existing. View lists of entities.
+    </description>
+    <url>http://www.bsoftlab.am</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -181,6 +188,7 @@
             <artifactId>logback-access</artifactId>
             <version>1.2.3</version>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -421,7 +429,15 @@
     </dependencies>
 
     <build>
-        <finalName>bsoftlab-goods-3.0</finalName>
+        <filters>
+            <filter>src/main/filters/filter.properties</filter>
+        </filters>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -457,32 +473,28 @@
     </build>
 
     <!-- More Project Information -->
-    <name>bsoftlab-goods-3.0</name>
-    <description>Application that works with goods and services</description>
-    <url>http://www.bsoftlab.net</url>
     <licenses>
         <license>
             <name>BSOFTLAB License, Version 3.0</name>
-            <url>http://www.bsoftlab.net/licenses/LICENSE-3.0.txt</url>
+            <url>http://www.bsoftlab.am/licenses/LICENSE-3.0.txt</url>
             <distribution>manual</distribution>
             <comments>A business-friendly OSS license</comments>
         </license>
     </licenses>
     <organization>
         <name>BSOFTLAB</name>
-        <url>http://www.bsoftlab.net</url>
+        <url>http://www.bsoftlab.am</url>
     </organization>
     <developers>
         <developer>
             <id>GEK</id>
             <name>Ghukas Eduardovich Kakosyan</name>
-            <email>ghukaskakosyan@bsoftlab.net</email>
-            <url>http://www.bsoftlab.net/ghukaskakosyan</url>
+            <email>ghukaskakosyan@bsoftlab.am</email>
+            <url>http://www.bsoftlab.am/ghukaskakosyan</url>
             <roles>
                 <role>architect</role>
                 <role>developer</role>
             </roles>
         </developer>
     </developers>
-
 </project>
