@@ -71,12 +71,15 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="Ghukas Kakosyan &lt;kakosyanghukas@gmail.com&gt;" />
         <option value="Ghukas Kakosyan &lt;46925583+ghukaskakosyan@users.noreply.github.com&gt;" />
+        <option value="Ghukas Kakosyan &lt;kakosyanghukas@gmail.com&gt;" />
       </list>
     </option>
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="b51075ec-daf7-4f83-9b90-ed3a06013671" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -245,7 +248,7 @@
     <property name="Repository.Attach.Sources" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554563742010" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554564297824" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -253,7 +256,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.23251748" />
-    <property name="settings.editor.selected.configurable" value="xpath.settings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -1176,7 +1179,7 @@
       <workItem from="1554027759911" duration="11078000" />
       <workItem from="1554047329472" duration="373000" />
       <workItem from="1554534578557" duration="2602000" />
-      <workItem from="1554547367178" duration="1814000" />
+      <workItem from="1554547367178" duration="2018000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/GhukasKakosyan/bsoftlab-goods-3.0&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/RoleRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/SalePriceRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/UnitofmsrRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/WorkmanRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/CurrencyRateWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/DepartmentWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/GroupWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/MatvalueWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/SalePriceWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/UnitofmsrWebController.java">
       <created>1551705560623</created>
@@ -1325,7 +1328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554563773438</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Implementing INNER JOIN in SQL queries">
+      <created>1554564162959</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1554564162960</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1337,7 +1347,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2327060000" />
+    <option name="totallyTimeSpent" value="2327264000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
