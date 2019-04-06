@@ -6,7 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00c6bbb9-d7a4-4483-a070-3fb1170e2427" name="Default" comment="Implementing INNER JOIN in SQL queries" />
+    <list default="true" id="00c6bbb9-d7a4-4483-a070-3fb1170e2427" name="Default" comment="Implementing INNER JOIN in SQL queries">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsoftlab-goods-3.0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bsoftlab-goods-3.0.iml" afterDir="false" />
+    </list>
     <ignored path="bsoftlab-goods-3.0.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -199,6 +202,24 @@
             </path>
             <path>
               <item name="bsoftlab-goods-3.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bsoftlab-goods-3.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bsoftlab-goods-3.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bsoftlab-goods-3.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bsoftlab-goods-3.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bsoftlab-goods-3.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bsoftlab-goods-3.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
@@ -225,7 +246,7 @@
     <property name="Repository.Attach.Sources" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554047079158" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554555213476" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -753,6 +774,69 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="JBossConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="SERVER" value="" />
+        <option name="BINDING_SET_NAME" value="" />
+        <option name="DOMAIN" value="false" />
+        <option name="SERVER_GROUP" value="" />
+        <option name="USERNAME" value="" />
+        <option name="PASSWORD" value="" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="JBoss" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="56247" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -1092,6 +1176,8 @@
       <workItem from="1554024449186" duration="1119000" />
       <workItem from="1554027759911" duration="11078000" />
       <workItem from="1554047329472" duration="373000" />
+      <workItem from="1554534578557" duration="2602000" />
+      <workItem from="1554547367178" duration="1570000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/GhukasKakosyan/bsoftlab-goods-3.0&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/RoleRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/SalePriceRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/UnitofmsrRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/WorkmanRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/CurrencyRateWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/DepartmentWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/GroupWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/MatvalueWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/SalePriceWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/UnitofmsrWebController.java">
       <created>1551705560623</created>
@@ -1245,7 +1331,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2322644000" />
+    <option name="totallyTimeSpent" value="2326816000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1259,7 +1345,7 @@
   <component name="ToolWindowManager">
     <frame x="-5" y="-5" width="1376" height="738" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" x="495" y="57" width="376" height="614" id="Project" order="0" sideWeight="0.49429038" weight="0.295764" />
+      <window_info active="true" content_ui="combo" x="495" y="57" width="376" height="614" id="Project" order="0" sideWeight="0.49429038" visible="true" weight="0.295764" />
       <window_info id="Structure" order="1" show_stripe_button="false" weight="0.24962178" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Web" order="3" show_stripe_button="false" sideWeight="0.50570965" side_tool="true" weight="0.24962178" />
@@ -1298,7 +1384,7 @@
       <window_info anchor="right" id="Bean Validation" order="7" show_stripe_button="false" />
       <window_info active="true" anchor="right" id="Maven Projects" order="8" visible="true" weight="0.19894099" />
       <window_info anchor="right" id="Capture Analysis" order="9" />
-      <window_info anchor="right" id="Maven" order="10" visible="true" weight="0.1301059" />
+      <window_info anchor="right" id="Maven" order="10" weight="0.1301059" />
       <window_info anchor="right" id="Theme Preview" order="11" />
     </layout>
     <layout-to-restore>
@@ -1418,13 +1504,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/4.0.2.RELEASE/spring-security-core-4.0.2.RELEASE-sources.jar!/org/springframework/security/access/annotation/Secured.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/CurrencyRateWebController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -1783,6 +1862,9 @@
           <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bsoftlab-goods-3.0.iml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
