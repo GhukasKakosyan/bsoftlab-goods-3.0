@@ -1,6 +1,6 @@
 package net.bsoftlab.dao.template.jpa;
 
-import net.bsoftlab.dao.RoleDao;
+import net.bsoftlab.dao.api.RoleDao;
 import net.bsoftlab.model.Role;
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;

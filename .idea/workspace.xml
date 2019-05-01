@@ -8,6 +8,47 @@
   <component name="ChangeListManager">
     <list default="true" id="00c6bbb9-d7a4-4483-a070-3fb1170e2427" name="Default" comment="Implementing INNER JOIN in SQL queries">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsoftlab-goods-3.0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bsoftlab-goods-3.0.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/CurrencyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/api/CurrencyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/CurrencyRateDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/api/CurrencyRateDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/api/DepartmentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/GroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/api/GroupDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/MatvalueDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/api/MatvalueDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/PermissionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/api/PermissionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/RoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/api/RoleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/SalePriceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/api/SalePriceDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/UnitofmsrDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/api/UnitofmsrDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/WorkmanDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/api/WorkmanDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyDaoJdbcTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyRateDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyRateDaoJdbcTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/DepartmentDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/DepartmentDaoJdbcTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/GroupDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/GroupDaoJdbcTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/MatvalueDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/MatvalueDaoJdbcTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/PermissionDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/PermissionDaoJdbcTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/RoleDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/RoleDaoJdbcTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/SalePriceDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/SalePriceDaoJdbcTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/UnitofmsrDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/UnitofmsrDaoJdbcTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/WorkmanDaoJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/WorkmanDaoJdbcTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/CurrencyDaoJpaTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/CurrencyDaoJpaTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/CurrencyRateDaoJpaTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/CurrencyRateDaoJpaTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/DepartmentDaoJpaTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/DepartmentDaoJpaTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/GroupDaoJpaTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/GroupDaoJpaTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/MatvalueDaoJpaTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/MatvalueDaoJpaTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/PermissionDaoJpaTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/PermissionDaoJpaTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/RoleDaoJpaTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/RoleDaoJpaTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/SalePriceDaoJpaTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/SalePriceDaoJpaTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/UnitofmsrDaoJpaTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/UnitofmsrDaoJpaTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/WorkmanDaoJpaTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/WorkmanDaoJpaTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/CurrencyRateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/CurrencyRateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/CurrencyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/CurrencyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/DepartmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/DepartmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/GroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/GroupServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/MatvalueServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/MatvalueServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/PermissionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/PermissionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/SalePriceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/SalePriceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/UnitofmsrServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/UnitofmsrServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/WorkmanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bsoftlab/service/implement/WorkmanServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="bsoftlab-goods-3.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,15 +112,12 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="Ghukas Kakosyan &lt;46925583+ghukaskakosyan@users.noreply.github.com&gt;" />
         <option value="Ghukas Kakosyan &lt;kakosyanghukas@gmail.com&gt;" />
+        <option value="Ghukas Kakosyan &lt;46925583+ghukaskakosyan@users.noreply.github.com&gt;" />
       </list>
     </option>
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="b51075ec-daf7-4f83-9b90-ed3a06013671" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -195,6 +233,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="bsoftlab-goods-3.0" type="58d84e3e:PackageViewProjectNode" />
+              <item name="bsoftlab-goods-3.0" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -222,24 +272,19 @@
             </path>
             <path>
               <item name="bsoftlab-goods-3.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bsoftlab-goods-3.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bsoftlab-goods-3.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="bsoftlab-goods-3.0" type="58d84e3e:PackageViewProjectNode" />
-              <item name="bsoftlab-goods-3.0" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,7 +293,7 @@
     <property name="Repository.Attach.Sources" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554564297824" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555164509274" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -256,15 +301,24 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.23251748" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="xpath.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ghukas Kakosyan\Documents\IntellJIDEA Projects\bsoftlab-goods-3.0\src\webapp\META-INF" />
+      <recent name="C:\Users\Ghukas Kakosyan\Documents\IntellJIDEA Projects\bsoftlab-goods-3.0\src\main\webapp\WEB-INF\viewers\" />
+      <recent name="C:\Users\Ghukas Kakosyan\Documents\IntellJIDEA Projects\bsoftlab-goods-3.0\src\main\webapp\META-INF" />
+      <recent name="C:\Users\Ghukas Kakosyan\Documents\IntellJIDEA Projects\bsoftlab-goods-3.0\src\main\webapp\WEB-INF" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="net.bsoftlab.dao.api" />
       <recent name="net.bsoftlab.resource.converter.type" />
       <recent name="net.bsoftlab.resource" />
       <recent name="net.bsoftlab" />
       <recent name="net.bsoftlab.service" />
-      <recent name="net.bsoftlab.dao" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="net.bsoftlab.resource.interfase" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Ghukas Kakosyan\Documents\IntellJIDEA Projects\bsoftlab-goods-3.0\src\main\resources" />
@@ -272,15 +326,6 @@
       <recent name="C:\Users\Ghukas Kakosyan\Documents\IntellJIDEA Projects\bsoftlab-goods-3.0\src\main\java\net\bsoftlab\logger" />
       <recent name="C:\Users\Ghukas Kakosyan\Documents\IntellJIDEA Projects\bsoftlab-goods-3.0\src\main\webapp\META-INF" />
       <recent name="C:\Users\Ghukas Kakosyan\Documents\IntellJIDEA Projects\bsoftlab-goods-3.0\src\main\webapp\WEB-INF\viewers\workmans" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="net.bsoftlab.resource.interfase" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Ghukas Kakosyan\Documents\IntellJIDEA Projects\bsoftlab-goods-3.0\src\webapp\META-INF" />
-      <recent name="C:\Users\Ghukas Kakosyan\Documents\IntellJIDEA Projects\bsoftlab-goods-3.0\src\main\webapp\WEB-INF\viewers\" />
-      <recent name="C:\Users\Ghukas Kakosyan\Documents\IntellJIDEA Projects\bsoftlab-goods-3.0\src\main\webapp\META-INF" />
-      <recent name="C:\Users\Ghukas Kakosyan\Documents\IntellJIDEA Projects\bsoftlab-goods-3.0\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -776,69 +821,6 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="JBossConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings>
-        <option name="SERVER" value="" />
-        <option name="BINDING_SET_NAME" value="" />
-        <option name="DOMAIN" value="false" />
-        <option name="SERVER_GROUP" value="" />
-        <option name="USERNAME" value="" />
-        <option name="PASSWORD" value="" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="JBoss" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="56247" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -1179,7 +1161,7 @@
       <workItem from="1554027759911" duration="11078000" />
       <workItem from="1554047329472" duration="373000" />
       <workItem from="1554534578557" duration="2602000" />
-      <workItem from="1554547367178" duration="2018000" />
+      <workItem from="1555156668998" duration="2743000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/GhukasKakosyan/bsoftlab-goods-3.0&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/RoleRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/SalePriceRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/UnitofmsrRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/rest/WorkmanRestController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/CurrencyRateWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/DepartmentWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/GroupWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/MatvalueWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/SalePriceWebController.java&#10;#&#9;src/main/java/net/bsoftlab/controller/web/UnitofmsrWebController.java">
       <created>1551705560623</created>
@@ -1321,21 +1303,7 @@
       <option name="project" value="LOCAL" />
       <updated>1554047603617</updated>
     </task>
-    <task id="LOCAL-00021" summary="Implementing INNER JOIN in SQL queries">
-      <created>1554563773438</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1554563773438</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Implementing INNER JOIN in SQL queries">
-      <created>1554564162959</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1554564162960</updated>
-    </task>
-    <option name="localTasksCounter" value="23" />
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1347,7 +1315,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2327264000" />
+    <option name="totallyTimeSpent" value="2327989000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1361,7 +1329,7 @@
   <component name="ToolWindowManager">
     <frame x="-5" y="-5" width="1376" height="738" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" x="495" y="57" width="376" height="614" id="Project" order="0" sideWeight="0.49429038" visible="true" weight="0.295764" />
+      <window_info content_ui="combo" x="495" y="57" width="376" height="614" id="Project" order="0" sideWeight="0.49429038" weight="0.29727685" />
       <window_info id="Structure" order="1" show_stripe_button="false" weight="0.24962178" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Web" order="3" show_stripe_button="false" sideWeight="0.50570965" side_tool="true" weight="0.24962178" />
@@ -1373,13 +1341,13 @@
       <window_info id="Capture Tool" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" show_stripe_button="false" weight="0.32084692" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49167928" weight="0.5228013" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49167928" weight="0.5439739" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" show_stripe_button="false" weight="0.39967373" />
       <window_info anchor="bottom" id="TODO" order="6" show_stripe_button="false" weight="0.32952693" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50832075" side_tool="true" weight="0.5228013" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32899022" />
       <window_info anchor="bottom" id="Spring" order="9" show_stripe_button="false" weight="0.32952693" />
       <window_info anchor="bottom" id="Terminal" order="10" show_stripe_button="false" weight="0.32952693" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" show_stripe_button="false" weight="0.32952693" />
@@ -1400,7 +1368,7 @@
       <window_info anchor="right" id="Bean Validation" order="7" show_stripe_button="false" />
       <window_info active="true" anchor="right" id="Maven Projects" order="8" visible="true" weight="0.19894099" />
       <window_info anchor="right" id="Capture Analysis" order="9" />
-      <window_info anchor="right" id="Maven" order="10" weight="0.1301059" />
+      <window_info anchor="right" id="Maven" order="10" visible="true" weight="0.1301059" />
       <window_info anchor="right" id="Theme Preview" order="11" />
     </layout>
     <layout-to-restore>
@@ -1520,46 +1488,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/controller/web/CurrencyRateWebController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="127" column="11" selection-start-line="127" selection-start-column="11" selection-end-line="127" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/mapper/CurrencyRateMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/model/Matvalue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="877">
-          <caret line="104" column="16" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
-          <folding>
-            <element signature="e#2456#2457#0" expanded="true" />
-            <element signature="e#2523#2524#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/PermissionDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/RoleDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/WorkmanDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/api/WorkmanDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
@@ -1619,16 +1548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="47" lean-forward="true" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyDaoJdbcTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="118" column="1" lean-forward="true" selection-start-line="118" selection-start-column="1" selection-end-line="118" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1746,9 +1665,6 @@
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/bsoftlab-goods-3.0-security.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/security/SecurityServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1881,6 +1797,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bsoftlab-goods-3.0.iml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jpa/CurrencyDaoJpaTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/template/jdbc/core/CurrencyDaoJdbcTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2360">
+          <caret line="118" column="1" lean-forward="true" selection-start-line="118" selection-start-column="1" selection-end-line="118" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/bsoftlab-goods-3.0-context.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/bsoftlab-goods-3.0-security.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-191" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/bsoftlab-goods-3.0-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/bsoftlab-goods-3.0-views.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/bsoftlab/dao/api/CurrencyDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

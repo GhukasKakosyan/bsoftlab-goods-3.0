@@ -1,8 +1,8 @@
 package net.bsoftlab.service.implement;
 
-import net.bsoftlab.dao.GroupDao;
-import net.bsoftlab.dao.UnitofmsrDao;
-import net.bsoftlab.dao.MatvalueDao;
+import net.bsoftlab.dao.api.GroupDao;
+import net.bsoftlab.dao.api.UnitofmsrDao;
+import net.bsoftlab.dao.api.MatvalueDao;
 import net.bsoftlab.model.Group;
 import net.bsoftlab.model.Matvalue;
 import net.bsoftlab.model.Unitofmsr;

@@ -1,7 +1,7 @@
 package net.bsoftlab.service.implement;
 
-import net.bsoftlab.dao.MatvalueDao;
-import net.bsoftlab.dao.UnitofmsrDao;
+import net.bsoftlab.dao.api.MatvalueDao;
+import net.bsoftlab.dao.api.UnitofmsrDao;
 import net.bsoftlab.model.Unitofmsr;
 import net.bsoftlab.service.UnitofmsrService;
 import net.bsoftlab.service.exception.ServiceException;

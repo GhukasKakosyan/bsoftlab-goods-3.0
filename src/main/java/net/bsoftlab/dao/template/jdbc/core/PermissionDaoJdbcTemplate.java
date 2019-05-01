@@ -1,6 +1,6 @@
 package net.bsoftlab.dao.template.jdbc.core;
 
-import net.bsoftlab.dao.PermissionDao;
+import net.bsoftlab.dao.api.PermissionDao;
 import net.bsoftlab.dao.template.jdbc.mapper.PermissionMapper;
 import net.bsoftlab.model.Permission;
 

@@ -1,6 +1,6 @@
 package net.bsoftlab.dao.template.jdbc.core;
 
-import net.bsoftlab.dao.SalePriceDao;
+import net.bsoftlab.dao.api.SalePriceDao;
 import net.bsoftlab.dao.template.jdbc.mapper.SalePriceMapper;
 import net.bsoftlab.model.Currency;
 import net.bsoftlab.model.Department;

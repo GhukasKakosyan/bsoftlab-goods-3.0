@@ -1,6 +1,6 @@
 package net.bsoftlab.service.implement;
 
-import net.bsoftlab.dao.WorkmanDao;
+import net.bsoftlab.dao.api.WorkmanDao;
 import net.bsoftlab.model.Workman;
 import net.bsoftlab.service.WorkmanService;
 import net.bsoftlab.service.exception.ServiceException;

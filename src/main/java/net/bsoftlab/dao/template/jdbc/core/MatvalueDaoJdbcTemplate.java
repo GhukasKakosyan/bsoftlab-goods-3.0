@@ -1,6 +1,6 @@
 package net.bsoftlab.dao.template.jdbc.core;
 
-import net.bsoftlab.dao.MatvalueDao;
+import net.bsoftlab.dao.api.MatvalueDao;
 import net.bsoftlab.dao.template.jdbc.mapper.MatvalueMapper;
 import net.bsoftlab.dao.template.jdbc.mapper.SalePriceMapper;
 

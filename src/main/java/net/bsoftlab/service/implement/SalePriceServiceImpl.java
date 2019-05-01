@@ -1,9 +1,9 @@
 package net.bsoftlab.service.implement;
 
-import net.bsoftlab.dao.CurrencyDao;
-import net.bsoftlab.dao.DepartmentDao;
-import net.bsoftlab.dao.MatvalueDao;
-import net.bsoftlab.dao.SalePriceDao;
+import net.bsoftlab.dao.api.CurrencyDao;
+import net.bsoftlab.dao.api.DepartmentDao;
+import net.bsoftlab.dao.api.MatvalueDao;
+import net.bsoftlab.dao.api.SalePriceDao;
 import net.bsoftlab.model.Currency;
 import net.bsoftlab.model.Department;
 import net.bsoftlab.model.Matvalue;

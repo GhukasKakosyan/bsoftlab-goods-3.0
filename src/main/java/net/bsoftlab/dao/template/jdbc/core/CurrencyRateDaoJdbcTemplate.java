@@ -1,6 +1,6 @@
 package net.bsoftlab.dao.template.jdbc.core;
 
-import net.bsoftlab.dao.CurrencyRateDao;
+import net.bsoftlab.dao.api.CurrencyRateDao;
 import net.bsoftlab.dao.template.jdbc.mapper.CurrencyRateMapper;
 import net.bsoftlab.model.Currency;
 import net.bsoftlab.model.CurrencyRate;

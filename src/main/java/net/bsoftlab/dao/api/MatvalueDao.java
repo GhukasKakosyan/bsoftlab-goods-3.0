@@ -1,4 +1,4 @@
-package net.bsoftlab.dao;
+package net.bsoftlab.dao.api;
 
 import net.bsoftlab.model.Group;
 import net.bsoftlab.model.Matvalue;

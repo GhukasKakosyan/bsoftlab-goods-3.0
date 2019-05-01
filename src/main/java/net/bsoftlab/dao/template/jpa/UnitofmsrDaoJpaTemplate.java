@@ -1,6 +1,6 @@
 package net.bsoftlab.dao.template.jpa;
 
-import net.bsoftlab.dao.UnitofmsrDao;
+import net.bsoftlab.dao.api.UnitofmsrDao;
 import net.bsoftlab.model.Unitofmsr;
 import net.bsoftlab.utility.Functions;
 

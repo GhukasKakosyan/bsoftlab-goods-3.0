@@ -1,7 +1,7 @@
 package net.bsoftlab.service.implement;
 
-import net.bsoftlab.dao.MatvalueDao;
-import net.bsoftlab.dao.GroupDao;
+import net.bsoftlab.dao.api.MatvalueDao;
+import net.bsoftlab.dao.api.GroupDao;
 import net.bsoftlab.model.Group;
 import net.bsoftlab.service.GroupService;
 import net.bsoftlab.service.exception.ServiceException;

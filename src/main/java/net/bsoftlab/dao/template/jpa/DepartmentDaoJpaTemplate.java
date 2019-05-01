@@ -1,6 +1,6 @@
 package net.bsoftlab.dao.template.jpa;
 
-import net.bsoftlab.dao.DepartmentDao;
+import net.bsoftlab.dao.api.DepartmentDao;
 import net.bsoftlab.model.Department;
 import net.bsoftlab.utility.Functions;
 

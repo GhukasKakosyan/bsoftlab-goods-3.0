@@ -1,6 +1,6 @@
 package net.bsoftlab.dao.template.jdbc.core;
 
-import net.bsoftlab.dao.DepartmentDao;
+import net.bsoftlab.dao.api.DepartmentDao;
 import net.bsoftlab.dao.template.jdbc.mapper.DepartmentMapper;
 import net.bsoftlab.model.Department;
 import net.bsoftlab.utility.Functions;

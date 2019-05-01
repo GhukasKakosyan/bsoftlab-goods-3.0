@@ -1,7 +1,7 @@
 package net.bsoftlab.service.implement;
 
-import net.bsoftlab.dao.CurrencyDao;
-import net.bsoftlab.dao.CurrencyRateDao;
+import net.bsoftlab.dao.api.CurrencyDao;
+import net.bsoftlab.dao.api.CurrencyRateDao;
 import net.bsoftlab.model.Currency;
 import net.bsoftlab.model.CurrencyRate;
 import net.bsoftlab.service.CurrencyRateService;

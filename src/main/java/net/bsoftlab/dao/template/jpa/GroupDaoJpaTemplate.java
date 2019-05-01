@@ -1,6 +1,6 @@
 package net.bsoftlab.dao.template.jpa;
 
-import net.bsoftlab.dao.GroupDao;
+import net.bsoftlab.dao.api.GroupDao;
 import net.bsoftlab.model.Group;
 import net.bsoftlab.utility.Functions;
 

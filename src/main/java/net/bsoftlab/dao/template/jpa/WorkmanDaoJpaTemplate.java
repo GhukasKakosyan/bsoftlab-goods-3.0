@@ -1,6 +1,6 @@
 package net.bsoftlab.dao.template.jpa;
 
-import net.bsoftlab.dao.WorkmanDao;
+import net.bsoftlab.dao.api.WorkmanDao;
 import net.bsoftlab.model.Workman;
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;

@@ -1,7 +1,7 @@
 package net.bsoftlab.service.implement;
 
-import net.bsoftlab.dao.SalePriceDao;
-import net.bsoftlab.dao.DepartmentDao;
+import net.bsoftlab.dao.api.SalePriceDao;
+import net.bsoftlab.dao.api.DepartmentDao;
 import net.bsoftlab.model.Department;
 import net.bsoftlab.service.DepartmentService;
 import net.bsoftlab.service.exception.ServiceException;

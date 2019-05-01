@@ -1,6 +1,6 @@
 package net.bsoftlab.dao.template.jdbc.core;
 
-import net.bsoftlab.dao.WorkmanDao;
+import net.bsoftlab.dao.api.WorkmanDao;
 import net.bsoftlab.dao.template.jdbc.mapper.PermissionMapper;
 import net.bsoftlab.dao.template.jdbc.mapper.RoleMapper;
 import net.bsoftlab.dao.template.jdbc.mapper.WorkmanMapper;

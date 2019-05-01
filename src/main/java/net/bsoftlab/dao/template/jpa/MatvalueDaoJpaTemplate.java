@@ -1,6 +1,6 @@
 package net.bsoftlab.dao.template.jpa;
 
-import net.bsoftlab.dao.MatvalueDao;
+import net.bsoftlab.dao.api.MatvalueDao;
 import net.bsoftlab.model.Group;
 import net.bsoftlab.model.Matvalue;
 import net.bsoftlab.model.Unitofmsr;

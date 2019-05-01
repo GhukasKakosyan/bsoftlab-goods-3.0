@@ -1,6 +1,6 @@
 package net.bsoftlab.service.implement;
 
-import net.bsoftlab.dao.PermissionDao;
+import net.bsoftlab.dao.api.PermissionDao;
 import net.bsoftlab.model.Permission;
 import net.bsoftlab.service.PermissionService;
 import net.bsoftlab.service.exception.ServiceException;

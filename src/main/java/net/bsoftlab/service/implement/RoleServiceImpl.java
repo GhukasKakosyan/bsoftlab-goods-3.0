@@ -1,6 +1,6 @@
 package net.bsoftlab.service.implement;
 
-import net.bsoftlab.dao.RoleDao;
+import net.bsoftlab.dao.api.RoleDao;
 import net.bsoftlab.model.Role;
 import net.bsoftlab.service.RoleService;
 
